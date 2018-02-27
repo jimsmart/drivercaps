@@ -42,7 +42,7 @@ $ go test -test.v ./...
 
 ## Output/Reports
 
-e.g.
+After execution, capability reports for each driver can be found in the leaf folders of this package, e.g.
 
 - [https://github.com/jimsmart/drivercaps/oracle/goracle](https://github.com/jimsmart/drivercaps/tree/master/oracle/goracle)
 - [https://github.com/jimsmart/drivercaps/postgres/jackc](https://github.com/jimsmart/drivercaps/tree/master/postgres/jackc)
