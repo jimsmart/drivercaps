@@ -4,10 +4,18 @@
 
 drivercaps is a [Go](https://golang.org) package to analyse and report database/sql drivers' column metadata capabilities.
 
+
+## Why?
+
+Different database drivers have varying levels of support for sql.ColumnType, this project shines some light on the matter.
+
+
 ## 'Under Construction'
 
 TODO links to reports
+
 TODO docs
+
 TODO Microsoft SQL Server support
 
 
@@ -28,6 +36,15 @@ $ go get github.com/jimsmart/drivercaps
 ```bash
 $ go test -test.v ./...
 ```
+
+## Output/Reports
+
+e.g.
+
+- [https://github.com/jimsmart/drivercaps/oracle/goracle](https://github.com/jimsmart/drivercaps/tree/master/oracle/goracle)
+- [https://github.com/jimsmart/drivercaps/postgres/jackc](https://github.com/jimsmart/drivercaps/tree/master/postgres/jackc)
+- etc.
+
 
 ## License
 
