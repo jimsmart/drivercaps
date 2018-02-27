@@ -304,7 +304,7 @@
 			<td nowrap><code>column_32</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -313,7 +313,7 @@
 			<td nowrap><code>column_33</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -322,7 +322,7 @@
 			<td nowrap><code>column_34</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -331,7 +331,7 @@
 			<td nowrap><code>column_35</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -340,7 +340,7 @@
 			<td nowrap><code>column_36</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -349,7 +349,7 @@
 			<td nowrap><code>column_37</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -358,7 +358,7 @@
 			<td nowrap><code>column_38</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -367,7 +367,7 @@
 			<td nowrap><code>column_39</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -376,7 +376,7 @@
 			<td nowrap><code>column_40</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -385,7 +385,7 @@
 			<td nowrap><code>column_41</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -394,7 +394,7 @@
 			<td nowrap><code>column_42</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -403,7 +403,7 @@
 			<td nowrap><code>column_43</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -412,7 +412,7 @@
 			<td nowrap><code>column_44</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -421,7 +421,7 @@
 			<td nowrap><code>column_45</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -430,7 +430,7 @@
 			<td nowrap><code>column_46</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -439,7 +439,7 @@
 			<td nowrap><code>column_47</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -448,7 +448,7 @@
 			<td nowrap><code>column_48</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -457,7 +457,7 @@
 			<td nowrap><code>column_49</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -466,7 +466,7 @@
 			<td nowrap><code>column_50</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -475,7 +475,7 @@
 			<td nowrap><code>column_51</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -484,7 +484,7 @@
 			<td nowrap><code>column_52</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -493,7 +493,7 @@
 			<td nowrap><code>column_53</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -502,7 +502,7 @@
 			<td nowrap><code>column_54</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -511,7 +511,7 @@
 			<td nowrap><code>column_55</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -520,7 +520,7 @@
 			<td nowrap><code>column_56</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -529,7 +529,7 @@
 			<td nowrap><code>column_57</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -538,7 +538,7 @@
 			<td nowrap><code>column_58</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -547,7 +547,7 @@
 			<td nowrap><code>column_59</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>true</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>sql.NullFloat64</code></td>
 		</tr>
@@ -1078,7 +1078,7 @@
 			<td nowrap><code>column_118</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float32</code></td>
 		</tr>
@@ -1087,7 +1087,7 @@
 			<td nowrap><code>column_119</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>float32</code></td>
 		</tr>
@@ -1096,7 +1096,7 @@
 			<td nowrap><code>column_120</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>float32</code></td>
 		</tr>
@@ -1105,7 +1105,7 @@
 			<td nowrap><code>column_121</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float32</code></td>
 		</tr>
@@ -1114,7 +1114,7 @@
 			<td nowrap><code>column_122</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>float32</code></td>
 		</tr>
@@ -1123,7 +1123,7 @@
 			<td nowrap><code>column_123</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>float32</code></td>
 		</tr>
@@ -1132,7 +1132,7 @@
 			<td nowrap><code>column_124</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1141,7 +1141,7 @@
 			<td nowrap><code>column_125</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1150,7 +1150,7 @@
 			<td nowrap><code>column_126</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1159,7 +1159,7 @@
 			<td nowrap><code>column_127</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1168,7 +1168,7 @@
 			<td nowrap><code>column_128</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1177,7 +1177,7 @@
 			<td nowrap><code>column_129</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1186,7 +1186,7 @@
 			<td nowrap><code>column_130</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1195,7 +1195,7 @@
 			<td nowrap><code>column_131</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1204,7 +1204,7 @@
 			<td nowrap><code>column_132</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1213,7 +1213,7 @@
 			<td nowrap><code>column_133</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1222,7 +1222,7 @@
 			<td nowrap><code>column_134</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1231,7 +1231,7 @@
 			<td nowrap><code>column_135</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1240,7 +1240,7 @@
 			<td nowrap><code>column_136</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1249,7 +1249,7 @@
 			<td nowrap><code>column_137</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1258,7 +1258,7 @@
 			<td nowrap><code>column_138</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1267,7 +1267,7 @@
 			<td nowrap><code>column_139</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1276,7 +1276,7 @@
 			<td nowrap><code>column_140</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,2)</code></td>
+			<td nowrap><code>(math.MaxInt64,2)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1285,7 +1285,7 @@
 			<td nowrap><code>column_141</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,30)</code></td>
+			<td nowrap><code>(math.MaxInt64,30)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1294,7 +1294,7 @@
 			<td nowrap><code>column_142</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float32</code></td>
 		</tr>
@@ -1303,7 +1303,7 @@
 			<td nowrap><code>column_143</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1312,7 +1312,7 @@
 			<td nowrap><code>column_144</code></td>
 			<td nowrap><code>FLOAT</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float32</code></td>
 		</tr>
@@ -1321,7 +1321,7 @@
 			<td nowrap><code>column_145</code></td>
 			<td nowrap><code>DOUBLE</code></td>
 			<td nowrap><code>false</code></td>
-			<td nowrap><code>(9223372036854775807,9223372036854775807)</code></td>
+			<td nowrap><code>(math.MaxInt64,math.MaxInt64)</code></td>
 			<td>-</td>
 			<td nowrap><code>float64</code></td>
 		</tr>
@@ -1563,6 +1563,6 @@
 </table>
 
 Report for [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) (mysql)<br/>
-Test timestamp 2018-02-27T15:05:26Z<br/>
+Test timestamp 2018-02-27T16:10:10Z<br/>
 Generated by [drivercaps](https://github.com/jimsmart/drivercaps)
 

@@ -190,7 +190,21 @@ func assembleResults(types []string, ci []*sql.ColumnType) [][]string {
 		precision, scale, decsizeok := ci[i].DecimalSize()
 		decsizeStr := "-"
 		if decsizeok {
-			decsizeStr = fmt.Sprintf("(%d,%d)", precision, scale)
+			// TODO Factor this out.
+			precStr := ""
+			if precision == math.MaxInt64 {
+				precStr = "math.MaxInt64"
+			} else {
+				precStr = strconv.FormatInt(precision, 10)
+			}
+			// TODO Factor this out.
+			scaleStr := ""
+			if scale == math.MaxInt64 {
+				scaleStr = "math.MaxInt64"
+			} else {
+				scaleStr = strconv.FormatInt(scale, 10)
+			}
+			decsizeStr = fmt.Sprintf("(%s,%s)", precStr, scaleStr)
 		}
 
 		length, lengthok := ci[i].Length()
