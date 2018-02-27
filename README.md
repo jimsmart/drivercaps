@@ -7,12 +7,12 @@ drivercaps is a [Go](https://golang.org) package to analyse and report database/
 
 ## Why?
 
-Different database drivers have varying levels of support for sql.ColumnType, this project shines some light on the matter.
+Different database drivers have varying levels of support for sql.ColumnType, this project shines some light on the subject.
 
 
 ## 'Under Construction'
 
-TODO links to reports
+TODO generate links to all reports
 
 TODO docs
 
@@ -33,6 +33,9 @@ $ go get github.com/jimsmart/drivercaps
 ```
 
 ## Usage
+
+Change directory to the drivercaps root folder and execute:
+
 ```bash
 $ go test -test.v ./...
 ```
