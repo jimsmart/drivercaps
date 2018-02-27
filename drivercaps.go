@@ -36,7 +36,6 @@ type DriverTest struct {
 	ConnStr   string
 	Columns   []*ColumnDefn
 	CreateOpt string
-	Query     string
 }
 
 type ColumnDefn struct {

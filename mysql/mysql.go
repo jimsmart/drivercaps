@@ -135,7 +135,6 @@ func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {
 			// https://dev.mysql.com/doc/refman/5.7/en/json.html
 			&drivercaps.ColumnDefn{DDL: "JSON"},
 		},
-		Query: "SELECT * FROM %s LIMIT 0",
 	}
 	return t
 }

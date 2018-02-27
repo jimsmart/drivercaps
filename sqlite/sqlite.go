@@ -47,7 +47,6 @@ func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {
 			&drivercaps.ColumnDefn{DDL: "DATETIME"},
 		},
 		CreateOpt: "WITHOUT ROWID",
-		Query:     "SELECT * FROM %s LIMIT 0",
 	}
 	return t
 }

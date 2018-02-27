@@ -22,7 +22,6 @@ func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {
 		// 	//
 		// 	&drivercaps.ColumnDefn{DDL: "NUMBER"},
 		// },
-		Query: "SELECT * FROM %s WHERE 1=0",
 	}
 	return t
 }
