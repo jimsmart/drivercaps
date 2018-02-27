@@ -1,0 +1,148 @@
++--------------------------------+------------+---------------+-------------+----------------+---------------+--------------+
+|         DDL Definition         |  ct.Name   | ct.DBTypeName | ct.Nullable | ct.DecimalSize |   ct.Length   | ct.ScanType  |
++--------------------------------+------------+---------------+-------------+----------------+---------------+--------------+
+| column_0 bigint                | column_0   | INT8          | -           | -              | -             | int64        |
+| column_1 int8                  | column_1   | INT8          | -           | -              | -             | int64        |
+| column_2 bigserial             | column_2   | INT8          | -           | -              | -             | int64        |
+| column_3 bit                   | column_3   | BIT           | -           | -              | -             | interface {} |
+| column_4 bit (8)               | column_4   | BIT           | -           | -              | -             | interface {} |
+| column_5 bit varying           | column_5   | VARBIT        | -           | -              | -             | interface {} |
+| column_6 bit varying (8)       | column_6   | VARBIT        | -           | -              | -             | interface {} |
+| column_7 varbit                | column_7   | VARBIT        | -           | -              | -             | interface {} |
+| column_8 varbit (8)            | column_8   | VARBIT        | -           | -              | -             | interface {} |
+| column_9 boolean               | column_9   | BOOL          | -           | -              | -             | bool         |
+| column_10 bool                 | column_10  | BOOL          | -           | -              | -             | bool         |
+| column_11 box                  | column_11  | BOX           | -           | -              | -             | interface {} |
+| column_12 bytea                | column_12  | BYTEA         | -           | -              | math.MaxInt64 | []uint8      |
+| column_13 character            | column_13  | BPCHAR        | -           | -              | 1             | interface {} |
+| column_14 character (8)        | column_14  | BPCHAR        | -           | -              | 8             | interface {} |
+| column_15 char                 | column_15  | BPCHAR        | -           | -              | 1             | interface {} |
+| column_16 char (8)             | column_16  | BPCHAR        | -           | -              | 8             | interface {} |
+| column_17 character varying    | column_17  | VARCHAR       | -           | -              | -5            | string       |
+| column_18 character varying    | column_18  | VARCHAR       | -           | -              | 8             | string       |
+| (8)                            |            |               |             |                |               |              |
+| column_19 varchar              | column_19  | VARCHAR       | -           | -              | -5            | string       |
+| column_20 varchar (8)          | column_20  | VARCHAR       | -           | -              | 8             | string       |
+| column_21 cidr                 | column_21  | CIDR          | -           | -              | -             | interface {} |
+| column_22 circle               | column_22  | CIRCLE        | -           | -              | -             | interface {} |
+| column_23 date                 | column_23  | DATE          | -           | -              | -             | time.Time    |
+| column_24 double precision     | column_24  | FLOAT8        | -           | -              | -             | interface {} |
+| column_25 float8               | column_25  | FLOAT8        | -           | -              | -             | interface {} |
+| column_26 inet                 | column_26  | INET          | -           | -              | -             | interface {} |
+| column_27 integer              | column_27  | INT4          | -           | -              | -             | int32        |
+| column_28 int                  | column_28  | INT4          | -           | -              | -             | int32        |
+| column_29 int4                 | column_29  | INT4          | -           | -              | -             | int32        |
+| column_30 interval             | column_30  | INTERVAL      | -           | -              | -             | interface {} |
+| column_31 json                 | column_31  | JSON          | -           | -              | -             | interface {} |
+| column_32 jsonb                | column_32  | JSONB         | -           | -              | -             | interface {} |
+| column_33 line                 | column_33  | LINE          | -           | -              | -             | interface {} |
+| column_34 lseg                 | column_34  | LSEG          | -           | -              | -             | interface {} |
+| column_35 macaddr              | column_35  | MACADDR       | -           | -              | -             | interface {} |
+| column_36 money                | column_36  | MONEY         | -           | -              | -             | interface {} |
+| column_37 numeric              | column_37  | NUMERIC       | -           | (65535,65531)  | -             | interface {} |
+| column_38 numeric (8,4)        | column_38  | NUMERIC       | -           | (8,4)          | -             | interface {} |
+| column_39 decimal              | column_39  | NUMERIC       | -           | (65535,65531)  | -             | interface {} |
+| column_40 decimal (8,4)        | column_40  | NUMERIC       | -           | (8,4)          | -             | interface {} |
+| column_41 path                 | column_41  | PATH          | -           | -              | -             | interface {} |
+| column_42 pg_lsn               | column_42  | PG_LSN        | -           | -              | -             | interface {} |
+| column_43 point                | column_43  | POINT         | -           | -              | -             | interface {} |
+| column_44 polygon              | column_44  | POLYGON       | -           | -              | -             | interface {} |
+| column_45 real                 | column_45  | FLOAT4        | -           | -              | -             | interface {} |
+| column_46 float4               | column_46  | FLOAT4        | -           | -              | -             | interface {} |
+| column_47 smallint             | column_47  | INT2          | -           | -              | -             | int16        |
+| column_48 int2                 | column_48  | INT2          | -           | -              | -             | int16        |
+| column_49 smallserial          | column_49  | INT2          | -           | -              | -             | int16        |
+| column_50 serial2              | column_50  | INT2          | -           | -              | -             | int16        |
+| column_51 serial               | column_51  | INT4          | -           | -              | -             | int32        |
+| column_52 serial4              | column_52  | INT4          | -           | -              | -             | int32        |
+| column_53 text                 | column_53  | TEXT          | -           | -              | math.MaxInt64 | string       |
+| column_54 time                 | column_54  | TIME          | -           | -              | -             | time.Time    |
+| column_55 time with time zone  | column_55  | TIMETZ        | -           | -              | -             | time.Time    |
+| column_56 timetz               | column_56  | TIMETZ        | -           | -              | -             | time.Time    |
+| column_57 timestamp            | column_57  | TIMESTAMP     | -           | -              | -             | time.Time    |
+| column_58 timestamp with time  | column_58  | TIMESTAMPTZ   | -           | -              | -             | time.Time    |
+| zone                           |            |               |             |                |               |              |
+| column_59 timestamptz          | column_59  | TIMESTAMPTZ   | -           | -              | -             | time.Time    |
+| column_60 tsquery              | column_60  | TSQUERY       | -           | -              | -             | interface {} |
+| column_61 tsvector             | column_61  | TSVECTOR      | -           | -              | -             | interface {} |
+| column_62 txid_snapshot        | column_62  | TXID_SNAPSHOT | -           | -              | -             | interface {} |
+| column_63 uuid                 | column_63  | UUID          | -           | -              | -             | interface {} |
+| column_64 xml                  | column_64  | XML           | -           | -              | -             | interface {} |
+| column_65 bigint NOT NULL      | column_65  | INT8          | -           | -              | -             | int64        |
+| column_66 int8 NOT NULL        | column_66  | INT8          | -           | -              | -             | int64        |
+| column_67 bigserial NOT NULL   | column_67  | INT8          | -           | -              | -             | int64        |
+| column_68 bit NOT NULL         | column_68  | BIT           | -           | -              | -             | interface {} |
+| column_69 bit (8) NOT NULL     | column_69  | BIT           | -           | -              | -             | interface {} |
+| column_70 bit varying NOT NULL | column_70  | VARBIT        | -           | -              | -             | interface {} |
+| column_71 bit varying (8) NOT  | column_71  | VARBIT        | -           | -              | -             | interface {} |
+| NULL                           |            |               |             |                |               |              |
+| column_72 varbit NOT NULL      | column_72  | VARBIT        | -           | -              | -             | interface {} |
+| column_73 varbit (8) NOT NULL  | column_73  | VARBIT        | -           | -              | -             | interface {} |
+| column_74 boolean NOT NULL     | column_74  | BOOL          | -           | -              | -             | bool         |
+| column_75 bool NOT NULL        | column_75  | BOOL          | -           | -              | -             | bool         |
+| column_76 box NOT NULL         | column_76  | BOX           | -           | -              | -             | interface {} |
+| column_77 bytea NOT NULL       | column_77  | BYTEA         | -           | -              | math.MaxInt64 | []uint8      |
+| column_78 character NOT NULL   | column_78  | BPCHAR        | -           | -              | 1             | interface {} |
+| column_79 character (8) NOT    | column_79  | BPCHAR        | -           | -              | 8             | interface {} |
+| NULL                           |            |               |             |                |               |              |
+| column_80 char NOT NULL        | column_80  | BPCHAR        | -           | -              | 1             | interface {} |
+| column_81 char (8) NOT NULL    | column_81  | BPCHAR        | -           | -              | 8             | interface {} |
+| column_82 character varying    | column_82  | VARCHAR       | -           | -              | -5            | string       |
+| NOT NULL                       |            |               |             |                |               |              |
+| column_83 character varying    | column_83  | VARCHAR       | -           | -              | 8             | string       |
+| (8) NOT NULL                   |            |               |             |                |               |              |
+| column_84 varchar NOT NULL     | column_84  | VARCHAR       | -           | -              | -5            | string       |
+| column_85 varchar (8) NOT NULL | column_85  | VARCHAR       | -           | -              | 8             | string       |
+| column_86 cidr NOT NULL        | column_86  | CIDR          | -           | -              | -             | interface {} |
+| column_87 circle NOT NULL      | column_87  | CIRCLE        | -           | -              | -             | interface {} |
+| column_88 date NOT NULL        | column_88  | DATE          | -           | -              | -             | time.Time    |
+| column_89 double precision NOT | column_89  | FLOAT8        | -           | -              | -             | interface {} |
+| NULL                           |            |               |             |                |               |              |
+| column_90 float8 NOT NULL      | column_90  | FLOAT8        | -           | -              | -             | interface {} |
+| column_91 inet NOT NULL        | column_91  | INET          | -           | -              | -             | interface {} |
+| column_92 integer NOT NULL     | column_92  | INT4          | -           | -              | -             | int32        |
+| column_93 int NOT NULL         | column_93  | INT4          | -           | -              | -             | int32        |
+| column_94 int4 NOT NULL        | column_94  | INT4          | -           | -              | -             | int32        |
+| column_95 interval NOT NULL    | column_95  | INTERVAL      | -           | -              | -             | interface {} |
+| column_96 json NOT NULL        | column_96  | JSON          | -           | -              | -             | interface {} |
+| column_97 jsonb NOT NULL       | column_97  | JSONB         | -           | -              | -             | interface {} |
+| column_98 line NOT NULL        | column_98  | LINE          | -           | -              | -             | interface {} |
+| column_99 lseg NOT NULL        | column_99  | LSEG          | -           | -              | -             | interface {} |
+| column_100 macaddr NOT NULL    | column_100 | MACADDR       | -           | -              | -             | interface {} |
+| column_101 money NOT NULL      | column_101 | MONEY         | -           | -              | -             | interface {} |
+| column_102 numeric NOT NULL    | column_102 | NUMERIC       | -           | (65535,65531)  | -             | interface {} |
+| column_103 numeric (8,4) NOT   | column_103 | NUMERIC       | -           | (8,4)          | -             | interface {} |
+| NULL                           |            |               |             |                |               |              |
+| column_104 decimal NOT NULL    | column_104 | NUMERIC       | -           | (65535,65531)  | -             | interface {} |
+| column_105 decimal (8,4) NOT   | column_105 | NUMERIC       | -           | (8,4)          | -             | interface {} |
+| NULL                           |            |               |             |                |               |              |
+| column_106 path NOT NULL       | column_106 | PATH          | -           | -              | -             | interface {} |
+| column_107 pg_lsn NOT NULL     | column_107 | PG_LSN        | -           | -              | -             | interface {} |
+| column_108 point NOT NULL      | column_108 | POINT         | -           | -              | -             | interface {} |
+| column_109 polygon NOT NULL    | column_109 | POLYGON       | -           | -              | -             | interface {} |
+| column_110 real NOT NULL       | column_110 | FLOAT4        | -           | -              | -             | interface {} |
+| column_111 float4 NOT NULL     | column_111 | FLOAT4        | -           | -              | -             | interface {} |
+| column_112 smallint NOT NULL   | column_112 | INT2          | -           | -              | -             | int16        |
+| column_113 int2 NOT NULL       | column_113 | INT2          | -           | -              | -             | int16        |
+| column_114 smallserial NOT     | column_114 | INT2          | -           | -              | -             | int16        |
+| NULL                           |            |               |             |                |               |              |
+| column_115 serial2 NOT NULL    | column_115 | INT2          | -           | -              | -             | int16        |
+| column_116 serial NOT NULL     | column_116 | INT4          | -           | -              | -             | int32        |
+| column_117 serial4 NOT NULL    | column_117 | INT4          | -           | -              | -             | int32        |
+| column_118 text NOT NULL       | column_118 | TEXT          | -           | -              | math.MaxInt64 | string       |
+| column_119 time NOT NULL       | column_119 | TIME          | -           | -              | -             | time.Time    |
+| column_120 time with time zone | column_120 | TIMETZ        | -           | -              | -             | time.Time    |
+| NOT NULL                       |            |               |             |                |               |              |
+| column_121 timetz NOT NULL     | column_121 | TIMETZ        | -           | -              | -             | time.Time    |
+| column_122 timestamp NOT NULL  | column_122 | TIMESTAMP     | -           | -              | -             | time.Time    |
+| column_123 timestamp with time | column_123 | TIMESTAMPTZ   | -           | -              | -             | time.Time    |
+| zone NOT NULL                  |            |               |             |                |               |              |
+| column_124 timestamptz NOT     | column_124 | TIMESTAMPTZ   | -           | -              | -             | time.Time    |
+| NULL                           |            |               |             |                |               |              |
+| column_125 tsquery NOT NULL    | column_125 | TSQUERY       | -           | -              | -             | interface {} |
+| column_126 tsvector NOT NULL   | column_126 | TSVECTOR      | -           | -              | -             | interface {} |
+| column_127 txid_snapshot NOT   | column_127 | TXID_SNAPSHOT | -           | -              | -             | interface {} |
+| NULL                           |            |               |             |                |               |              |
+| column_128 uuid NOT NULL       | column_128 | UUID          | -           | -              | -             | interface {} |
+| column_129 xml NOT NULL        | column_129 | XML           | -           | -              | -             | interface {} |
++--------------------------------+------------+---------------+-------------+----------------+---------------+--------------+

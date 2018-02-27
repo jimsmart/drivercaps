@@ -1,0 +1,61 @@
++--------------------------------+-----------+-------------------+-------------+----------------+-----------+-------------+
+|         DDL Definition         |  ct.Name  |   ct.DBTypeName   | ct.Nullable | ct.DecimalSize | ct.Length | ct.ScanType |
++--------------------------------+-----------+-------------------+-------------+----------------+-----------+-------------+
+| column_0 CHAR                  | COLUMN_0  | SQLT_AFC          | -           | -              | 1         | []string    |
+| column_1 CHAR (8)              | COLUMN_1  | SQLT_AFC          | -           | -              | 8         | []string    |
+| column_2 VARCHAR2 (8)          | COLUMN_2  | SQLT_CHR          | -           | -              | 8         | []string    |
+| column_3 NCHAR                 | COLUMN_3  | SQLT_AFC          | -           | -              | 2         | []string    |
+| column_4 NCHAR (8)             | COLUMN_4  | SQLT_AFC          | -           | -              | 16        | []string    |
+| column_5 NVARCHAR2 (8)         | COLUMN_5  | SQLT_CHR          | -           | -              | 16        | []string    |
+| column_6 DATE                  | COLUMN_6  | SQLT_DAT          | -           | -              | 7         | []string    |
+| column_7 TIMESTAMP             | COLUMN_7  | SQLT_TIMESTAMP    | -           | -              | 11        | []string    |
+| column_8 TIMESTAMP WITH TIME   | COLUMN_8  | SQLT_TIMESTAMP_TZ | -           | -              | 13        | []string    |
+| ZONE                           |           |                   |             |                |           |             |
+| column_9 INTERVAL YEAR TO      | COLUMN_9  | SQLT_INTERVAL_YM  | -           | -              | 5         | []string    |
+| MONTH                          |           |                   |             |                |           |             |
+| column_10 INTERVAL DAY TO      | COLUMN_10 | SQLT_INTERVAL_DS  | -           | -              | 11        | []string    |
+| SECOND                         |           |                   |             |                |           |             |
+| column_11 BLOB                 | COLUMN_11 | SQLT_BLOB         | -           | -              | 4000      | []string    |
+| column_12 CLOB                 | COLUMN_12 | SQLT_CLOB         | -           | -              | 4000      | []string    |
+| column_13 CLOB                 | COLUMN_13 | SQLT_CLOB         | -           | -              | 4000      | []string    |
+| column_14 BFILE                | COLUMN_14 | SQLT_FILE         | -           | -              | 530       | []string    |
+| column_15 RAW (8)              | COLUMN_15 | SQLT_BIN          | -           | -              | 8         | []string    |
+| column_16 NUMBER               | COLUMN_16 | SQLT_NUM          | -           | -              | 22        | []string    |
+| column_17 NUMBER (8)           | COLUMN_17 | SQLT_NUM          | -           | -              | 22        | []string    |
+| column_18 NUMBER (8,4)         | COLUMN_18 | SQLT_NUM          | -           | -              | 22        | []string    |
+| column_19 FLOAT                | COLUMN_19 | SQLT_NUM          | -           | -              | 22        | []string    |
+| column_20 FLOAT (30)           | COLUMN_20 | SQLT_NUM          | -           | -              | 22        | []string    |
+| column_21 BINARY_FLOAT         | COLUMN_21 |                   | -           | -              | 4         | []string    |
+| column_22 BINARY_DOUBLE        | COLUMN_22 |                   | -           | -              | 8         | []string    |
+| column_23 CHAR NOT NULL        | COLUMN_23 | SQLT_AFC          | -           | -              | 1         | []string    |
+| column_24 CHAR (8) NOT NULL    | COLUMN_24 | SQLT_AFC          | -           | -              | 8         | []string    |
+| column_25 VARCHAR2 (8) NOT     | COLUMN_25 | SQLT_CHR          | -           | -              | 8         | []string    |
+| NULL                           |           |                   |             |                |           |             |
+| column_26 NCHAR NOT NULL       | COLUMN_26 | SQLT_AFC          | -           | -              | 2         | []string    |
+| column_27 NCHAR (8) NOT NULL   | COLUMN_27 | SQLT_AFC          | -           | -              | 16        | []string    |
+| column_28 NVARCHAR2 (8) NOT    | COLUMN_28 | SQLT_CHR          | -           | -              | 16        | []string    |
+| NULL                           |           |                   |             |                |           |             |
+| column_29 DATE NOT NULL        | COLUMN_29 | SQLT_DAT          | -           | -              | 7         | []string    |
+| column_30 TIMESTAMP NOT NULL   | COLUMN_30 | SQLT_TIMESTAMP    | -           | -              | 11        | []string    |
+| column_31 TIMESTAMP WITH TIME  | COLUMN_31 | SQLT_TIMESTAMP_TZ | -           | -              | 13        | []string    |
+| ZONE NOT NULL                  |           |                   |             |                |           |             |
+| column_32 INTERVAL YEAR TO     | COLUMN_32 | SQLT_INTERVAL_YM  | -           | -              | 5         | []string    |
+| MONTH NOT NULL                 |           |                   |             |                |           |             |
+| column_33 INTERVAL DAY TO      | COLUMN_33 | SQLT_INTERVAL_DS  | -           | -              | 11        | []string    |
+| SECOND NOT NULL                |           |                   |             |                |           |             |
+| column_34 BLOB NOT NULL        | COLUMN_34 | SQLT_BLOB         | -           | -              | 4000      | []string    |
+| column_35 CLOB NOT NULL        | COLUMN_35 | SQLT_CLOB         | -           | -              | 4000      | []string    |
+| column_36 CLOB NOT NULL        | COLUMN_36 | SQLT_CLOB         | -           | -              | 4000      | []string    |
+| column_37 BFILE NOT NULL       | COLUMN_37 | SQLT_FILE         | -           | -              | 530       | []string    |
+| column_38 RAW (8) NOT NULL     | COLUMN_38 | SQLT_BIN          | -           | -              | 8         | []string    |
+| column_39 NUMBER NOT NULL      | COLUMN_39 | SQLT_NUM          | -           | -              | 22        | []string    |
+| column_40 NUMBER (8) NOT NULL  | COLUMN_40 | SQLT_NUM          | -           | -              | 22        | []string    |
+| column_41 NUMBER (8,4) NOT     | COLUMN_41 | SQLT_NUM          | -           | -              | 22        | []string    |
+| NULL                           |           |                   |             |                |           |             |
+| column_42 FLOAT NOT NULL       | COLUMN_42 | SQLT_NUM          | -           | -              | 22        | []string    |
+| column_43 FLOAT (30) NOT NULL  | COLUMN_43 | SQLT_NUM          | -           | -              | 22        | []string    |
+| column_44 BINARY_FLOAT NOT     | COLUMN_44 |                   | -           | -              | 4         | []string    |
+| NULL                           |           |                   |             |                |           |             |
+| column_45 BINARY_DOUBLE NOT    | COLUMN_45 |                   | -           | -              | 8         | []string    |
+| NULL                           |           |                   |             |                |           |             |
++--------------------------------+-----------+-------------------+-------------+----------------+-----------+-------------+

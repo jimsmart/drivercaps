@@ -1,0 +1,67 @@
++--------------------------------+-----------+------------------------+-------------+----------------+-----------+-------------+
+|         DDL Definition         |  ct.Name  |     ct.DBTypeName      | ct.Nullable | ct.DecimalSize | ct.Length | ct.ScanType |
++--------------------------------+-----------+------------------------+-------------+----------------+-----------+-------------+
+| column_0 INT                   | column_0  | INT                    | -           | -              | -         | nil         |
+| column_1 INTEGER               | column_1  | INTEGER                | -           | -              | -         | nil         |
+| column_2 TINYINT               | column_2  | TINYINT                | -           | -              | -         | nil         |
+| column_3 SMALLINT              | column_3  | SMALLINT               | -           | -              | -         | nil         |
+| column_4 MEDIUMINT             | column_4  | MEDIUMINT              | -           | -              | -         | nil         |
+| column_5 BIGINT                | column_5  | BIGINT                 | -           | -              | -         | nil         |
+| column_6 UNSIGNED BIG INT      | column_6  | UNSIGNED BIG INT       | -           | -              | -         | nil         |
+| column_7 INT2                  | column_7  | INT2                   | -           | -              | -         | nil         |
+| column_8 INT8                  | column_8  | INT8                   | -           | -              | -         | nil         |
+| column_9 CHARACTER(20)         | column_9  | CHARACTER(20)          | -           | -              | -         | nil         |
+| column_10 VARCHAR(255)         | column_10 | VARCHAR(255)           | -           | -              | -         | nil         |
+| column_11 VARYING              | column_11 | VARYING CHARACTER(255) | -           | -              | -         | nil         |
+| CHARACTER(255)                 |           |                        |             |                |           |             |
+| column_12 NCHAR(55)            | column_12 | NCHAR(55)              | -           | -              | -         | nil         |
+| column_13 NATIVE CHARACTER(70) | column_13 | NATIVE CHARACTER(70)   | -           | -              | -         | nil         |
+| column_14 NVARCHAR(100)        | column_14 | NVARCHAR(100)          | -           | -              | -         | nil         |
+| column_15 TEXT                 | column_15 | TEXT                   | -           | -              | -         | nil         |
+| column_16 CLOB                 | column_16 | CLOB                   | -           | -              | -         | nil         |
+| column_17 BLOB                 | column_17 | BLOB                   | -           | -              | -         | nil         |
+| column_18 REAL                 | column_18 | REAL                   | -           | -              | -         | nil         |
+| column_19 DOUBLE               | column_19 | DOUBLE                 | -           | -              | -         | nil         |
+| column_20 DOUBLE PRECISION     | column_20 | DOUBLE PRECISION       | -           | -              | -         | nil         |
+| column_21 FLOAT                | column_21 | FLOAT                  | -           | -              | -         | nil         |
+| column_22 NUMERIC              | column_22 | NUMERIC                | -           | -              | -         | nil         |
+| column_23 DECIMAL(10,5)        | column_23 | DECIMAL(10,5)          | -           | -              | -         | nil         |
+| column_24 BOOLEAN              | column_24 | BOOLEAN                | -           | -              | -         | nil         |
+| column_25 DATE                 | column_25 | DATE                   | -           | -              | -         | nil         |
+| column_26 DATETIME             | column_26 | DATETIME               | -           | -              | -         | nil         |
+| column_27 INT NOT NULL         | column_27 | INT                    | -           | -              | -         | nil         |
+| column_28 INTEGER NOT NULL     | column_28 | INTEGER                | -           | -              | -         | nil         |
+| column_29 TINYINT NOT NULL     | column_29 | TINYINT                | -           | -              | -         | nil         |
+| column_30 SMALLINT NOT NULL    | column_30 | SMALLINT               | -           | -              | -         | nil         |
+| column_31 MEDIUMINT NOT NULL   | column_31 | MEDIUMINT              | -           | -              | -         | nil         |
+| column_32 BIGINT NOT NULL      | column_32 | BIGINT                 | -           | -              | -         | nil         |
+| column_33 UNSIGNED BIG INT NOT | column_33 | UNSIGNED BIG INT       | -           | -              | -         | nil         |
+| NULL                           |           |                        |             |                |           |             |
+| column_34 INT2 NOT NULL        | column_34 | INT2                   | -           | -              | -         | nil         |
+| column_35 INT8 NOT NULL        | column_35 | INT8                   | -           | -              | -         | nil         |
+| column_36 CHARACTER(20) NOT    | column_36 | CHARACTER(20)          | -           | -              | -         | nil         |
+| NULL                           |           |                        |             |                |           |             |
+| column_37 VARCHAR(255) NOT     | column_37 | VARCHAR(255)           | -           | -              | -         | nil         |
+| NULL                           |           |                        |             |                |           |             |
+| column_38 VARYING              | column_38 | VARYING CHARACTER(255) | -           | -              | -         | nil         |
+| CHARACTER(255) NOT NULL        |           |                        |             |                |           |             |
+| column_39 NCHAR(55) NOT NULL   | column_39 | NCHAR(55)              | -           | -              | -         | nil         |
+| column_40 NATIVE CHARACTER(70) | column_40 | NATIVE CHARACTER(70)   | -           | -              | -         | nil         |
+| NOT NULL                       |           |                        |             |                |           |             |
+| column_41 NVARCHAR(100) NOT    | column_41 | NVARCHAR(100)          | -           | -              | -         | nil         |
+| NULL                           |           |                        |             |                |           |             |
+| column_42 TEXT NOT NULL        | column_42 | TEXT                   | -           | -              | -         | nil         |
+| column_43 CLOB NOT NULL        | column_43 | CLOB                   | -           | -              | -         | nil         |
+| column_44 BLOB NOT NULL        | column_44 | BLOB                   | -           | -              | -         | nil         |
+| column_45 REAL NOT NULL        | column_45 | REAL                   | -           | -              | -         | nil         |
+| column_46 DOUBLE NOT NULL      | column_46 | DOUBLE                 | -           | -              | -         | nil         |
+| column_47 DOUBLE PRECISION NOT | column_47 | DOUBLE PRECISION       | -           | -              | -         | nil         |
+| NULL                           |           |                        |             |                |           |             |
+| column_48 FLOAT NOT NULL       | column_48 | FLOAT                  | -           | -              | -         | nil         |
+| column_49 NUMERIC NOT NULL     | column_49 | NUMERIC                | -           | -              | -         | nil         |
+| column_50 DECIMAL(10,5) NOT    | column_50 | DECIMAL(10,5)          | -           | -              | -         | nil         |
+| NULL                           |           |                        |             |                |           |             |
+| column_51 BOOLEAN NOT NULL     | column_51 | BOOLEAN                | -           | -              | -         | nil         |
+| column_52 DATE NOT NULL        | column_52 | DATE                   | -           | -              | -         | nil         |
+| column_53 DATETIME NOT NULL    | column_53 | DATETIME               | -           | -              | -         | nil         |
++--------------------------------+-----------+------------------------+-------------+----------------+-----------+-------------+

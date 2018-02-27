@@ -1,0 +1,55 @@
+DDL Definition,ct.Name,ct.DBTypeName,ct.Nullable,ct.DecimalSize,ct.Length,ct.ScanType
+column_0 INT,column_0,INT,true,-,-,nil
+column_1 INTEGER,column_1,INTEGER,true,-,-,nil
+column_2 TINYINT,column_2,TINYINT,true,-,-,nil
+column_3 SMALLINT,column_3,SMALLINT,true,-,-,nil
+column_4 MEDIUMINT,column_4,MEDIUMINT,true,-,-,nil
+column_5 BIGINT,column_5,BIGINT,true,-,-,nil
+column_6 UNSIGNED BIG INT,column_6,UNSIGNED BIG INT,true,-,-,nil
+column_7 INT2,column_7,INT2,true,-,-,nil
+column_8 INT8,column_8,INT8,true,-,-,nil
+column_9 CHARACTER(20),column_9,CHARACTER(20),true,-,-,nil
+column_10 VARCHAR(255),column_10,VARCHAR(255),true,-,-,nil
+column_11 VARYING CHARACTER(255),column_11,VARYING CHARACTER(255),true,-,-,nil
+column_12 NCHAR(55),column_12,NCHAR(55),true,-,-,nil
+column_13 NATIVE CHARACTER(70),column_13,NATIVE CHARACTER(70),true,-,-,nil
+column_14 NVARCHAR(100),column_14,NVARCHAR(100),true,-,-,nil
+column_15 TEXT,column_15,TEXT,true,-,-,nil
+column_16 CLOB,column_16,CLOB,true,-,-,nil
+column_17 BLOB,column_17,BLOB,true,-,-,nil
+column_18 REAL,column_18,REAL,true,-,-,nil
+column_19 DOUBLE,column_19,DOUBLE,true,-,-,nil
+column_20 DOUBLE PRECISION,column_20,DOUBLE PRECISION,true,-,-,nil
+column_21 FLOAT,column_21,FLOAT,true,-,-,nil
+column_22 NUMERIC,column_22,NUMERIC,true,-,-,nil
+"column_23 DECIMAL(10,5)",column_23,"DECIMAL(10,5)",true,-,-,nil
+column_24 BOOLEAN,column_24,BOOLEAN,true,-,-,nil
+column_25 DATE,column_25,DATE,true,-,-,nil
+column_26 DATETIME,column_26,DATETIME,true,-,-,nil
+column_27 INT NOT NULL,column_27,INT,true,-,-,nil
+column_28 INTEGER NOT NULL,column_28,INTEGER,true,-,-,nil
+column_29 TINYINT NOT NULL,column_29,TINYINT,true,-,-,nil
+column_30 SMALLINT NOT NULL,column_30,SMALLINT,true,-,-,nil
+column_31 MEDIUMINT NOT NULL,column_31,MEDIUMINT,true,-,-,nil
+column_32 BIGINT NOT NULL,column_32,BIGINT,true,-,-,nil
+column_33 UNSIGNED BIG INT NOT NULL,column_33,UNSIGNED BIG INT,true,-,-,nil
+column_34 INT2 NOT NULL,column_34,INT2,true,-,-,nil
+column_35 INT8 NOT NULL,column_35,INT8,true,-,-,nil
+column_36 CHARACTER(20) NOT NULL,column_36,CHARACTER(20),true,-,-,nil
+column_37 VARCHAR(255) NOT NULL,column_37,VARCHAR(255),true,-,-,nil
+column_38 VARYING CHARACTER(255) NOT NULL,column_38,VARYING CHARACTER(255),true,-,-,nil
+column_39 NCHAR(55) NOT NULL,column_39,NCHAR(55),true,-,-,nil
+column_40 NATIVE CHARACTER(70) NOT NULL,column_40,NATIVE CHARACTER(70),true,-,-,nil
+column_41 NVARCHAR(100) NOT NULL,column_41,NVARCHAR(100),true,-,-,nil
+column_42 TEXT NOT NULL,column_42,TEXT,true,-,-,nil
+column_43 CLOB NOT NULL,column_43,CLOB,true,-,-,nil
+column_44 BLOB NOT NULL,column_44,BLOB,true,-,-,nil
+column_45 REAL NOT NULL,column_45,REAL,true,-,-,nil
+column_46 DOUBLE NOT NULL,column_46,DOUBLE,true,-,-,nil
+column_47 DOUBLE PRECISION NOT NULL,column_47,DOUBLE PRECISION,true,-,-,nil
+column_48 FLOAT NOT NULL,column_48,FLOAT,true,-,-,nil
+column_49 NUMERIC NOT NULL,column_49,NUMERIC,true,-,-,nil
+"column_50 DECIMAL(10,5) NOT NULL",column_50,"DECIMAL(10,5)",true,-,-,nil
+column_51 BOOLEAN NOT NULL,column_51,BOOLEAN,true,-,-,nil
+column_52 DATE NOT NULL,column_52,DATE,true,-,-,nil
+column_53 DATETIME NOT NULL,column_53,DATETIME,true,-,-,nil

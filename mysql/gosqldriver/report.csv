@@ -1,0 +1,173 @@
+DDL Definition,ct.Name,ct.DBTypeName,ct.Nullable,ct.DecimalSize,ct.Length,ct.ScanType
+column_0 BIT,column_0,BIT,false,-,-,sql.RawBytes
+column_1 BIT (8),column_1,BIT,true,-,-,sql.RawBytes
+column_2 TINYINT,column_2,TINYINT,true,-,-,sql.NullInt64
+column_3 TINYINT UNSIGNED,column_3,TINYINT,true,-,-,sql.NullInt64
+column_4 BOOL,column_4,TINYINT,true,-,-,sql.NullInt64
+column_5 BOOLEAN,column_5,TINYINT,true,-,-,sql.NullInt64
+column_6 SMALLINT,column_6,SMALLINT,true,-,-,sql.NullInt64
+column_7 SMALLINT UNSIGNED,column_7,SMALLINT,true,-,-,sql.NullInt64
+column_8 MEDIUMINT,column_8,MEDIUMINT,true,-,-,sql.NullInt64
+column_9 MEDIUMINT UNSIGNED,column_9,MEDIUMINT,true,-,-,sql.NullInt64
+column_10 INT,column_10,INT,true,-,-,sql.NullInt64
+column_11 INT UNSIGNED,column_11,INT,true,-,-,sql.NullInt64
+column_12 INTEGER,column_12,INT,true,-,-,sql.NullInt64
+column_13 INTEGER UNSIGNED,column_13,INT,true,-,-,sql.NullInt64
+column_14 BIGINT,column_14,BIGINT,true,-,-,sql.NullInt64
+column_15 BIGINT UNSIGNED,column_15,BIGINT,true,-,-,sql.NullInt64
+column_16 DECIMAL,column_16,DECIMAL,true,"(10,0)",-,sql.RawBytes
+column_17 DECIMAL UNSIGNED,column_17,DECIMAL,true,"(9,0)",-,sql.RawBytes
+"column_18 DECIMAL (8,4)",column_18,DECIMAL,true,"(8,4)",-,sql.RawBytes
+"column_19 DECIMAL (8,4) UNSIGNED",column_19,DECIMAL,true,"(7,4)",-,sql.RawBytes
+column_20 DEC,column_20,DECIMAL,true,"(10,0)",-,sql.RawBytes
+column_21 DEC UNSIGNED,column_21,DECIMAL,true,"(9,0)",-,sql.RawBytes
+"column_22 DEC (8,4)",column_22,DECIMAL,true,"(8,4)",-,sql.RawBytes
+"column_23 DEC (8,4) UNSIGNED",column_23,DECIMAL,true,"(7,4)",-,sql.RawBytes
+column_24 NUMERIC,column_24,DECIMAL,true,"(10,0)",-,sql.RawBytes
+column_25 NUMERIC UNSIGNED,column_25,DECIMAL,true,"(9,0)",-,sql.RawBytes
+"column_26 NUMERIC (8,4)",column_26,DECIMAL,true,"(8,4)",-,sql.RawBytes
+"column_27 NUMERIC (8,4) UNSIGNED",column_27,DECIMAL,true,"(7,4)",-,sql.RawBytes
+column_28 FIXED,column_28,DECIMAL,true,"(10,0)",-,sql.RawBytes
+column_29 FIXED UNSIGNED,column_29,DECIMAL,true,"(9,0)",-,sql.RawBytes
+"column_30 FIXED (8,4)",column_30,DECIMAL,true,"(8,4)",-,sql.RawBytes
+"column_31 FIXED (8,4) UNSIGNED",column_31,DECIMAL,true,"(7,4)",-,sql.RawBytes
+column_32 FLOAT,column_32,FLOAT,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+"column_33 FLOAT (5,2)",column_33,FLOAT,true,"(9223372036854775807,2)",-,sql.NullFloat64
+"column_34 FLOAT (100,30)",column_34,FLOAT,true,"(9223372036854775807,30)",-,sql.NullFloat64
+column_35 FLOAT UNSIGNED,column_35,FLOAT,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+"column_36 FLOAT (5,2) UNSIGNED",column_36,FLOAT,true,"(9223372036854775807,2)",-,sql.NullFloat64
+"column_37 FLOAT (100,30) UNSIGNED",column_37,FLOAT,true,"(9223372036854775807,30)",-,sql.NullFloat64
+column_38 DOUBLE,column_38,DOUBLE,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+"column_39 DOUBLE (5,2)",column_39,DOUBLE,true,"(9223372036854775807,2)",-,sql.NullFloat64
+"column_40 DOUBLE (100,30)",column_40,DOUBLE,true,"(9223372036854775807,30)",-,sql.NullFloat64
+column_41 DOUBLE UNSIGNED,column_41,DOUBLE,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+"column_42 DOUBLE (5,2) UNSIGNED",column_42,DOUBLE,true,"(9223372036854775807,2)",-,sql.NullFloat64
+"column_43 DOUBLE (100,30) UNSIGNED",column_43,DOUBLE,true,"(9223372036854775807,30)",-,sql.NullFloat64
+column_44 DOUBLE PRECISION,column_44,DOUBLE,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+"column_45 DOUBLE PRECISION (5,2)",column_45,DOUBLE,true,"(9223372036854775807,2)",-,sql.NullFloat64
+"column_46 DOUBLE PRECISION (100,30)",column_46,DOUBLE,true,"(9223372036854775807,30)",-,sql.NullFloat64
+column_47 DOUBLE PRECISION UNSIGNED,column_47,DOUBLE,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+"column_48 DOUBLE PRECISION (5,2) UNSIGNED",column_48,DOUBLE,true,"(9223372036854775807,2)",-,sql.NullFloat64
+"column_49 DOUBLE PRECISION (100,30) UNSIGNED",column_49,DOUBLE,true,"(9223372036854775807,30)",-,sql.NullFloat64
+column_50 REAL,column_50,DOUBLE,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+"column_51 REAL (5,2)",column_51,DOUBLE,true,"(9223372036854775807,2)",-,sql.NullFloat64
+"column_52 REAL (100,30)",column_52,DOUBLE,true,"(9223372036854775807,30)",-,sql.NullFloat64
+column_53 REAL UNSIGNED,column_53,DOUBLE,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+"column_54 REAL (5,2) UNSIGNED",column_54,DOUBLE,true,"(9223372036854775807,2)",-,sql.NullFloat64
+"column_55 REAL (100,30) UNSIGNED",column_55,DOUBLE,true,"(9223372036854775807,30)",-,sql.NullFloat64
+column_56 FLOAT (10),column_56,FLOAT,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+column_57 FLOAT (30),column_57,DOUBLE,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+column_58 FLOAT (10) UNSIGNED,column_58,FLOAT,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+column_59 FLOAT (30) UNSIGNED,column_59,DOUBLE,true,"(9223372036854775807,9223372036854775807)",-,sql.NullFloat64
+column_60 DATE,column_60,DATE,true,-,-,mysql.NullTime
+column_61 DATETIME,column_61,DATETIME,true,"(0,0)",-,mysql.NullTime
+column_62 TIME,column_62,TIME,true,"(0,0)",-,sql.RawBytes
+column_63 YEAR,column_63,YEAR,true,-,-,sql.NullInt64
+column_64 YEAR (4),column_64,YEAR,true,-,-,sql.NullInt64
+column_65 CHAR,column_65,CHAR,true,-,-,sql.RawBytes
+column_66 CHAR (8),column_66,CHAR,true,-,-,sql.RawBytes
+column_67 VARCHAR (8),column_67,VARCHAR,true,-,-,sql.RawBytes
+column_68 BINARY,column_68,BINARY,true,-,-,sql.RawBytes
+column_69 BINARY (8),column_69,BINARY,true,-,-,sql.RawBytes
+column_70 VARBINARY (8),column_70,VARBINARY,true,-,-,sql.RawBytes
+column_71 TINYBLOB,column_71,BLOB,true,-,-,sql.RawBytes
+column_72 BLOB,column_72,BLOB,true,-,-,sql.RawBytes
+column_73 BLOB (8),column_73,BLOB,true,-,-,sql.RawBytes
+column_74 MEDIUMBLOB,column_74,BLOB,true,-,-,sql.RawBytes
+column_75 LONGBLOB,column_75,BLOB,true,-,-,sql.RawBytes
+column_76 TINYTEXT,column_76,TEXT,true,-,-,sql.RawBytes
+column_77 TEXT,column_77,TEXT,true,-,-,sql.RawBytes
+column_78 TEXT (8),column_78,TEXT,true,-,-,sql.RawBytes
+column_79 MEDIUMTEXT,column_79,TEXT,true,-,-,sql.RawBytes
+column_80 LONGTEXT,column_80,TEXT,true,-,-,sql.RawBytes
+column_81 LONG,column_81,TEXT,true,-,-,sql.RawBytes
+column_82 LONG VARCHAR,column_82,TEXT,true,-,-,sql.RawBytes
+"column_83 ENUM ('a','b','c')",column_83,CHAR,true,-,-,sql.RawBytes
+"column_84 SET ('a','b','c')",column_84,CHAR,true,-,-,sql.RawBytes
+column_85 JSON,column_85,JSON,true,-,-,sql.RawBytes
+column_86 BIT NOT NULL,column_86,BIT,false,-,-,sql.RawBytes
+column_87 BIT (8) NOT NULL,column_87,BIT,false,-,-,sql.RawBytes
+column_88 TINYINT NOT NULL,column_88,TINYINT,false,-,-,int8
+column_89 TINYINT UNSIGNED NOT NULL,column_89,TINYINT,false,-,-,uint8
+column_90 BOOL NOT NULL,column_90,TINYINT,false,-,-,int8
+column_91 BOOLEAN NOT NULL,column_91,TINYINT,false,-,-,int8
+column_92 SMALLINT NOT NULL,column_92,SMALLINT,false,-,-,int16
+column_93 SMALLINT UNSIGNED NOT NULL,column_93,SMALLINT,false,-,-,uint16
+column_94 MEDIUMINT NOT NULL,column_94,MEDIUMINT,false,-,-,int32
+column_95 MEDIUMINT UNSIGNED NOT NULL,column_95,MEDIUMINT,false,-,-,uint32
+column_96 INT NOT NULL,column_96,INT,false,-,-,int32
+column_97 INT UNSIGNED NOT NULL,column_97,INT,false,-,-,uint32
+column_98 INTEGER NOT NULL,column_98,INT,false,-,-,int32
+column_99 INTEGER UNSIGNED NOT NULL,column_99,INT,false,-,-,uint32
+column_100 BIGINT NOT NULL,column_100,BIGINT,false,-,-,int64
+column_101 BIGINT UNSIGNED NOT NULL,column_101,BIGINT,false,-,-,uint64
+column_102 DECIMAL NOT NULL,column_102,DECIMAL,false,"(10,0)",-,sql.RawBytes
+column_103 DECIMAL UNSIGNED NOT NULL,column_103,DECIMAL,false,"(9,0)",-,sql.RawBytes
+"column_104 DECIMAL (8,4) NOT NULL",column_104,DECIMAL,false,"(8,4)",-,sql.RawBytes
+"column_105 DECIMAL (8,4) UNSIGNED NOT NULL",column_105,DECIMAL,false,"(7,4)",-,sql.RawBytes
+column_106 DEC NOT NULL,column_106,DECIMAL,false,"(10,0)",-,sql.RawBytes
+column_107 DEC UNSIGNED NOT NULL,column_107,DECIMAL,false,"(9,0)",-,sql.RawBytes
+"column_108 DEC (8,4) NOT NULL",column_108,DECIMAL,false,"(8,4)",-,sql.RawBytes
+"column_109 DEC (8,4) UNSIGNED NOT NULL",column_109,DECIMAL,false,"(7,4)",-,sql.RawBytes
+column_110 NUMERIC NOT NULL,column_110,DECIMAL,false,"(10,0)",-,sql.RawBytes
+column_111 NUMERIC UNSIGNED NOT NULL,column_111,DECIMAL,false,"(9,0)",-,sql.RawBytes
+"column_112 NUMERIC (8,4) NOT NULL",column_112,DECIMAL,false,"(8,4)",-,sql.RawBytes
+"column_113 NUMERIC (8,4) UNSIGNED NOT NULL",column_113,DECIMAL,false,"(7,4)",-,sql.RawBytes
+column_114 FIXED NOT NULL,column_114,DECIMAL,false,"(10,0)",-,sql.RawBytes
+column_115 FIXED UNSIGNED NOT NULL,column_115,DECIMAL,false,"(9,0)",-,sql.RawBytes
+"column_116 FIXED (8,4) NOT NULL",column_116,DECIMAL,false,"(8,4)",-,sql.RawBytes
+"column_117 FIXED (8,4) UNSIGNED NOT NULL",column_117,DECIMAL,false,"(7,4)",-,sql.RawBytes
+column_118 FLOAT NOT NULL,column_118,FLOAT,false,"(9223372036854775807,9223372036854775807)",-,float32
+"column_119 FLOAT (5,2) NOT NULL",column_119,FLOAT,false,"(9223372036854775807,2)",-,float32
+"column_120 FLOAT (100,30) NOT NULL",column_120,FLOAT,false,"(9223372036854775807,30)",-,float32
+column_121 FLOAT UNSIGNED NOT NULL,column_121,FLOAT,false,"(9223372036854775807,9223372036854775807)",-,float32
+"column_122 FLOAT (5,2) UNSIGNED NOT NULL",column_122,FLOAT,false,"(9223372036854775807,2)",-,float32
+"column_123 FLOAT (100,30) UNSIGNED NOT NULL",column_123,FLOAT,false,"(9223372036854775807,30)",-,float32
+column_124 DOUBLE NOT NULL,column_124,DOUBLE,false,"(9223372036854775807,9223372036854775807)",-,float64
+"column_125 DOUBLE (5,2) NOT NULL",column_125,DOUBLE,false,"(9223372036854775807,2)",-,float64
+"column_126 DOUBLE (100,30) NOT NULL",column_126,DOUBLE,false,"(9223372036854775807,30)",-,float64
+column_127 DOUBLE UNSIGNED NOT NULL,column_127,DOUBLE,false,"(9223372036854775807,9223372036854775807)",-,float64
+"column_128 DOUBLE (5,2) UNSIGNED NOT NULL",column_128,DOUBLE,false,"(9223372036854775807,2)",-,float64
+"column_129 DOUBLE (100,30) UNSIGNED NOT NULL",column_129,DOUBLE,false,"(9223372036854775807,30)",-,float64
+column_130 DOUBLE PRECISION NOT NULL,column_130,DOUBLE,false,"(9223372036854775807,9223372036854775807)",-,float64
+"column_131 DOUBLE PRECISION (5,2) NOT NULL",column_131,DOUBLE,false,"(9223372036854775807,2)",-,float64
+"column_132 DOUBLE PRECISION (100,30) NOT NULL",column_132,DOUBLE,false,"(9223372036854775807,30)",-,float64
+column_133 DOUBLE PRECISION UNSIGNED NOT NULL,column_133,DOUBLE,false,"(9223372036854775807,9223372036854775807)",-,float64
+"column_134 DOUBLE PRECISION (5,2) UNSIGNED NOT NULL",column_134,DOUBLE,false,"(9223372036854775807,2)",-,float64
+"column_135 DOUBLE PRECISION (100,30) UNSIGNED NOT NULL",column_135,DOUBLE,false,"(9223372036854775807,30)",-,float64
+column_136 REAL NOT NULL,column_136,DOUBLE,false,"(9223372036854775807,9223372036854775807)",-,float64
+"column_137 REAL (5,2) NOT NULL",column_137,DOUBLE,false,"(9223372036854775807,2)",-,float64
+"column_138 REAL (100,30) NOT NULL",column_138,DOUBLE,false,"(9223372036854775807,30)",-,float64
+column_139 REAL UNSIGNED NOT NULL,column_139,DOUBLE,false,"(9223372036854775807,9223372036854775807)",-,float64
+"column_140 REAL (5,2) UNSIGNED NOT NULL",column_140,DOUBLE,false,"(9223372036854775807,2)",-,float64
+"column_141 REAL (100,30) UNSIGNED NOT NULL",column_141,DOUBLE,false,"(9223372036854775807,30)",-,float64
+column_142 FLOAT (10) NOT NULL,column_142,FLOAT,false,"(9223372036854775807,9223372036854775807)",-,float32
+column_143 FLOAT (30) NOT NULL,column_143,DOUBLE,false,"(9223372036854775807,9223372036854775807)",-,float64
+column_144 FLOAT (10) UNSIGNED NOT NULL,column_144,FLOAT,false,"(9223372036854775807,9223372036854775807)",-,float32
+column_145 FLOAT (30) UNSIGNED NOT NULL,column_145,DOUBLE,false,"(9223372036854775807,9223372036854775807)",-,float64
+column_146 DATE NOT NULL,column_146,DATE,false,-,-,mysql.NullTime
+column_147 DATETIME NOT NULL,column_147,DATETIME,false,"(0,0)",-,mysql.NullTime
+column_148 TIME NOT NULL,column_148,TIME,false,"(0,0)",-,sql.RawBytes
+column_149 YEAR NOT NULL,column_149,YEAR,false,-,-,uint16
+column_150 YEAR (4) NOT NULL,column_150,YEAR,false,-,-,uint16
+column_151 CHAR NOT NULL,column_151,CHAR,false,-,-,sql.RawBytes
+column_152 CHAR (8) NOT NULL,column_152,CHAR,false,-,-,sql.RawBytes
+column_153 VARCHAR (8) NOT NULL,column_153,VARCHAR,false,-,-,sql.RawBytes
+column_154 BINARY NOT NULL,column_154,BINARY,false,-,-,sql.RawBytes
+column_155 BINARY (8) NOT NULL,column_155,BINARY,false,-,-,sql.RawBytes
+column_156 VARBINARY (8) NOT NULL,column_156,VARBINARY,false,-,-,sql.RawBytes
+column_157 TINYBLOB NOT NULL,column_157,BLOB,false,-,-,sql.RawBytes
+column_158 BLOB NOT NULL,column_158,BLOB,false,-,-,sql.RawBytes
+column_159 BLOB (8) NOT NULL,column_159,BLOB,false,-,-,sql.RawBytes
+column_160 MEDIUMBLOB NOT NULL,column_160,BLOB,false,-,-,sql.RawBytes
+column_161 LONGBLOB NOT NULL,column_161,BLOB,false,-,-,sql.RawBytes
+column_162 TINYTEXT NOT NULL,column_162,TEXT,false,-,-,sql.RawBytes
+column_163 TEXT NOT NULL,column_163,TEXT,false,-,-,sql.RawBytes
+column_164 TEXT (8) NOT NULL,column_164,TEXT,false,-,-,sql.RawBytes
+column_165 MEDIUMTEXT NOT NULL,column_165,TEXT,false,-,-,sql.RawBytes
+column_166 LONGTEXT NOT NULL,column_166,TEXT,false,-,-,sql.RawBytes
+column_167 LONG NOT NULL,column_167,TEXT,false,-,-,sql.RawBytes
+column_168 LONG VARCHAR NOT NULL,column_168,TEXT,false,-,-,sql.RawBytes
+"column_169 ENUM ('a','b','c') NOT NULL",column_169,CHAR,false,-,-,sql.RawBytes
+"column_170 SET ('a','b','c') NOT NULL",column_170,CHAR,false,-,-,sql.RawBytes
+column_171 JSON NOT NULL,column_171,JSON,false,-,-,sql.RawBytes

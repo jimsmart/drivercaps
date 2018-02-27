@@ -1,0 +1,12 @@
+package drivercaps_test
+
+import (
+	// . "github.com/jimsmart/drivercaps"
+
+	. "github.com/onsi/ginkgo"
+	// . "github.com/onsi/gomega"
+)
+
+var _ = Describe("DriverCaps", func() {
+
+})

@@ -1,0 +1,47 @@
+DDL Definition,ct.Name,ct.DBTypeName,ct.Nullable,ct.DecimalSize,ct.Length,ct.ScanType
+column_0 CHAR,COLUMN_0,CHAR,false,-,1,string
+column_1 CHAR (8),COLUMN_1,CHAR,true,-,8,string
+column_2 VARCHAR2 (8),COLUMN_2,VARCHAR2,true,-,8,string
+column_3 NCHAR,COLUMN_3,NCHAR,true,-,4,string
+column_4 NCHAR (8),COLUMN_4,NCHAR,true,-,32,string
+column_5 NVARCHAR2 (8),COLUMN_5,NVARCHAR2,true,-,32,string
+column_6 DATE,COLUMN_6,DATE,true,-,-,time.Time
+column_7 TIMESTAMP,COLUMN_7,TIMESTAMP,true,-,-,time.Time
+column_8 TIMESTAMP WITH TIME ZONE,COLUMN_8,TIMESTAMP WITH TIMEZONE,true,-,-,time.Time
+column_9 INTERVAL YEAR TO MONTH,COLUMN_9,INTERVAL YEAR TO MONTH,true,-,-,string
+column_10 INTERVAL DAY TO SECOND,COLUMN_10,INTERVAL DAY TO SECOND,true,-,-,time.Duration
+column_11 BLOB,COLUMN_11,BLOB,true,-,math.MaxInt64,[]uint8
+column_12 CLOB,COLUMN_12,CLOB,true,-,math.MaxInt64,string
+column_13 CLOB,COLUMN_13,CLOB,true,-,math.MaxInt64,string
+column_14 BFILE,COLUMN_14,BFILE,true,-,math.MaxInt64,[]uint8
+column_15 RAW (8),COLUMN_15,RAW,true,-,-,[]uint8
+column_16 NUMBER,COLUMN_16,NUMBER,true,"(0,-127)",-,goracle.Number
+column_17 NUMBER (8),COLUMN_17,NUMBER,true,"(8,0)",-,int64
+"column_18 NUMBER (8,4)",COLUMN_18,NUMBER,true,"(8,4)",-,goracle.Number
+column_19 FLOAT,COLUMN_19,NUMBER,true,"(126,-127)",-,goracle.Number
+column_20 FLOAT (30),COLUMN_20,NUMBER,true,"(30,-127)",-,goracle.Number
+column_21 BINARY_FLOAT,COLUMN_21,FLOAT,true,-,-,float32
+column_22 BINARY_DOUBLE,COLUMN_22,DOUBLE,true,-,-,float64
+column_23 CHAR NOT NULL,COLUMN_23,CHAR,false,-,1,string
+column_24 CHAR (8) NOT NULL,COLUMN_24,CHAR,false,-,8,string
+column_25 VARCHAR2 (8) NOT NULL,COLUMN_25,VARCHAR2,false,-,8,string
+column_26 NCHAR NOT NULL,COLUMN_26,NCHAR,false,-,4,string
+column_27 NCHAR (8) NOT NULL,COLUMN_27,NCHAR,false,-,32,string
+column_28 NVARCHAR2 (8) NOT NULL,COLUMN_28,NVARCHAR2,false,-,32,string
+column_29 DATE NOT NULL,COLUMN_29,DATE,false,-,-,time.Time
+column_30 TIMESTAMP NOT NULL,COLUMN_30,TIMESTAMP,false,-,-,time.Time
+column_31 TIMESTAMP WITH TIME ZONE NOT NULL,COLUMN_31,TIMESTAMP WITH TIMEZONE,false,-,-,time.Time
+column_32 INTERVAL YEAR TO MONTH NOT NULL,COLUMN_32,INTERVAL YEAR TO MONTH,false,-,-,string
+column_33 INTERVAL DAY TO SECOND NOT NULL,COLUMN_33,INTERVAL DAY TO SECOND,false,-,-,time.Duration
+column_34 BLOB NOT NULL,COLUMN_34,BLOB,false,-,math.MaxInt64,[]uint8
+column_35 CLOB NOT NULL,COLUMN_35,CLOB,false,-,math.MaxInt64,string
+column_36 CLOB NOT NULL,COLUMN_36,CLOB,false,-,math.MaxInt64,string
+column_37 BFILE NOT NULL,COLUMN_37,BFILE,false,-,math.MaxInt64,[]uint8
+column_38 RAW (8) NOT NULL,COLUMN_38,RAW,false,-,-,[]uint8
+column_39 NUMBER NOT NULL,COLUMN_39,NUMBER,false,"(0,-127)",-,goracle.Number
+column_40 NUMBER (8) NOT NULL,COLUMN_40,NUMBER,false,"(8,0)",-,int64
+"column_41 NUMBER (8,4) NOT NULL",COLUMN_41,NUMBER,false,"(8,4)",-,goracle.Number
+column_42 FLOAT NOT NULL,COLUMN_42,NUMBER,false,"(126,-127)",-,goracle.Number
+column_43 FLOAT (30) NOT NULL,COLUMN_43,NUMBER,false,"(30,-127)",-,goracle.Number
+column_44 BINARY_FLOAT NOT NULL,COLUMN_44,FLOAT,false,-,-,float32
+column_45 BINARY_DOUBLE NOT NULL,COLUMN_45,DOUBLE,false,-,-,float64
