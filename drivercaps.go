@@ -16,6 +16,7 @@ import (
 	"time"
 
 	"github.com/djherbis/times"
+	"github.com/jimsmart/schema"
 	"github.com/olekukonko/tablewriter"
 	// . "github.com/onsi/ginkgo"
 	// . "github.com/onsi/gomega"
@@ -140,15 +141,7 @@ func exerciseDriver(test *DriverTest) ([][]string, error) {
 		return nil, err
 	}
 
-	q := fmt.Sprintf(test.Query, tname)
-	// log.Printf("executing %s", q)
-	rows, err := db.Query(q)
-	if err != nil {
-		return nil, err
-	}
-	defer rows.Close()
-	// log.Println("executed ok")
-	ci, err := rows.ColumnTypes()
+	ci, err := schema.Table(db, tname)
 	if err != nil {
 		return nil, err
 	}
