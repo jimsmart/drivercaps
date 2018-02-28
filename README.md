@@ -31,7 +31,7 @@ Currently supporting the following database engines:
 
 ## Reports
 
-Driver | Database |
+Driver | Database | Report
 ---|---|---
 github.com/denisenkom/go-mssqldb | MS SQL | [View Report](https://github.com/jimsmart/drivercaps/tree/master/mssql/denisenkom)
 github.com/minus5/gofreetds | MS SQL | [View Report](https://github.com/jimsmart/drivercaps/tree/master/mssql/minus5)
