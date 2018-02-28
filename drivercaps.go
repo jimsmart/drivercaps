@@ -1,12 +1,8 @@
 package drivercaps
 
 import (
-	"bufio"
 	"database/sql"
-	"encoding/csv"
 	"fmt"
-	"html/template"
-	"io"
 	"log"
 	"math"
 	"math/rand"
@@ -15,9 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/djherbis/times"
 	"github.com/jimsmart/schema"
-	"github.com/olekukonko/tablewriter"
 	// . "github.com/onsi/ginkgo"
 	// . "github.com/onsi/gomega"
 )
@@ -118,7 +112,7 @@ func exerciseDriver(test *DriverTest) ([][]string, error) {
 	var cmd []string
 	// TODO(js) Consider making some columns uppercase, to detect whether driver honours case.
 	for _, ci := range test.Columns {
-		s := fmt.Sprintf("column_%d %s", i, ci.DDL)
+		s := fmt.Sprintf("t_%d %s", i, ci.DDL)
 		types = append(types, s)
 		cmd = append(cmd, "\t"+s)
 		i++
@@ -127,12 +121,12 @@ func exerciseDriver(test *DriverTest) ([][]string, error) {
 		if ci.OnePerTable {
 			continue
 		}
-		s := fmt.Sprintf("column_%d %s NOT NULL", i, ci.DDL)
+		s := fmt.Sprintf("t_%d %s NOT NULL", i, ci.DDL)
 		types = append(types, s)
 		cmd = append(cmd, "\t"+s)
 		i++
 	}
-	cmd = append(cmd, "\tPRIMARY KEY (column_0)")
+	cmd = append(cmd, "\tPRIMARY KEY (t_0)")
 	create += strings.Join(cmd, ",\n")
 	create += fmt.Sprintf("\n) %s", test.CreateOpt)
 	err = exec(db, create)
@@ -162,12 +156,12 @@ func assembleResults(types []string, ci []*sql.ColumnType) [][]string {
 	// }
 	header := []string{
 		"DDL Definition",
-		"ct.Name",
-		"ct.DBTypeName",
-		"ct.Nullable",
-		"ct.DecimalSize",
-		"ct.Length",
-		"ct.ScanType",
+		".Name",
+		".DBTypeName",
+		".Nullable",
+		".DecimalSize",
+		".Length",
+		".ScanType",
 	}
 	results = append(results, header)
 
@@ -185,14 +179,14 @@ func assembleResults(types []string, ci []*sql.ColumnType) [][]string {
 			// TODO Factor this out.
 			precStr := ""
 			if precision == math.MaxInt64 {
-				precStr = "math.MaxInt64"
+				precStr = "MaxInt64"
 			} else {
 				precStr = strconv.FormatInt(precision, 10)
 			}
 			// TODO Factor this out.
 			scaleStr := ""
 			if scale == math.MaxInt64 {
-				scaleStr = "math.MaxInt64"
+				scaleStr = "MaxInt64"
 			} else {
 				scaleStr = strconv.FormatInt(scale, 10)
 			}
@@ -203,7 +197,7 @@ func assembleResults(types []string, ci []*sql.ColumnType) [][]string {
 		lengthStr := "-"
 		if lengthok {
 			if length == math.MaxInt64 {
-				lengthStr = "math.MaxInt64"
+				lengthStr = "MaxInt64"
 			} else {
 				lengthStr = strconv.FormatInt(length, 10)
 			}
@@ -231,223 +225,12 @@ func assembleResults(types []string, ci []*sql.ColumnType) [][]string {
 	return results
 }
 
-func renderASCII(results [][]string, test *DriverTest, tim time.Time) {
-	writeASCII(os.Stdout, results, test, tim)
-}
-
-func writeASCIIFile(results [][]string, test *DriverTest, tim time.Time) {
-	filename := localFilename(asciiFilename)
-	// log.Println("filename", filename)
-	f, err := os.OpenFile(filename, os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer f.Close()
-
-	bufw := bufio.NewWriter(f)
-	writeASCII(bufw, results, test, tim)
-	bufw.Flush()
-}
-
-func writeASCII(w io.Writer, results [][]string, test *DriverTest, tim time.Time) {
-
-	header := []string{
-		"DDL Definition",
-		"ct.Name",
-		"ct.DBTypeName",
-		"ct.Nullable",
-		"ct.DecimalSize",
-		"ct.Length",
-		"ct.ScanType",
-	}
-
-	table := tablewriter.NewWriter(w)
-	// table.SetAutoWrapText(false)
-	table.SetAutoFormatHeaders(false)
-	// table.SetHeader(results[0])
-	table.SetHeader(header)
-	table.SetAlignment(tablewriter.ALIGN_LEFT)
-	// table.SetColumnAlignment([]int{
-	// 	tablewriter.ALIGN_LEFT,
-	// 	tablewriter.ALIGN_LEFT,
-	// 	tablewriter.ALIGN_LEFT,
-	// 	tablewriter.ALIGN_LEFT,
-	// 	tablewriter.ALIGN_CENTER,
-	// 	tablewriter.ALIGN_RIGHT,
-	// 	tablewriter.ALIGN_LEFT,
-	// })
-	// table.SetCaption(true, title)
-
-	// Markdown format.
-	// table.SetBorders(tablewriter.Border{Left: true, Top: false, Right: true, Bottom: false})
-	// table.SetCenterSeparator("|")
-
-	results = results[1:len(results)]
-
-	for i := range results {
-		table.Append(results[i])
-	}
-	table.Render()
-}
-
-func renderCSV(results [][]string, test *DriverTest) {
-	writeCSV(os.Stdout, results, test)
-}
-
-func writeCSVFile(results [][]string, test *DriverTest) {
-	filename := localFilename(csvFilename)
-	// log.Println("filename", filename)
-	f, err := os.OpenFile(filename, os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer f.Close()
-
-	bufw := bufio.NewWriter(f)
-	writeCSV(bufw, results, test)
-	bufw.Flush()
-}
-
-func writeCSV(w io.Writer, results [][]string, test *DriverTest) {
-	csvw := csv.NewWriter(w)
-	csvw.WriteAll(results) // calls Flush internally
-	if err := csvw.Error(); err != nil {
-		log.Fatalf("csv.WriteAll error %v", err)
-	}
-}
-
-func readCSVFile() ([][]string, time.Time, error) {
-	filename := localFilename(csvFilename)
-	// log.Println("filename", filename)
-	// return nil, nil
-
-	f, err := os.OpenFile(filename, os.O_RDONLY, 0644)
-	if err != nil {
-		return nil, time.Time{}, err
-	}
-	defer f.Close()
-
-	bufr := bufio.NewReader(f)
-	csvr := csv.NewReader(bufr)
-	results, err := csvr.ReadAll()
-	if err != nil {
-		return nil, time.Time{}, err
-	}
-
-	t, err := times.Stat(filename)
-	if err != nil {
-		return nil, time.Time{}, err
-	}
-	return results, t.ModTime(), nil
-}
-
 func localFilename(filename string) string {
 	wd, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)
 	}
 	return wd + filename
-}
-
-func renderMarkdown(results [][]string, test *DriverTest, tim time.Time) {
-	writeMarkdown(os.Stdout, results, test, tim)
-}
-
-func writeMarkdownFile(results [][]string, test *DriverTest, tim time.Time) {
-
-	// TODO(js) This is a bad code smell. We override the default headings from csv,
-	// both here and when dealing with ascii :/
-	header := []string{
-		"DDL Definition",
-		"ct.Name",
-		"ct.DBTypeName",
-		"ct.Nullable",
-		"ct.DecimalSize",
-		"ct.Length",
-		"ct.ScanType",
-	}
-
-	var res [][]string
-	res = append(res, header)
-	res = append(res, results[1:len(results)]...)
-	results = res
-
-	filename := localFilename(markdownFilename)
-	// log.Println("filename", filename)
-	f, err := os.OpenFile(filename, os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer f.Close()
-
-	bufw := bufio.NewWriter(f)
-	writeMarkdown(bufw, results, test, tim)
-	bufw.Flush()
-}
-
-// func markdownFilename() string {
-// 	wd, err := os.Getwd()
-// 	if err != nil {
-// 		log.Fatal(err)
-// 	}
-// 	return wd + "/README.md"
-// }
-
-func writeMarkdown(w io.Writer, results [][]string, test *DriverTest, tim time.Time) {
-
-	// TODO(js) Externalise this (markdown) template.
-	const tpl = `
-# Driver &#91;&#93;&#42;sql.ColumnType Capability Report
-
-- Package "{{.Package}}" ({{.Driver}})
-- {{.Database}}
-
-<table>
-	<thead>
-		<tr>
-			{{range .Headings}}<th>{{ . }}</th>{{end}}
-		</tr>
-	</thead>
-	<tbody>{{range $row := .Rows}}
-		<tr>{{range $row}}
-			{{if and (ne . "-") (ne . "")}}<td nowrap><code>{{ . }}</code></td>{{end}}{{if eq . "-"}}<td>-</td>{{end}}{{if eq . ""}}<td/>{{end}}{{end}}
-		</tr>{{end}}
-	</tbody>
-</table>
-
-Report for [{{.Package}}](https://{{.URL}}) ({{.Driver}})<br/>
-Test timestamp {{.Timestamp}}<br/>
-Generated by [drivercaps](https://github.com/jimsmart/drivercaps)
-
-`
-
-	t, err := template.New("webpage").Parse(tpl)
-	if err != nil {
-		log.Fatalf("template.Parse error %v", err)
-	}
-
-	data := struct {
-		Database  string
-		URL       string
-		Package   string
-		Driver    string
-		Headings  []string
-		Rows      [][]string
-		Timestamp string
-	}{
-		Database:  test.Database,
-		URL:       test.PkgURL,
-		Package:   test.PkgName,
-		Driver:    test.DrvName,
-		Headings:  results[0],
-		Rows:      results[1:len(results)],
-		Timestamp: tim.Format(time.RFC3339),
-	}
-
-	err = t.Execute(w, data)
-	if err != nil {
-		log.Fatalf("template.Execute error %v", err)
-	}
 }
 
 func exec(db *sql.DB, ddl string) error {

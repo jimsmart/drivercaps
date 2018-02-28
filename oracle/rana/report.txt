@@ -1,61 +1,53 @@
-+--------------------------------+-----------+--------------------------+-------------+----------------+-----------+---------------+
-|         DDL Definition         |  ct.Name  |      ct.DBTypeName       | ct.Nullable | ct.DecimalSize | ct.Length |  ct.ScanType  |
-+--------------------------------+-----------+--------------------------+-------------+----------------+-----------+---------------+
-| column_0 CHAR                  | COLUMN_0  | CHAR                     | true        | -              | 1         | string        |
-| column_1 CHAR (8)              | COLUMN_1  | CHAR                     | true        | -              | 8         | string        |
-| column_2 VARCHAR2 (8)          | COLUMN_2  | VARCHAR2                 | true        | -              | 8         | string        |
-| column_3 NCHAR                 | COLUMN_3  | CHAR                     | true        | -              | 2         | string        |
-| column_4 NCHAR (8)             | COLUMN_4  | CHAR                     | true        | -              | 16        | string        |
-| column_5 NVARCHAR2 (8)         | COLUMN_5  | VARCHAR2                 | true        | -              | 16        | string        |
-| column_6 DATE                  | COLUMN_6  | DATE                     | true        | -              | 7         | time.Time     |
-| column_7 TIMESTAMP             | COLUMN_7  | TIMESTAMP                | true        | -              | 11        | time.Time     |
-| column_8 TIMESTAMP WITH TIME   | COLUMN_8  | TIMESTAMP WITH TIME ZONE | true        | -              | 13        | time.Time     |
-| ZONE                           |           |                          |             |                |           |               |
-| column_9 INTERVAL YEAR TO      | COLUMN_9  | INTERVAL YEAR TO MONTH   | true        | -              | 5         | time.Duration |
-| MONTH                          |           |                          |             |                |           |               |
-| column_10 INTERVAL DAY TO      | COLUMN_10 | INTERVAL DAY TO SECOND   | true        | -              | 11        | time.Duration |
-| SECOND                         |           |                          |             |                |           |               |
-| column_11 BLOB                 | COLUMN_11 | BLOB                     | true        | -              | 4000      | []uint8       |
-| column_12 CLOB                 | COLUMN_12 | CLOB                     | true        | -              | 4000      | string        |
-| column_13 CLOB                 | COLUMN_13 | CLOB                     | true        | -              | 4000      | string        |
-| column_14 BFILE                | COLUMN_14 | FILE                     | true        | -              | 530       | []uint8       |
-| column_15 RAW (8)              | COLUMN_15 | RAW                      | true        | -              | 8         | []uint8       |
-| column_16 NUMBER               | COLUMN_16 | NUMBER                   | true        | (0,-127)       | 22        | float64       |
-| column_17 NUMBER (8)           | COLUMN_17 | NUMBER                   | true        | (8,0)          | 22        | float64       |
-| column_18 NUMBER (8,4)         | COLUMN_18 | NUMBER                   | true        | (8,4)          | 22        | float64       |
-| column_19 FLOAT                | COLUMN_19 | NUMBER                   | true        | (126,-127)     | 22        | float64       |
-| column_20 FLOAT (30)           | COLUMN_20 | NUMBER                   | true        | (30,-127)      | 22        | float64       |
-| column_21 BINARY_FLOAT         | COLUMN_21 | 100                      | true        | -              | 4         | nil           |
-| column_22 BINARY_DOUBLE        | COLUMN_22 | 101                      | true        | -              | 8         | nil           |
-| column_23 CHAR NOT NULL        | COLUMN_23 | CHAR                     | true        | -              | 1         | string        |
-| column_24 CHAR (8) NOT NULL    | COLUMN_24 | CHAR                     | true        | -              | 8         | string        |
-| column_25 VARCHAR2 (8) NOT     | COLUMN_25 | VARCHAR2                 | true        | -              | 8         | string        |
-| NULL                           |           |                          |             |                |           |               |
-| column_26 NCHAR NOT NULL       | COLUMN_26 | CHAR                     | true        | -              | 2         | string        |
-| column_27 NCHAR (8) NOT NULL   | COLUMN_27 | CHAR                     | true        | -              | 16        | string        |
-| column_28 NVARCHAR2 (8) NOT    | COLUMN_28 | VARCHAR2                 | true        | -              | 16        | string        |
-| NULL                           |           |                          |             |                |           |               |
-| column_29 DATE NOT NULL        | COLUMN_29 | DATE                     | true        | -              | 7         | time.Time     |
-| column_30 TIMESTAMP NOT NULL   | COLUMN_30 | TIMESTAMP                | true        | -              | 11        | time.Time     |
-| column_31 TIMESTAMP WITH TIME  | COLUMN_31 | TIMESTAMP WITH TIME ZONE | true        | -              | 13        | time.Time     |
-| ZONE NOT NULL                  |           |                          |             |                |           |               |
-| column_32 INTERVAL YEAR TO     | COLUMN_32 | INTERVAL YEAR TO MONTH   | true        | -              | 5         | time.Duration |
-| MONTH NOT NULL                 |           |                          |             |                |           |               |
-| column_33 INTERVAL DAY TO      | COLUMN_33 | INTERVAL DAY TO SECOND   | true        | -              | 11        | time.Duration |
-| SECOND NOT NULL                |           |                          |             |                |           |               |
-| column_34 BLOB NOT NULL        | COLUMN_34 | BLOB                     | true        | -              | 4000      | []uint8       |
-| column_35 CLOB NOT NULL        | COLUMN_35 | CLOB                     | true        | -              | 4000      | string        |
-| column_36 CLOB NOT NULL        | COLUMN_36 | CLOB                     | true        | -              | 4000      | string        |
-| column_37 BFILE NOT NULL       | COLUMN_37 | FILE                     | true        | -              | 530       | []uint8       |
-| column_38 RAW (8) NOT NULL     | COLUMN_38 | RAW                      | true        | -              | 8         | []uint8       |
-| column_39 NUMBER NOT NULL      | COLUMN_39 | NUMBER                   | true        | (0,-127)       | 22        | float64       |
-| column_40 NUMBER (8) NOT NULL  | COLUMN_40 | NUMBER                   | true        | (8,0)          | 22        | float64       |
-| column_41 NUMBER (8,4) NOT     | COLUMN_41 | NUMBER                   | true        | (8,4)          | 22        | float64       |
-| NULL                           |           |                          |             |                |           |               |
-| column_42 FLOAT NOT NULL       | COLUMN_42 | NUMBER                   | true        | (126,-127)     | 22        | float64       |
-| column_43 FLOAT (30) NOT NULL  | COLUMN_43 | NUMBER                   | true        | (30,-127)      | 22        | float64       |
-| column_44 BINARY_FLOAT NOT     | COLUMN_44 | 100                      | true        | -              | 4         | nil           |
-| NULL                           |           |                          |             |                |           |               |
-| column_45 BINARY_DOUBLE NOT    | COLUMN_45 | 101                      | true        | -              | 8         | nil           |
-| NULL                           |           |                          |             |                |           |               |
-+--------------------------------+-----------+--------------------------+-------------+----------------+-----------+---------------+
++--------------------------------+-------+--------------------------+-----------+--------------+---------+---------------+
+|         DDL Definition         | .Name |       .DBTypeName        | .Nullable | .DecimalSize | .Length |   .ScanType   |
++--------------------------------+-------+--------------------------+-----------+--------------+---------+---------------+
+| t_0 CHAR                       | T_0   | CHAR                     | true      | -            | 1       | string        |
+| t_1 CHAR (8)                   | T_1   | CHAR                     | true      | -            | 8       | string        |
+| t_2 VARCHAR2 (8)               | T_2   | VARCHAR2                 | true      | -            | 8       | string        |
+| t_3 NCHAR                      | T_3   | CHAR                     | true      | -            | 2       | string        |
+| t_4 NCHAR (8)                  | T_4   | CHAR                     | true      | -            | 16      | string        |
+| t_5 NVARCHAR2 (8)              | T_5   | VARCHAR2                 | true      | -            | 16      | string        |
+| t_6 DATE                       | T_6   | DATE                     | true      | -            | 7       | time.Time     |
+| t_7 TIMESTAMP                  | T_7   | TIMESTAMP                | true      | -            | 11      | time.Time     |
+| t_8 TIMESTAMP WITH TIME ZONE   | T_8   | TIMESTAMP WITH TIME ZONE | true      | -            | 13      | time.Time     |
+| t_9 INTERVAL YEAR TO MONTH     | T_9   | INTERVAL YEAR TO MONTH   | true      | -            | 5       | time.Duration |
+| t_10 INTERVAL DAY TO SECOND    | T_10  | INTERVAL DAY TO SECOND   | true      | -            | 11      | time.Duration |
+| t_11 BLOB                      | T_11  | BLOB                     | true      | -            | 4000    | []uint8       |
+| t_12 CLOB                      | T_12  | CLOB                     | true      | -            | 4000    | string        |
+| t_13 CLOB                      | T_13  | CLOB                     | true      | -            | 4000    | string        |
+| t_14 BFILE                     | T_14  | FILE                     | true      | -            | 530     | []uint8       |
+| t_15 RAW (8)                   | T_15  | RAW                      | true      | -            | 8       | []uint8       |
+| t_16 NUMBER                    | T_16  | NUMBER                   | true      | (0,-127)     | 22      | float64       |
+| t_17 NUMBER (8)                | T_17  | NUMBER                   | true      | (8,0)        | 22      | float64       |
+| t_18 NUMBER (8,4)              | T_18  | NUMBER                   | true      | (8,4)        | 22      | float64       |
+| t_19 FLOAT                     | T_19  | NUMBER                   | true      | (126,-127)   | 22      | float64       |
+| t_20 FLOAT (30)                | T_20  | NUMBER                   | true      | (30,-127)    | 22      | float64       |
+| t_21 BINARY_FLOAT              | T_21  | 100                      | true      | -            | 4       | nil           |
+| t_22 BINARY_DOUBLE             | T_22  | 101                      | true      | -            | 8       | nil           |
+| t_23 CHAR NOT NULL             | T_23  | CHAR                     | true      | -            | 1       | string        |
+| t_24 CHAR (8) NOT NULL         | T_24  | CHAR                     | true      | -            | 8       | string        |
+| t_25 VARCHAR2 (8) NOT NULL     | T_25  | VARCHAR2                 | true      | -            | 8       | string        |
+| t_26 NCHAR NOT NULL            | T_26  | CHAR                     | true      | -            | 2       | string        |
+| t_27 NCHAR (8) NOT NULL        | T_27  | CHAR                     | true      | -            | 16      | string        |
+| t_28 NVARCHAR2 (8) NOT NULL    | T_28  | VARCHAR2                 | true      | -            | 16      | string        |
+| t_29 DATE NOT NULL             | T_29  | DATE                     | true      | -            | 7       | time.Time     |
+| t_30 TIMESTAMP NOT NULL        | T_30  | TIMESTAMP                | true      | -            | 11      | time.Time     |
+| t_31 TIMESTAMP WITH TIME ZONE  | T_31  | TIMESTAMP WITH TIME ZONE | true      | -            | 13      | time.Time     |
+| NOT NULL                       |       |                          |           |              |         |               |
+| t_32 INTERVAL YEAR TO MONTH    | T_32  | INTERVAL YEAR TO MONTH   | true      | -            | 5       | time.Duration |
+| NOT NULL                       |       |                          |           |              |         |               |
+| t_33 INTERVAL DAY TO SECOND    | T_33  | INTERVAL DAY TO SECOND   | true      | -            | 11      | time.Duration |
+| NOT NULL                       |       |                          |           |              |         |               |
+| t_34 BLOB NOT NULL             | T_34  | BLOB                     | true      | -            | 4000    | []uint8       |
+| t_35 CLOB NOT NULL             | T_35  | CLOB                     | true      | -            | 4000    | string        |
+| t_36 CLOB NOT NULL             | T_36  | CLOB                     | true      | -            | 4000    | string        |
+| t_37 BFILE NOT NULL            | T_37  | FILE                     | true      | -            | 530     | []uint8       |
+| t_38 RAW (8) NOT NULL          | T_38  | RAW                      | true      | -            | 8       | []uint8       |
+| t_39 NUMBER NOT NULL           | T_39  | NUMBER                   | true      | (0,-127)     | 22      | float64       |
+| t_40 NUMBER (8) NOT NULL       | T_40  | NUMBER                   | true      | (8,0)        | 22      | float64       |
+| t_41 NUMBER (8,4) NOT NULL     | T_41  | NUMBER                   | true      | (8,4)        | 22      | float64       |
+| t_42 FLOAT NOT NULL            | T_42  | NUMBER                   | true      | (126,-127)   | 22      | float64       |
+| t_43 FLOAT (30) NOT NULL       | T_43  | NUMBER                   | true      | (30,-127)    | 22      | float64       |
+| t_44 BINARY_FLOAT NOT NULL     | T_44  | 100                      | true      | -            | 4       | nil           |
+| t_45 BINARY_DOUBLE NOT NULL    | T_45  | 101                      | true      | -            | 8       | nil           |
++--------------------------------+-------+--------------------------+-----------+--------------+---------+---------------+

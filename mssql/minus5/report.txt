@@ -1,0 +1,57 @@
++--------------------------------+-------+-------------+-----------+--------------+---------+--------------+
+|         DDL Definition         | .Name | .DBTypeName | .Nullable | .DecimalSize | .Length |  .ScanType   |
++--------------------------------+-------+-------------+-----------+--------------+---------+--------------+
+| t_0 bigint                     | t_0   |             | -         | -            | -       | interface {} |
+| t_1 bit                        | t_1   |             | -         | -            | -       | interface {} |
+| t_2 decimal                    | t_2   |             | -         | -            | -       | interface {} |
+| t_3 int                        | t_3   |             | -         | -            | -       | interface {} |
+| t_4 numeric                    | t_4   |             | -         | -            | -       | interface {} |
+| t_5 smallint                   | t_5   |             | -         | -            | -       | interface {} |
+| t_6 tinyint                    | t_6   |             | -         | -            | -       | interface {} |
+| t_7 float                      | t_7   |             | -         | -            | -       | interface {} |
+| t_8 real                       | t_8   |             | -         | -            | -       | interface {} |
+| t_9 date                       | t_9   |             | -         | -            | -       | interface {} |
+| t_10 datetime2                 | t_10  |             | -         | -            | -       | interface {} |
+| t_11 datetime                  | t_11  |             | -         | -            | -       | interface {} |
+| t_12 datetimeoffset            | t_12  |             | -         | -            | -       | interface {} |
+| t_13 smalldatetime             | t_13  |             | -         | -            | -       | interface {} |
+| t_14 time                      | t_14  |             | -         | -            | -       | interface {} |
+| t_15 char                      | t_15  |             | -         | -            | -       | interface {} |
+| t_16 text                      | t_16  |             | -         | -            | -       | interface {} |
+| t_17 varchar                   | t_17  |             | -         | -            | -       | interface {} |
+| t_18 nchar                     | t_18  |             | -         | -            | -       | interface {} |
+| t_19 ntext                     | t_19  |             | -         | -            | -       | interface {} |
+| t_20 nvarchar                  | t_20  |             | -         | -            | -       | interface {} |
+| t_21 binary                    | t_21  |             | -         | -            | -       | interface {} |
+| t_22 image                     | t_22  |             | -         | -            | -       | interface {} |
+| t_23 varbinary                 | t_23  |             | -         | -            | -       | interface {} |
+| t_24 rowversion                | t_24  |             | -         | -            | -       | interface {} |
+| t_25 uniqueidentifier          | t_25  |             | -         | -            | -       | interface {} |
+| t_26 xml                       | t_26  |             | -         | -            | -       | interface {} |
+| t_27 bigint NOT NULL           | t_27  |             | -         | -            | -       | interface {} |
+| t_28 bit NOT NULL              | t_28  |             | -         | -            | -       | interface {} |
+| t_29 decimal NOT NULL          | t_29  |             | -         | -            | -       | interface {} |
+| t_30 int NOT NULL              | t_30  |             | -         | -            | -       | interface {} |
+| t_31 numeric NOT NULL          | t_31  |             | -         | -            | -       | interface {} |
+| t_32 smallint NOT NULL         | t_32  |             | -         | -            | -       | interface {} |
+| t_33 tinyint NOT NULL          | t_33  |             | -         | -            | -       | interface {} |
+| t_34 float NOT NULL            | t_34  |             | -         | -            | -       | interface {} |
+| t_35 real NOT NULL             | t_35  |             | -         | -            | -       | interface {} |
+| t_36 date NOT NULL             | t_36  |             | -         | -            | -       | interface {} |
+| t_37 datetime2 NOT NULL        | t_37  |             | -         | -            | -       | interface {} |
+| t_38 datetime NOT NULL         | t_38  |             | -         | -            | -       | interface {} |
+| t_39 datetimeoffset NOT NULL   | t_39  |             | -         | -            | -       | interface {} |
+| t_40 smalldatetime NOT NULL    | t_40  |             | -         | -            | -       | interface {} |
+| t_41 time NOT NULL             | t_41  |             | -         | -            | -       | interface {} |
+| t_42 char NOT NULL             | t_42  |             | -         | -            | -       | interface {} |
+| t_43 text NOT NULL             | t_43  |             | -         | -            | -       | interface {} |
+| t_44 varchar NOT NULL          | t_44  |             | -         | -            | -       | interface {} |
+| t_45 nchar NOT NULL            | t_45  |             | -         | -            | -       | interface {} |
+| t_46 ntext NOT NULL            | t_46  |             | -         | -            | -       | interface {} |
+| t_47 nvarchar NOT NULL         | t_47  |             | -         | -            | -       | interface {} |
+| t_48 binary NOT NULL           | t_48  |             | -         | -            | -       | interface {} |
+| t_49 image NOT NULL            | t_49  |             | -         | -            | -       | interface {} |
+| t_50 varbinary NOT NULL        | t_50  |             | -         | -            | -       | interface {} |
+| t_51 uniqueidentifier NOT NULL | t_51  |             | -         | -            | -       | interface {} |
+| t_52 xml NOT NULL              | t_52  |             | -         | -            | -       | interface {} |
++--------------------------------+-------+-------------+-----------+--------------+---------+--------------+

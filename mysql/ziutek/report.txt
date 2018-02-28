@@ -1,231 +1,202 @@
-+--------------------------------+------------+---------------+-------------+----------------+-----------+--------------+
-|         DDL Definition         |  ct.Name   | ct.DBTypeName | ct.Nullable | ct.DecimalSize | ct.Length | ct.ScanType  |
-+--------------------------------+------------+---------------+-------------+----------------+-----------+--------------+
-| column_0 BIT                   | column_0   |               | -           | -              | -         | interface {} |
-| column_1 BIT (8)               | column_1   |               | -           | -              | -         | interface {} |
-| column_2 TINYINT               | column_2   |               | -           | -              | -         | interface {} |
-| column_3 TINYINT UNSIGNED      | column_3   |               | -           | -              | -         | interface {} |
-| column_4 BOOL                  | column_4   |               | -           | -              | -         | interface {} |
-| column_5 BOOLEAN               | column_5   |               | -           | -              | -         | interface {} |
-| column_6 SMALLINT              | column_6   |               | -           | -              | -         | interface {} |
-| column_7 SMALLINT UNSIGNED     | column_7   |               | -           | -              | -         | interface {} |
-| column_8 MEDIUMINT             | column_8   |               | -           | -              | -         | interface {} |
-| column_9 MEDIUMINT UNSIGNED    | column_9   |               | -           | -              | -         | interface {} |
-| column_10 INT                  | column_10  |               | -           | -              | -         | interface {} |
-| column_11 INT UNSIGNED         | column_11  |               | -           | -              | -         | interface {} |
-| column_12 INTEGER              | column_12  |               | -           | -              | -         | interface {} |
-| column_13 INTEGER UNSIGNED     | column_13  |               | -           | -              | -         | interface {} |
-| column_14 BIGINT               | column_14  |               | -           | -              | -         | interface {} |
-| column_15 BIGINT UNSIGNED      | column_15  |               | -           | -              | -         | interface {} |
-| column_16 DECIMAL              | column_16  |               | -           | -              | -         | interface {} |
-| column_17 DECIMAL UNSIGNED     | column_17  |               | -           | -              | -         | interface {} |
-| column_18 DECIMAL (8,4)        | column_18  |               | -           | -              | -         | interface {} |
-| column_19 DECIMAL (8,4)        | column_19  |               | -           | -              | -         | interface {} |
-| UNSIGNED                       |            |               |             |                |           |              |
-| column_20 DEC                  | column_20  |               | -           | -              | -         | interface {} |
-| column_21 DEC UNSIGNED         | column_21  |               | -           | -              | -         | interface {} |
-| column_22 DEC (8,4)            | column_22  |               | -           | -              | -         | interface {} |
-| column_23 DEC (8,4) UNSIGNED   | column_23  |               | -           | -              | -         | interface {} |
-| column_24 NUMERIC              | column_24  |               | -           | -              | -         | interface {} |
-| column_25 NUMERIC UNSIGNED     | column_25  |               | -           | -              | -         | interface {} |
-| column_26 NUMERIC (8,4)        | column_26  |               | -           | -              | -         | interface {} |
-| column_27 NUMERIC (8,4)        | column_27  |               | -           | -              | -         | interface {} |
-| UNSIGNED                       |            |               |             |                |           |              |
-| column_28 FIXED                | column_28  |               | -           | -              | -         | interface {} |
-| column_29 FIXED UNSIGNED       | column_29  |               | -           | -              | -         | interface {} |
-| column_30 FIXED (8,4)          | column_30  |               | -           | -              | -         | interface {} |
-| column_31 FIXED (8,4) UNSIGNED | column_31  |               | -           | -              | -         | interface {} |
-| column_32 FLOAT                | column_32  |               | -           | -              | -         | interface {} |
-| column_33 FLOAT (5,2)          | column_33  |               | -           | -              | -         | interface {} |
-| column_34 FLOAT (100,30)       | column_34  |               | -           | -              | -         | interface {} |
-| column_35 FLOAT UNSIGNED       | column_35  |               | -           | -              | -         | interface {} |
-| column_36 FLOAT (5,2) UNSIGNED | column_36  |               | -           | -              | -         | interface {} |
-| column_37 FLOAT (100,30)       | column_37  |               | -           | -              | -         | interface {} |
-| UNSIGNED                       |            |               |             |                |           |              |
-| column_38 DOUBLE               | column_38  |               | -           | -              | -         | interface {} |
-| column_39 DOUBLE (5,2)         | column_39  |               | -           | -              | -         | interface {} |
-| column_40 DOUBLE (100,30)      | column_40  |               | -           | -              | -         | interface {} |
-| column_41 DOUBLE UNSIGNED      | column_41  |               | -           | -              | -         | interface {} |
-| column_42 DOUBLE (5,2)         | column_42  |               | -           | -              | -         | interface {} |
-| UNSIGNED                       |            |               |             |                |           |              |
-| column_43 DOUBLE (100,30)      | column_43  |               | -           | -              | -         | interface {} |
-| UNSIGNED                       |            |               |             |                |           |              |
-| column_44 DOUBLE PRECISION     | column_44  |               | -           | -              | -         | interface {} |
-| column_45 DOUBLE PRECISION     | column_45  |               | -           | -              | -         | interface {} |
-| (5,2)                          |            |               |             |                |           |              |
-| column_46 DOUBLE PRECISION     | column_46  |               | -           | -              | -         | interface {} |
-| (100,30)                       |            |               |             |                |           |              |
-| column_47 DOUBLE PRECISION     | column_47  |               | -           | -              | -         | interface {} |
-| UNSIGNED                       |            |               |             |                |           |              |
-| column_48 DOUBLE PRECISION     | column_48  |               | -           | -              | -         | interface {} |
-| (5,2) UNSIGNED                 |            |               |             |                |           |              |
-| column_49 DOUBLE PRECISION     | column_49  |               | -           | -              | -         | interface {} |
-| (100,30) UNSIGNED              |            |               |             |                |           |              |
-| column_50 REAL                 | column_50  |               | -           | -              | -         | interface {} |
-| column_51 REAL (5,2)           | column_51  |               | -           | -              | -         | interface {} |
-| column_52 REAL (100,30)        | column_52  |               | -           | -              | -         | interface {} |
-| column_53 REAL UNSIGNED        | column_53  |               | -           | -              | -         | interface {} |
-| column_54 REAL (5,2) UNSIGNED  | column_54  |               | -           | -              | -         | interface {} |
-| column_55 REAL (100,30)        | column_55  |               | -           | -              | -         | interface {} |
-| UNSIGNED                       |            |               |             |                |           |              |
-| column_56 FLOAT (10)           | column_56  |               | -           | -              | -         | interface {} |
-| column_57 FLOAT (30)           | column_57  |               | -           | -              | -         | interface {} |
-| column_58 FLOAT (10) UNSIGNED  | column_58  |               | -           | -              | -         | interface {} |
-| column_59 FLOAT (30) UNSIGNED  | column_59  |               | -           | -              | -         | interface {} |
-| column_60 DATE                 | column_60  |               | -           | -              | -         | interface {} |
-| column_61 DATETIME             | column_61  |               | -           | -              | -         | interface {} |
-| column_62 TIME                 | column_62  |               | -           | -              | -         | interface {} |
-| column_63 YEAR                 | column_63  |               | -           | -              | -         | interface {} |
-| column_64 YEAR (4)             | column_64  |               | -           | -              | -         | interface {} |
-| column_65 CHAR                 | column_65  |               | -           | -              | -         | interface {} |
-| column_66 CHAR (8)             | column_66  |               | -           | -              | -         | interface {} |
-| column_67 VARCHAR (8)          | column_67  |               | -           | -              | -         | interface {} |
-| column_68 BINARY               | column_68  |               | -           | -              | -         | interface {} |
-| column_69 BINARY (8)           | column_69  |               | -           | -              | -         | interface {} |
-| column_70 VARBINARY (8)        | column_70  |               | -           | -              | -         | interface {} |
-| column_71 TINYBLOB             | column_71  |               | -           | -              | -         | interface {} |
-| column_72 BLOB                 | column_72  |               | -           | -              | -         | interface {} |
-| column_73 BLOB (8)             | column_73  |               | -           | -              | -         | interface {} |
-| column_74 MEDIUMBLOB           | column_74  |               | -           | -              | -         | interface {} |
-| column_75 LONGBLOB             | column_75  |               | -           | -              | -         | interface {} |
-| column_76 TINYTEXT             | column_76  |               | -           | -              | -         | interface {} |
-| column_77 TEXT                 | column_77  |               | -           | -              | -         | interface {} |
-| column_78 TEXT (8)             | column_78  |               | -           | -              | -         | interface {} |
-| column_79 MEDIUMTEXT           | column_79  |               | -           | -              | -         | interface {} |
-| column_80 LONGTEXT             | column_80  |               | -           | -              | -         | interface {} |
-| column_81 LONG                 | column_81  |               | -           | -              | -         | interface {} |
-| column_82 LONG VARCHAR         | column_82  |               | -           | -              | -         | interface {} |
-| column_83 ENUM ('a','b','c')   | column_83  |               | -           | -              | -         | interface {} |
-| column_84 SET ('a','b','c')    | column_84  |               | -           | -              | -         | interface {} |
-| column_85 JSON                 | column_85  |               | -           | -              | -         | interface {} |
-| column_86 BIT NOT NULL         | column_86  |               | -           | -              | -         | interface {} |
-| column_87 BIT (8) NOT NULL     | column_87  |               | -           | -              | -         | interface {} |
-| column_88 TINYINT NOT NULL     | column_88  |               | -           | -              | -         | interface {} |
-| column_89 TINYINT UNSIGNED NOT | column_89  |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_90 BOOL NOT NULL        | column_90  |               | -           | -              | -         | interface {} |
-| column_91 BOOLEAN NOT NULL     | column_91  |               | -           | -              | -         | interface {} |
-| column_92 SMALLINT NOT NULL    | column_92  |               | -           | -              | -         | interface {} |
-| column_93 SMALLINT UNSIGNED    | column_93  |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_94 MEDIUMINT NOT NULL   | column_94  |               | -           | -              | -         | interface {} |
-| column_95 MEDIUMINT UNSIGNED   | column_95  |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_96 INT NOT NULL         | column_96  |               | -           | -              | -         | interface {} |
-| column_97 INT UNSIGNED NOT     | column_97  |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_98 INTEGER NOT NULL     | column_98  |               | -           | -              | -         | interface {} |
-| column_99 INTEGER UNSIGNED NOT | column_99  |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_100 BIGINT NOT NULL     | column_100 |               | -           | -              | -         | interface {} |
-| column_101 BIGINT UNSIGNED NOT | column_101 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_102 DECIMAL NOT NULL    | column_102 |               | -           | -              | -         | interface {} |
-| column_103 DECIMAL UNSIGNED    | column_103 |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_104 DECIMAL (8,4) NOT   | column_104 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_105 DECIMAL (8,4)       | column_105 |               | -           | -              | -         | interface {} |
-| UNSIGNED NOT NULL              |            |               |             |                |           |              |
-| column_106 DEC NOT NULL        | column_106 |               | -           | -              | -         | interface {} |
-| column_107 DEC UNSIGNED NOT    | column_107 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_108 DEC (8,4) NOT NULL  | column_108 |               | -           | -              | -         | interface {} |
-| column_109 DEC (8,4) UNSIGNED  | column_109 |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_110 NUMERIC NOT NULL    | column_110 |               | -           | -              | -         | interface {} |
-| column_111 NUMERIC UNSIGNED    | column_111 |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_112 NUMERIC (8,4) NOT   | column_112 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_113 NUMERIC (8,4)       | column_113 |               | -           | -              | -         | interface {} |
-| UNSIGNED NOT NULL              |            |               |             |                |           |              |
-| column_114 FIXED NOT NULL      | column_114 |               | -           | -              | -         | interface {} |
-| column_115 FIXED UNSIGNED NOT  | column_115 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_116 FIXED (8,4) NOT     | column_116 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_117 FIXED (8,4)         | column_117 |               | -           | -              | -         | interface {} |
-| UNSIGNED NOT NULL              |            |               |             |                |           |              |
-| column_118 FLOAT NOT NULL      | column_118 |               | -           | -              | -         | interface {} |
-| column_119 FLOAT (5,2) NOT     | column_119 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_120 FLOAT (100,30) NOT  | column_120 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_121 FLOAT UNSIGNED NOT  | column_121 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_122 FLOAT (5,2)         | column_122 |               | -           | -              | -         | interface {} |
-| UNSIGNED NOT NULL              |            |               |             |                |           |              |
-| column_123 FLOAT (100,30)      | column_123 |               | -           | -              | -         | interface {} |
-| UNSIGNED NOT NULL              |            |               |             |                |           |              |
-| column_124 DOUBLE NOT NULL     | column_124 |               | -           | -              | -         | interface {} |
-| column_125 DOUBLE (5,2) NOT    | column_125 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_126 DOUBLE (100,30) NOT | column_126 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_127 DOUBLE UNSIGNED NOT | column_127 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_128 DOUBLE (5,2)        | column_128 |               | -           | -              | -         | interface {} |
-| UNSIGNED NOT NULL              |            |               |             |                |           |              |
-| column_129 DOUBLE (100,30)     | column_129 |               | -           | -              | -         | interface {} |
-| UNSIGNED NOT NULL              |            |               |             |                |           |              |
-| column_130 DOUBLE PRECISION    | column_130 |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_131 DOUBLE PRECISION    | column_131 |               | -           | -              | -         | interface {} |
-| (5,2) NOT NULL                 |            |               |             |                |           |              |
-| column_132 DOUBLE PRECISION    | column_132 |               | -           | -              | -         | interface {} |
-| (100,30) NOT NULL              |            |               |             |                |           |              |
-| column_133 DOUBLE PRECISION    | column_133 |               | -           | -              | -         | interface {} |
-| UNSIGNED NOT NULL              |            |               |             |                |           |              |
-| column_134 DOUBLE PRECISION    | column_134 |               | -           | -              | -         | interface {} |
-| (5,2) UNSIGNED NOT NULL        |            |               |             |                |           |              |
-| column_135 DOUBLE PRECISION    | column_135 |               | -           | -              | -         | interface {} |
-| (100,30) UNSIGNED NOT NULL     |            |               |             |                |           |              |
-| column_136 REAL NOT NULL       | column_136 |               | -           | -              | -         | interface {} |
-| column_137 REAL (5,2) NOT NULL | column_137 |               | -           | -              | -         | interface {} |
-| column_138 REAL (100,30) NOT   | column_138 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_139 REAL UNSIGNED NOT   | column_139 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_140 REAL (5,2) UNSIGNED | column_140 |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_141 REAL (100,30)       | column_141 |               | -           | -              | -         | interface {} |
-| UNSIGNED NOT NULL              |            |               |             |                |           |              |
-| column_142 FLOAT (10) NOT NULL | column_142 |               | -           | -              | -         | interface {} |
-| column_143 FLOAT (30) NOT NULL | column_143 |               | -           | -              | -         | interface {} |
-| column_144 FLOAT (10) UNSIGNED | column_144 |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_145 FLOAT (30) UNSIGNED | column_145 |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_146 DATE NOT NULL       | column_146 |               | -           | -              | -         | interface {} |
-| column_147 DATETIME NOT NULL   | column_147 |               | -           | -              | -         | interface {} |
-| column_148 TIME NOT NULL       | column_148 |               | -           | -              | -         | interface {} |
-| column_149 YEAR NOT NULL       | column_149 |               | -           | -              | -         | interface {} |
-| column_150 YEAR (4) NOT NULL   | column_150 |               | -           | -              | -         | interface {} |
-| column_151 CHAR NOT NULL       | column_151 |               | -           | -              | -         | interface {} |
-| column_152 CHAR (8) NOT NULL   | column_152 |               | -           | -              | -         | interface {} |
-| column_153 VARCHAR (8) NOT     | column_153 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_154 BINARY NOT NULL     | column_154 |               | -           | -              | -         | interface {} |
-| column_155 BINARY (8) NOT NULL | column_155 |               | -           | -              | -         | interface {} |
-| column_156 VARBINARY (8) NOT   | column_156 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_157 TINYBLOB NOT NULL   | column_157 |               | -           | -              | -         | interface {} |
-| column_158 BLOB NOT NULL       | column_158 |               | -           | -              | -         | interface {} |
-| column_159 BLOB (8) NOT NULL   | column_159 |               | -           | -              | -         | interface {} |
-| column_160 MEDIUMBLOB NOT NULL | column_160 |               | -           | -              | -         | interface {} |
-| column_161 LONGBLOB NOT NULL   | column_161 |               | -           | -              | -         | interface {} |
-| column_162 TINYTEXT NOT NULL   | column_162 |               | -           | -              | -         | interface {} |
-| column_163 TEXT NOT NULL       | column_163 |               | -           | -              | -         | interface {} |
-| column_164 TEXT (8) NOT NULL   | column_164 |               | -           | -              | -         | interface {} |
-| column_165 MEDIUMTEXT NOT NULL | column_165 |               | -           | -              | -         | interface {} |
-| column_166 LONGTEXT NOT NULL   | column_166 |               | -           | -              | -         | interface {} |
-| column_167 LONG NOT NULL       | column_167 |               | -           | -              | -         | interface {} |
-| column_168 LONG VARCHAR NOT    | column_168 |               | -           | -              | -         | interface {} |
-| NULL                           |            |               |             |                |           |              |
-| column_169 ENUM ('a','b','c')  | column_169 |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_170 SET ('a','b','c')   | column_170 |               | -           | -              | -         | interface {} |
-| NOT NULL                       |            |               |             |                |           |              |
-| column_171 JSON NOT NULL       | column_171 |               | -           | -              | -         | interface {} |
-+--------------------------------+------------+---------------+-------------+----------------+-----------+--------------+
++--------------------------------+-------+-------------+-----------+--------------+---------+--------------+
+|         DDL Definition         | .Name | .DBTypeName | .Nullable | .DecimalSize | .Length |  .ScanType   |
++--------------------------------+-------+-------------+-----------+--------------+---------+--------------+
+| t_0 BIT                        | t_0   |             | -         | -            | -       | interface {} |
+| t_1 BIT (8)                    | t_1   |             | -         | -            | -       | interface {} |
+| t_2 TINYINT                    | t_2   |             | -         | -            | -       | interface {} |
+| t_3 TINYINT UNSIGNED           | t_3   |             | -         | -            | -       | interface {} |
+| t_4 BOOL                       | t_4   |             | -         | -            | -       | interface {} |
+| t_5 BOOLEAN                    | t_5   |             | -         | -            | -       | interface {} |
+| t_6 SMALLINT                   | t_6   |             | -         | -            | -       | interface {} |
+| t_7 SMALLINT UNSIGNED          | t_7   |             | -         | -            | -       | interface {} |
+| t_8 MEDIUMINT                  | t_8   |             | -         | -            | -       | interface {} |
+| t_9 MEDIUMINT UNSIGNED         | t_9   |             | -         | -            | -       | interface {} |
+| t_10 INT                       | t_10  |             | -         | -            | -       | interface {} |
+| t_11 INT UNSIGNED              | t_11  |             | -         | -            | -       | interface {} |
+| t_12 INTEGER                   | t_12  |             | -         | -            | -       | interface {} |
+| t_13 INTEGER UNSIGNED          | t_13  |             | -         | -            | -       | interface {} |
+| t_14 BIGINT                    | t_14  |             | -         | -            | -       | interface {} |
+| t_15 BIGINT UNSIGNED           | t_15  |             | -         | -            | -       | interface {} |
+| t_16 DECIMAL                   | t_16  |             | -         | -            | -       | interface {} |
+| t_17 DECIMAL UNSIGNED          | t_17  |             | -         | -            | -       | interface {} |
+| t_18 DECIMAL (8,4)             | t_18  |             | -         | -            | -       | interface {} |
+| t_19 DECIMAL (8,4) UNSIGNED    | t_19  |             | -         | -            | -       | interface {} |
+| t_20 DEC                       | t_20  |             | -         | -            | -       | interface {} |
+| t_21 DEC UNSIGNED              | t_21  |             | -         | -            | -       | interface {} |
+| t_22 DEC (8,4)                 | t_22  |             | -         | -            | -       | interface {} |
+| t_23 DEC (8,4) UNSIGNED        | t_23  |             | -         | -            | -       | interface {} |
+| t_24 NUMERIC                   | t_24  |             | -         | -            | -       | interface {} |
+| t_25 NUMERIC UNSIGNED          | t_25  |             | -         | -            | -       | interface {} |
+| t_26 NUMERIC (8,4)             | t_26  |             | -         | -            | -       | interface {} |
+| t_27 NUMERIC (8,4) UNSIGNED    | t_27  |             | -         | -            | -       | interface {} |
+| t_28 FIXED                     | t_28  |             | -         | -            | -       | interface {} |
+| t_29 FIXED UNSIGNED            | t_29  |             | -         | -            | -       | interface {} |
+| t_30 FIXED (8,4)               | t_30  |             | -         | -            | -       | interface {} |
+| t_31 FIXED (8,4) UNSIGNED      | t_31  |             | -         | -            | -       | interface {} |
+| t_32 FLOAT                     | t_32  |             | -         | -            | -       | interface {} |
+| t_33 FLOAT (5,2)               | t_33  |             | -         | -            | -       | interface {} |
+| t_34 FLOAT (100,30)            | t_34  |             | -         | -            | -       | interface {} |
+| t_35 FLOAT UNSIGNED            | t_35  |             | -         | -            | -       | interface {} |
+| t_36 FLOAT (5,2) UNSIGNED      | t_36  |             | -         | -            | -       | interface {} |
+| t_37 FLOAT (100,30) UNSIGNED   | t_37  |             | -         | -            | -       | interface {} |
+| t_38 DOUBLE                    | t_38  |             | -         | -            | -       | interface {} |
+| t_39 DOUBLE (5,2)              | t_39  |             | -         | -            | -       | interface {} |
+| t_40 DOUBLE (100,30)           | t_40  |             | -         | -            | -       | interface {} |
+| t_41 DOUBLE UNSIGNED           | t_41  |             | -         | -            | -       | interface {} |
+| t_42 DOUBLE (5,2) UNSIGNED     | t_42  |             | -         | -            | -       | interface {} |
+| t_43 DOUBLE (100,30) UNSIGNED  | t_43  |             | -         | -            | -       | interface {} |
+| t_44 DOUBLE PRECISION          | t_44  |             | -         | -            | -       | interface {} |
+| t_45 DOUBLE PRECISION (5,2)    | t_45  |             | -         | -            | -       | interface {} |
+| t_46 DOUBLE PRECISION (100,30) | t_46  |             | -         | -            | -       | interface {} |
+| t_47 DOUBLE PRECISION UNSIGNED | t_47  |             | -         | -            | -       | interface {} |
+| t_48 DOUBLE PRECISION (5,2)    | t_48  |             | -         | -            | -       | interface {} |
+| UNSIGNED                       |       |             |           |              |         |              |
+| t_49 DOUBLE PRECISION (100,30) | t_49  |             | -         | -            | -       | interface {} |
+| UNSIGNED                       |       |             |           |              |         |              |
+| t_50 REAL                      | t_50  |             | -         | -            | -       | interface {} |
+| t_51 REAL (5,2)                | t_51  |             | -         | -            | -       | interface {} |
+| t_52 REAL (100,30)             | t_52  |             | -         | -            | -       | interface {} |
+| t_53 REAL UNSIGNED             | t_53  |             | -         | -            | -       | interface {} |
+| t_54 REAL (5,2) UNSIGNED       | t_54  |             | -         | -            | -       | interface {} |
+| t_55 REAL (100,30) UNSIGNED    | t_55  |             | -         | -            | -       | interface {} |
+| t_56 FLOAT (10)                | t_56  |             | -         | -            | -       | interface {} |
+| t_57 FLOAT (30)                | t_57  |             | -         | -            | -       | interface {} |
+| t_58 FLOAT (10) UNSIGNED       | t_58  |             | -         | -            | -       | interface {} |
+| t_59 FLOAT (30) UNSIGNED       | t_59  |             | -         | -            | -       | interface {} |
+| t_60 DATE                      | t_60  |             | -         | -            | -       | interface {} |
+| t_61 DATETIME                  | t_61  |             | -         | -            | -       | interface {} |
+| t_62 TIME                      | t_62  |             | -         | -            | -       | interface {} |
+| t_63 YEAR                      | t_63  |             | -         | -            | -       | interface {} |
+| t_64 YEAR (4)                  | t_64  |             | -         | -            | -       | interface {} |
+| t_65 CHAR                      | t_65  |             | -         | -            | -       | interface {} |
+| t_66 CHAR (8)                  | t_66  |             | -         | -            | -       | interface {} |
+| t_67 VARCHAR (8)               | t_67  |             | -         | -            | -       | interface {} |
+| t_68 BINARY                    | t_68  |             | -         | -            | -       | interface {} |
+| t_69 BINARY (8)                | t_69  |             | -         | -            | -       | interface {} |
+| t_70 VARBINARY (8)             | t_70  |             | -         | -            | -       | interface {} |
+| t_71 TINYBLOB                  | t_71  |             | -         | -            | -       | interface {} |
+| t_72 BLOB                      | t_72  |             | -         | -            | -       | interface {} |
+| t_73 BLOB (8)                  | t_73  |             | -         | -            | -       | interface {} |
+| t_74 MEDIUMBLOB                | t_74  |             | -         | -            | -       | interface {} |
+| t_75 LONGBLOB                  | t_75  |             | -         | -            | -       | interface {} |
+| t_76 TINYTEXT                  | t_76  |             | -         | -            | -       | interface {} |
+| t_77 TEXT                      | t_77  |             | -         | -            | -       | interface {} |
+| t_78 TEXT (8)                  | t_78  |             | -         | -            | -       | interface {} |
+| t_79 MEDIUMTEXT                | t_79  |             | -         | -            | -       | interface {} |
+| t_80 LONGTEXT                  | t_80  |             | -         | -            | -       | interface {} |
+| t_81 LONG                      | t_81  |             | -         | -            | -       | interface {} |
+| t_82 LONG VARCHAR              | t_82  |             | -         | -            | -       | interface {} |
+| t_83 ENUM ('a','b','c')        | t_83  |             | -         | -            | -       | interface {} |
+| t_84 SET ('a','b','c')         | t_84  |             | -         | -            | -       | interface {} |
+| t_85 JSON                      | t_85  |             | -         | -            | -       | interface {} |
+| t_86 BIT NOT NULL              | t_86  |             | -         | -            | -       | interface {} |
+| t_87 BIT (8) NOT NULL          | t_87  |             | -         | -            | -       | interface {} |
+| t_88 TINYINT NOT NULL          | t_88  |             | -         | -            | -       | interface {} |
+| t_89 TINYINT UNSIGNED NOT NULL | t_89  |             | -         | -            | -       | interface {} |
+| t_90 BOOL NOT NULL             | t_90  |             | -         | -            | -       | interface {} |
+| t_91 BOOLEAN NOT NULL          | t_91  |             | -         | -            | -       | interface {} |
+| t_92 SMALLINT NOT NULL         | t_92  |             | -         | -            | -       | interface {} |
+| t_93 SMALLINT UNSIGNED NOT     | t_93  |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_94 MEDIUMINT NOT NULL        | t_94  |             | -         | -            | -       | interface {} |
+| t_95 MEDIUMINT UNSIGNED NOT    | t_95  |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_96 INT NOT NULL              | t_96  |             | -         | -            | -       | interface {} |
+| t_97 INT UNSIGNED NOT NULL     | t_97  |             | -         | -            | -       | interface {} |
+| t_98 INTEGER NOT NULL          | t_98  |             | -         | -            | -       | interface {} |
+| t_99 INTEGER UNSIGNED NOT NULL | t_99  |             | -         | -            | -       | interface {} |
+| t_100 BIGINT NOT NULL          | t_100 |             | -         | -            | -       | interface {} |
+| t_101 BIGINT UNSIGNED NOT NULL | t_101 |             | -         | -            | -       | interface {} |
+| t_102 DECIMAL NOT NULL         | t_102 |             | -         | -            | -       | interface {} |
+| t_103 DECIMAL UNSIGNED NOT     | t_103 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_104 DECIMAL (8,4) NOT NULL   | t_104 |             | -         | -            | -       | interface {} |
+| t_105 DECIMAL (8,4) UNSIGNED   | t_105 |             | -         | -            | -       | interface {} |
+| NOT NULL                       |       |             |           |              |         |              |
+| t_106 DEC NOT NULL             | t_106 |             | -         | -            | -       | interface {} |
+| t_107 DEC UNSIGNED NOT NULL    | t_107 |             | -         | -            | -       | interface {} |
+| t_108 DEC (8,4) NOT NULL       | t_108 |             | -         | -            | -       | interface {} |
+| t_109 DEC (8,4) UNSIGNED NOT   | t_109 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_110 NUMERIC NOT NULL         | t_110 |             | -         | -            | -       | interface {} |
+| t_111 NUMERIC UNSIGNED NOT     | t_111 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_112 NUMERIC (8,4) NOT NULL   | t_112 |             | -         | -            | -       | interface {} |
+| t_113 NUMERIC (8,4) UNSIGNED   | t_113 |             | -         | -            | -       | interface {} |
+| NOT NULL                       |       |             |           |              |         |              |
+| t_114 FIXED NOT NULL           | t_114 |             | -         | -            | -       | interface {} |
+| t_115 FIXED UNSIGNED NOT NULL  | t_115 |             | -         | -            | -       | interface {} |
+| t_116 FIXED (8,4) NOT NULL     | t_116 |             | -         | -            | -       | interface {} |
+| t_117 FIXED (8,4) UNSIGNED NOT | t_117 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_118 FLOAT NOT NULL           | t_118 |             | -         | -            | -       | interface {} |
+| t_119 FLOAT (5,2) NOT NULL     | t_119 |             | -         | -            | -       | interface {} |
+| t_120 FLOAT (100,30) NOT NULL  | t_120 |             | -         | -            | -       | interface {} |
+| t_121 FLOAT UNSIGNED NOT NULL  | t_121 |             | -         | -            | -       | interface {} |
+| t_122 FLOAT (5,2) UNSIGNED NOT | t_122 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_123 FLOAT (100,30) UNSIGNED  | t_123 |             | -         | -            | -       | interface {} |
+| NOT NULL                       |       |             |           |              |         |              |
+| t_124 DOUBLE NOT NULL          | t_124 |             | -         | -            | -       | interface {} |
+| t_125 DOUBLE (5,2) NOT NULL    | t_125 |             | -         | -            | -       | interface {} |
+| t_126 DOUBLE (100,30) NOT NULL | t_126 |             | -         | -            | -       | interface {} |
+| t_127 DOUBLE UNSIGNED NOT NULL | t_127 |             | -         | -            | -       | interface {} |
+| t_128 DOUBLE (5,2) UNSIGNED    | t_128 |             | -         | -            | -       | interface {} |
+| NOT NULL                       |       |             |           |              |         |              |
+| t_129 DOUBLE (100,30) UNSIGNED | t_129 |             | -         | -            | -       | interface {} |
+| NOT NULL                       |       |             |           |              |         |              |
+| t_130 DOUBLE PRECISION NOT     | t_130 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_131 DOUBLE PRECISION (5,2)   | t_131 |             | -         | -            | -       | interface {} |
+| NOT NULL                       |       |             |           |              |         |              |
+| t_132 DOUBLE PRECISION         | t_132 |             | -         | -            | -       | interface {} |
+| (100,30) NOT NULL              |       |             |           |              |         |              |
+| t_133 DOUBLE PRECISION         | t_133 |             | -         | -            | -       | interface {} |
+| UNSIGNED NOT NULL              |       |             |           |              |         |              |
+| t_134 DOUBLE PRECISION (5,2)   | t_134 |             | -         | -            | -       | interface {} |
+| UNSIGNED NOT NULL              |       |             |           |              |         |              |
+| t_135 DOUBLE PRECISION         | t_135 |             | -         | -            | -       | interface {} |
+| (100,30) UNSIGNED NOT NULL     |       |             |           |              |         |              |
+| t_136 REAL NOT NULL            | t_136 |             | -         | -            | -       | interface {} |
+| t_137 REAL (5,2) NOT NULL      | t_137 |             | -         | -            | -       | interface {} |
+| t_138 REAL (100,30) NOT NULL   | t_138 |             | -         | -            | -       | interface {} |
+| t_139 REAL UNSIGNED NOT NULL   | t_139 |             | -         | -            | -       | interface {} |
+| t_140 REAL (5,2) UNSIGNED NOT  | t_140 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_141 REAL (100,30) UNSIGNED   | t_141 |             | -         | -            | -       | interface {} |
+| NOT NULL                       |       |             |           |              |         |              |
+| t_142 FLOAT (10) NOT NULL      | t_142 |             | -         | -            | -       | interface {} |
+| t_143 FLOAT (30) NOT NULL      | t_143 |             | -         | -            | -       | interface {} |
+| t_144 FLOAT (10) UNSIGNED NOT  | t_144 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_145 FLOAT (30) UNSIGNED NOT  | t_145 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_146 DATE NOT NULL            | t_146 |             | -         | -            | -       | interface {} |
+| t_147 DATETIME NOT NULL        | t_147 |             | -         | -            | -       | interface {} |
+| t_148 TIME NOT NULL            | t_148 |             | -         | -            | -       | interface {} |
+| t_149 YEAR NOT NULL            | t_149 |             | -         | -            | -       | interface {} |
+| t_150 YEAR (4) NOT NULL        | t_150 |             | -         | -            | -       | interface {} |
+| t_151 CHAR NOT NULL            | t_151 |             | -         | -            | -       | interface {} |
+| t_152 CHAR (8) NOT NULL        | t_152 |             | -         | -            | -       | interface {} |
+| t_153 VARCHAR (8) NOT NULL     | t_153 |             | -         | -            | -       | interface {} |
+| t_154 BINARY NOT NULL          | t_154 |             | -         | -            | -       | interface {} |
+| t_155 BINARY (8) NOT NULL      | t_155 |             | -         | -            | -       | interface {} |
+| t_156 VARBINARY (8) NOT NULL   | t_156 |             | -         | -            | -       | interface {} |
+| t_157 TINYBLOB NOT NULL        | t_157 |             | -         | -            | -       | interface {} |
+| t_158 BLOB NOT NULL            | t_158 |             | -         | -            | -       | interface {} |
+| t_159 BLOB (8) NOT NULL        | t_159 |             | -         | -            | -       | interface {} |
+| t_160 MEDIUMBLOB NOT NULL      | t_160 |             | -         | -            | -       | interface {} |
+| t_161 LONGBLOB NOT NULL        | t_161 |             | -         | -            | -       | interface {} |
+| t_162 TINYTEXT NOT NULL        | t_162 |             | -         | -            | -       | interface {} |
+| t_163 TEXT NOT NULL            | t_163 |             | -         | -            | -       | interface {} |
+| t_164 TEXT (8) NOT NULL        | t_164 |             | -         | -            | -       | interface {} |
+| t_165 MEDIUMTEXT NOT NULL      | t_165 |             | -         | -            | -       | interface {} |
+| t_166 LONGTEXT NOT NULL        | t_166 |             | -         | -            | -       | interface {} |
+| t_167 LONG NOT NULL            | t_167 |             | -         | -            | -       | interface {} |
+| t_168 LONG VARCHAR NOT NULL    | t_168 |             | -         | -            | -       | interface {} |
+| t_169 ENUM ('a','b','c') NOT   | t_169 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_170 SET ('a','b','c') NOT    | t_170 |             | -         | -            | -       | interface {} |
+| NULL                           |       |             |           |              |         |              |
+| t_171 JSON NOT NULL            | t_171 |             | -         | -            | -       | interface {} |
++--------------------------------+-------+-------------+-----------+--------------+---------+--------------+

@@ -1,47 +1,47 @@
-DDL Definition,ct.Name,ct.DBTypeName,ct.Nullable,ct.DecimalSize,ct.Length,ct.ScanType
-column_0 CHAR,COLUMN_0,SQLT_AFC,-,-,1,[]string
-column_1 CHAR (8),COLUMN_1,SQLT_AFC,-,-,8,[]string
-column_2 VARCHAR2 (8),COLUMN_2,SQLT_CHR,-,-,8,[]string
-column_3 NCHAR,COLUMN_3,SQLT_AFC,-,-,2,[]string
-column_4 NCHAR (8),COLUMN_4,SQLT_AFC,-,-,16,[]string
-column_5 NVARCHAR2 (8),COLUMN_5,SQLT_CHR,-,-,16,[]string
-column_6 DATE,COLUMN_6,SQLT_DAT,-,-,7,[]string
-column_7 TIMESTAMP,COLUMN_7,SQLT_TIMESTAMP,-,-,11,[]string
-column_8 TIMESTAMP WITH TIME ZONE,COLUMN_8,SQLT_TIMESTAMP_TZ,-,-,13,[]string
-column_9 INTERVAL YEAR TO MONTH,COLUMN_9,SQLT_INTERVAL_YM,-,-,5,[]string
-column_10 INTERVAL DAY TO SECOND,COLUMN_10,SQLT_INTERVAL_DS,-,-,11,[]string
-column_11 BLOB,COLUMN_11,SQLT_BLOB,-,-,4000,[]string
-column_12 CLOB,COLUMN_12,SQLT_CLOB,-,-,4000,[]string
-column_13 CLOB,COLUMN_13,SQLT_CLOB,-,-,4000,[]string
-column_14 BFILE,COLUMN_14,SQLT_FILE,-,-,530,[]string
-column_15 RAW (8),COLUMN_15,SQLT_BIN,-,-,8,[]string
-column_16 NUMBER,COLUMN_16,SQLT_NUM,-,-,22,[]string
-column_17 NUMBER (8),COLUMN_17,SQLT_NUM,-,-,22,[]string
-"column_18 NUMBER (8,4)",COLUMN_18,SQLT_NUM,-,-,22,[]string
-column_19 FLOAT,COLUMN_19,SQLT_NUM,-,-,22,[]string
-column_20 FLOAT (30),COLUMN_20,SQLT_NUM,-,-,22,[]string
-column_21 BINARY_FLOAT,COLUMN_21,,-,-,4,[]string
-column_22 BINARY_DOUBLE,COLUMN_22,,-,-,8,[]string
-column_23 CHAR NOT NULL,COLUMN_23,SQLT_AFC,-,-,1,[]string
-column_24 CHAR (8) NOT NULL,COLUMN_24,SQLT_AFC,-,-,8,[]string
-column_25 VARCHAR2 (8) NOT NULL,COLUMN_25,SQLT_CHR,-,-,8,[]string
-column_26 NCHAR NOT NULL,COLUMN_26,SQLT_AFC,-,-,2,[]string
-column_27 NCHAR (8) NOT NULL,COLUMN_27,SQLT_AFC,-,-,16,[]string
-column_28 NVARCHAR2 (8) NOT NULL,COLUMN_28,SQLT_CHR,-,-,16,[]string
-column_29 DATE NOT NULL,COLUMN_29,SQLT_DAT,-,-,7,[]string
-column_30 TIMESTAMP NOT NULL,COLUMN_30,SQLT_TIMESTAMP,-,-,11,[]string
-column_31 TIMESTAMP WITH TIME ZONE NOT NULL,COLUMN_31,SQLT_TIMESTAMP_TZ,-,-,13,[]string
-column_32 INTERVAL YEAR TO MONTH NOT NULL,COLUMN_32,SQLT_INTERVAL_YM,-,-,5,[]string
-column_33 INTERVAL DAY TO SECOND NOT NULL,COLUMN_33,SQLT_INTERVAL_DS,-,-,11,[]string
-column_34 BLOB NOT NULL,COLUMN_34,SQLT_BLOB,-,-,4000,[]string
-column_35 CLOB NOT NULL,COLUMN_35,SQLT_CLOB,-,-,4000,[]string
-column_36 CLOB NOT NULL,COLUMN_36,SQLT_CLOB,-,-,4000,[]string
-column_37 BFILE NOT NULL,COLUMN_37,SQLT_FILE,-,-,530,[]string
-column_38 RAW (8) NOT NULL,COLUMN_38,SQLT_BIN,-,-,8,[]string
-column_39 NUMBER NOT NULL,COLUMN_39,SQLT_NUM,-,-,22,[]string
-column_40 NUMBER (8) NOT NULL,COLUMN_40,SQLT_NUM,-,-,22,[]string
-"column_41 NUMBER (8,4) NOT NULL",COLUMN_41,SQLT_NUM,-,-,22,[]string
-column_42 FLOAT NOT NULL,COLUMN_42,SQLT_NUM,-,-,22,[]string
-column_43 FLOAT (30) NOT NULL,COLUMN_43,SQLT_NUM,-,-,22,[]string
-column_44 BINARY_FLOAT NOT NULL,COLUMN_44,,-,-,4,[]string
-column_45 BINARY_DOUBLE NOT NULL,COLUMN_45,,-,-,8,[]string
+DDL Definition,.Name,.DBTypeName,.Nullable,.DecimalSize,.Length,.ScanType
+t_0 CHAR,T_0,SQLT_AFC,-,-,1,[]string
+t_1 CHAR (8),T_1,SQLT_AFC,-,-,8,[]string
+t_2 VARCHAR2 (8),T_2,SQLT_CHR,-,-,8,[]string
+t_3 NCHAR,T_3,SQLT_AFC,-,-,2,[]string
+t_4 NCHAR (8),T_4,SQLT_AFC,-,-,16,[]string
+t_5 NVARCHAR2 (8),T_5,SQLT_CHR,-,-,16,[]string
+t_6 DATE,T_6,SQLT_DAT,-,-,7,[]string
+t_7 TIMESTAMP,T_7,SQLT_TIMESTAMP,-,-,11,[]string
+t_8 TIMESTAMP WITH TIME ZONE,T_8,SQLT_TIMESTAMP_TZ,-,-,13,[]string
+t_9 INTERVAL YEAR TO MONTH,T_9,SQLT_INTERVAL_YM,-,-,5,[]string
+t_10 INTERVAL DAY TO SECOND,T_10,SQLT_INTERVAL_DS,-,-,11,[]string
+t_11 BLOB,T_11,SQLT_BLOB,-,-,4000,[]string
+t_12 CLOB,T_12,SQLT_CLOB,-,-,4000,[]string
+t_13 CLOB,T_13,SQLT_CLOB,-,-,4000,[]string
+t_14 BFILE,T_14,SQLT_FILE,-,-,530,[]string
+t_15 RAW (8),T_15,SQLT_BIN,-,-,8,[]string
+t_16 NUMBER,T_16,SQLT_NUM,-,-,22,[]string
+t_17 NUMBER (8),T_17,SQLT_NUM,-,-,22,[]string
+"t_18 NUMBER (8,4)",T_18,SQLT_NUM,-,-,22,[]string
+t_19 FLOAT,T_19,SQLT_NUM,-,-,22,[]string
+t_20 FLOAT (30),T_20,SQLT_NUM,-,-,22,[]string
+t_21 BINARY_FLOAT,T_21,,-,-,4,[]string
+t_22 BINARY_DOUBLE,T_22,,-,-,8,[]string
+t_23 CHAR NOT NULL,T_23,SQLT_AFC,-,-,1,[]string
+t_24 CHAR (8) NOT NULL,T_24,SQLT_AFC,-,-,8,[]string
+t_25 VARCHAR2 (8) NOT NULL,T_25,SQLT_CHR,-,-,8,[]string
+t_26 NCHAR NOT NULL,T_26,SQLT_AFC,-,-,2,[]string
+t_27 NCHAR (8) NOT NULL,T_27,SQLT_AFC,-,-,16,[]string
+t_28 NVARCHAR2 (8) NOT NULL,T_28,SQLT_CHR,-,-,16,[]string
+t_29 DATE NOT NULL,T_29,SQLT_DAT,-,-,7,[]string
+t_30 TIMESTAMP NOT NULL,T_30,SQLT_TIMESTAMP,-,-,11,[]string
+t_31 TIMESTAMP WITH TIME ZONE NOT NULL,T_31,SQLT_TIMESTAMP_TZ,-,-,13,[]string
+t_32 INTERVAL YEAR TO MONTH NOT NULL,T_32,SQLT_INTERVAL_YM,-,-,5,[]string
+t_33 INTERVAL DAY TO SECOND NOT NULL,T_33,SQLT_INTERVAL_DS,-,-,11,[]string
+t_34 BLOB NOT NULL,T_34,SQLT_BLOB,-,-,4000,[]string
+t_35 CLOB NOT NULL,T_35,SQLT_CLOB,-,-,4000,[]string
+t_36 CLOB NOT NULL,T_36,SQLT_CLOB,-,-,4000,[]string
+t_37 BFILE NOT NULL,T_37,SQLT_FILE,-,-,530,[]string
+t_38 RAW (8) NOT NULL,T_38,SQLT_BIN,-,-,8,[]string
+t_39 NUMBER NOT NULL,T_39,SQLT_NUM,-,-,22,[]string
+t_40 NUMBER (8) NOT NULL,T_40,SQLT_NUM,-,-,22,[]string
+"t_41 NUMBER (8,4) NOT NULL",T_41,SQLT_NUM,-,-,22,[]string
+t_42 FLOAT NOT NULL,T_42,SQLT_NUM,-,-,22,[]string
+t_43 FLOAT (30) NOT NULL,T_43,SQLT_NUM,-,-,22,[]string
+t_44 BINARY_FLOAT NOT NULL,T_44,,-,-,4,[]string
+t_45 BINARY_DOUBLE NOT NULL,T_45,,-,-,8,[]string

@@ -1,0 +1,56 @@
+DDL Definition,.Name,.DBTypeName,.Nullable,.DecimalSize,.Length,.ScanType
+t_0 bigint,t_0,BIGINT,false,-,-,int64
+t_1 bit,t_1,BIT,true,-,-,bool
+t_2 decimal,t_2,DECIMAL,true,"(18,0)",-,[]uint8
+t_3 int,t_3,INT,true,-,-,int64
+t_4 numeric,t_4,DECIMAL,true,"(18,0)",-,[]uint8
+t_5 smallint,t_5,SMALLINT,true,-,-,int64
+t_6 tinyint,t_6,TINYINT,true,-,-,int64
+t_7 float,t_7,FLOAT,true,-,-,float64
+t_8 real,t_8,REAL,true,-,-,float64
+t_9 date,t_9,DATE,true,-,-,time.Time
+t_10 datetime2,t_10,DATETIME2,true,-,-,time.Time
+t_11 datetime,t_11,DATETIME,true,-,-,time.Time
+t_12 datetimeoffset,t_12,DATETIMEOFFSET,true,-,-,time.Time
+t_13 smalldatetime,t_13,SMALLDATETIME,true,-,-,time.Time
+t_14 time,t_14,TIME,true,-,-,time.Time
+t_15 char,t_15,CHAR,true,-,1,string
+t_16 text,t_16,TEXT,true,-,2147483647,string
+t_17 varchar,t_17,VARCHAR,true,-,1,string
+t_18 nchar,t_18,NCHAR,true,-,1,string
+t_19 ntext,t_19,NTEXT,true,-,1073741823,string
+t_20 nvarchar,t_20,NVARCHAR,true,-,1,string
+t_21 binary,t_21,BINARY,true,-,-,[]uint8
+t_22 image,t_22,IMAGE,true,-,2147483647,[]uint8
+t_23 varbinary,t_23,VARBINARY,true,-,1,[]uint8
+t_24 sql_variant,t_24,SQL_VARIANT,true,-,-,nil
+t_25 rowversion,t_25,BINARY,false,-,-,[]uint8
+t_26 uniqueidentifier,t_26,UNIQUEIDENTIFIER,true,-,-,[]uint8
+t_27 xml,t_27,XML,true,-,1073741822,string
+t_28 bigint NOT NULL,t_28,BIGINT,false,-,-,int64
+t_29 bit NOT NULL,t_29,BIT,false,-,-,bool
+t_30 decimal NOT NULL,t_30,DECIMAL,false,"(18,0)",-,[]uint8
+t_31 int NOT NULL,t_31,INT,false,-,-,int64
+t_32 numeric NOT NULL,t_32,DECIMAL,false,"(18,0)",-,[]uint8
+t_33 smallint NOT NULL,t_33,SMALLINT,false,-,-,int64
+t_34 tinyint NOT NULL,t_34,TINYINT,false,-,-,int64
+t_35 float NOT NULL,t_35,FLOAT,false,-,-,float64
+t_36 real NOT NULL,t_36,REAL,false,-,-,float64
+t_37 date NOT NULL,t_37,DATE,false,-,-,time.Time
+t_38 datetime2 NOT NULL,t_38,DATETIME2,false,-,-,time.Time
+t_39 datetime NOT NULL,t_39,DATETIME,false,-,-,time.Time
+t_40 datetimeoffset NOT NULL,t_40,DATETIMEOFFSET,false,-,-,time.Time
+t_41 smalldatetime NOT NULL,t_41,SMALLDATETIME,false,-,-,time.Time
+t_42 time NOT NULL,t_42,TIME,false,-,-,time.Time
+t_43 char NOT NULL,t_43,CHAR,false,-,1,string
+t_44 text NOT NULL,t_44,TEXT,false,-,2147483647,string
+t_45 varchar NOT NULL,t_45,VARCHAR,false,-,1,string
+t_46 nchar NOT NULL,t_46,NCHAR,false,-,1,string
+t_47 ntext NOT NULL,t_47,NTEXT,false,-,1073741823,string
+t_48 nvarchar NOT NULL,t_48,NVARCHAR,false,-,1,string
+t_49 binary NOT NULL,t_49,BINARY,false,-,-,[]uint8
+t_50 image NOT NULL,t_50,IMAGE,false,-,2147483647,[]uint8
+t_51 varbinary NOT NULL,t_51,VARBINARY,false,-,1,[]uint8
+t_52 sql_variant NOT NULL,t_52,SQL_VARIANT,false,-,-,nil
+t_53 uniqueidentifier NOT NULL,t_53,UNIQUEIDENTIFIER,false,-,-,[]uint8
+t_54 xml NOT NULL,t_54,XML,false,-,1073741822,string

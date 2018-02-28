@@ -1,55 +1,55 @@
-DDL Definition,ct.Name,ct.DBTypeName,ct.Nullable,ct.DecimalSize,ct.Length,ct.ScanType
-column_0 INT,column_0,,-,-,-,interface {}
-column_1 INTEGER,column_1,,-,-,-,interface {}
-column_2 TINYINT,column_2,,-,-,-,interface {}
-column_3 SMALLINT,column_3,,-,-,-,interface {}
-column_4 MEDIUMINT,column_4,,-,-,-,interface {}
-column_5 BIGINT,column_5,,-,-,-,interface {}
-column_6 UNSIGNED BIG INT,column_6,,-,-,-,interface {}
-column_7 INT2,column_7,,-,-,-,interface {}
-column_8 INT8,column_8,,-,-,-,interface {}
-column_9 CHARACTER(20),column_9,,-,-,-,interface {}
-column_10 VARCHAR(255),column_10,,-,-,-,interface {}
-column_11 VARYING CHARACTER(255),column_11,,-,-,-,interface {}
-column_12 NCHAR(55),column_12,,-,-,-,interface {}
-column_13 NATIVE CHARACTER(70),column_13,,-,-,-,interface {}
-column_14 NVARCHAR(100),column_14,,-,-,-,interface {}
-column_15 TEXT,column_15,,-,-,-,interface {}
-column_16 CLOB,column_16,,-,-,-,interface {}
-column_17 BLOB,column_17,,-,-,-,interface {}
-column_18 REAL,column_18,,-,-,-,interface {}
-column_19 DOUBLE,column_19,,-,-,-,interface {}
-column_20 DOUBLE PRECISION,column_20,,-,-,-,interface {}
-column_21 FLOAT,column_21,,-,-,-,interface {}
-column_22 NUMERIC,column_22,,-,-,-,interface {}
-"column_23 DECIMAL(10,5)",column_23,,-,-,-,interface {}
-column_24 BOOLEAN,column_24,,-,-,-,interface {}
-column_25 DATE,column_25,,-,-,-,interface {}
-column_26 DATETIME,column_26,,-,-,-,interface {}
-column_27 INT NOT NULL,column_27,,-,-,-,interface {}
-column_28 INTEGER NOT NULL,column_28,,-,-,-,interface {}
-column_29 TINYINT NOT NULL,column_29,,-,-,-,interface {}
-column_30 SMALLINT NOT NULL,column_30,,-,-,-,interface {}
-column_31 MEDIUMINT NOT NULL,column_31,,-,-,-,interface {}
-column_32 BIGINT NOT NULL,column_32,,-,-,-,interface {}
-column_33 UNSIGNED BIG INT NOT NULL,column_33,,-,-,-,interface {}
-column_34 INT2 NOT NULL,column_34,,-,-,-,interface {}
-column_35 INT8 NOT NULL,column_35,,-,-,-,interface {}
-column_36 CHARACTER(20) NOT NULL,column_36,,-,-,-,interface {}
-column_37 VARCHAR(255) NOT NULL,column_37,,-,-,-,interface {}
-column_38 VARYING CHARACTER(255) NOT NULL,column_38,,-,-,-,interface {}
-column_39 NCHAR(55) NOT NULL,column_39,,-,-,-,interface {}
-column_40 NATIVE CHARACTER(70) NOT NULL,column_40,,-,-,-,interface {}
-column_41 NVARCHAR(100) NOT NULL,column_41,,-,-,-,interface {}
-column_42 TEXT NOT NULL,column_42,,-,-,-,interface {}
-column_43 CLOB NOT NULL,column_43,,-,-,-,interface {}
-column_44 BLOB NOT NULL,column_44,,-,-,-,interface {}
-column_45 REAL NOT NULL,column_45,,-,-,-,interface {}
-column_46 DOUBLE NOT NULL,column_46,,-,-,-,interface {}
-column_47 DOUBLE PRECISION NOT NULL,column_47,,-,-,-,interface {}
-column_48 FLOAT NOT NULL,column_48,,-,-,-,interface {}
-column_49 NUMERIC NOT NULL,column_49,,-,-,-,interface {}
-"column_50 DECIMAL(10,5) NOT NULL",column_50,,-,-,-,interface {}
-column_51 BOOLEAN NOT NULL,column_51,,-,-,-,interface {}
-column_52 DATE NOT NULL,column_52,,-,-,-,interface {}
-column_53 DATETIME NOT NULL,column_53,,-,-,-,interface {}
+DDL Definition,.Name,.DBTypeName,.Nullable,.DecimalSize,.Length,.ScanType
+t_0 INT,t_0,,-,-,-,interface {}
+t_1 INTEGER,t_1,,-,-,-,interface {}
+t_2 TINYINT,t_2,,-,-,-,interface {}
+t_3 SMALLINT,t_3,,-,-,-,interface {}
+t_4 MEDIUMINT,t_4,,-,-,-,interface {}
+t_5 BIGINT,t_5,,-,-,-,interface {}
+t_6 UNSIGNED BIG INT,t_6,,-,-,-,interface {}
+t_7 INT2,t_7,,-,-,-,interface {}
+t_8 INT8,t_8,,-,-,-,interface {}
+t_9 CHARACTER(20),t_9,,-,-,-,interface {}
+t_10 VARCHAR(255),t_10,,-,-,-,interface {}
+t_11 VARYING CHARACTER(255),t_11,,-,-,-,interface {}
+t_12 NCHAR(55),t_12,,-,-,-,interface {}
+t_13 NATIVE CHARACTER(70),t_13,,-,-,-,interface {}
+t_14 NVARCHAR(100),t_14,,-,-,-,interface {}
+t_15 TEXT,t_15,,-,-,-,interface {}
+t_16 CLOB,t_16,,-,-,-,interface {}
+t_17 BLOB,t_17,,-,-,-,interface {}
+t_18 REAL,t_18,,-,-,-,interface {}
+t_19 DOUBLE,t_19,,-,-,-,interface {}
+t_20 DOUBLE PRECISION,t_20,,-,-,-,interface {}
+t_21 FLOAT,t_21,,-,-,-,interface {}
+t_22 NUMERIC,t_22,,-,-,-,interface {}
+"t_23 DECIMAL(10,5)",t_23,,-,-,-,interface {}
+t_24 BOOLEAN,t_24,,-,-,-,interface {}
+t_25 DATE,t_25,,-,-,-,interface {}
+t_26 DATETIME,t_26,,-,-,-,interface {}
+t_27 INT NOT NULL,t_27,,-,-,-,interface {}
+t_28 INTEGER NOT NULL,t_28,,-,-,-,interface {}
+t_29 TINYINT NOT NULL,t_29,,-,-,-,interface {}
+t_30 SMALLINT NOT NULL,t_30,,-,-,-,interface {}
+t_31 MEDIUMINT NOT NULL,t_31,,-,-,-,interface {}
+t_32 BIGINT NOT NULL,t_32,,-,-,-,interface {}
+t_33 UNSIGNED BIG INT NOT NULL,t_33,,-,-,-,interface {}
+t_34 INT2 NOT NULL,t_34,,-,-,-,interface {}
+t_35 INT8 NOT NULL,t_35,,-,-,-,interface {}
+t_36 CHARACTER(20) NOT NULL,t_36,,-,-,-,interface {}
+t_37 VARCHAR(255) NOT NULL,t_37,,-,-,-,interface {}
+t_38 VARYING CHARACTER(255) NOT NULL,t_38,,-,-,-,interface {}
+t_39 NCHAR(55) NOT NULL,t_39,,-,-,-,interface {}
+t_40 NATIVE CHARACTER(70) NOT NULL,t_40,,-,-,-,interface {}
+t_41 NVARCHAR(100) NOT NULL,t_41,,-,-,-,interface {}
+t_42 TEXT NOT NULL,t_42,,-,-,-,interface {}
+t_43 CLOB NOT NULL,t_43,,-,-,-,interface {}
+t_44 BLOB NOT NULL,t_44,,-,-,-,interface {}
+t_45 REAL NOT NULL,t_45,,-,-,-,interface {}
+t_46 DOUBLE NOT NULL,t_46,,-,-,-,interface {}
+t_47 DOUBLE PRECISION NOT NULL,t_47,,-,-,-,interface {}
+t_48 FLOAT NOT NULL,t_48,,-,-,-,interface {}
+t_49 NUMERIC NOT NULL,t_49,,-,-,-,interface {}
+"t_50 DECIMAL(10,5) NOT NULL",t_50,,-,-,-,interface {}
+t_51 BOOLEAN NOT NULL,t_51,,-,-,-,interface {}
+t_52 DATE NOT NULL,t_52,,-,-,-,interface {}
+t_53 DATETIME NOT NULL,t_53,,-,-,-,interface {}

@@ -23,10 +23,11 @@ func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {
 		ConnStr:  connStr,
 		Columns: []*drivercaps.ColumnDefn{
 			// https://docs.oracle.com/database/121/SQLQR/sqlqr06002.htm#SQLQR959
-			&drivercaps.ColumnDefn{DDL: "CHAR"},
+			// TODO(js) CHAR is detected as not nullable?
+			&drivercaps.ColumnDefn{DDL: "CHAR"}, // TODO(js) Is this valid? Do we just get default/max length?
 			&drivercaps.ColumnDefn{DDL: "CHAR (8)"},
 			&drivercaps.ColumnDefn{DDL: "VARCHAR2 (8)"},
-			&drivercaps.ColumnDefn{DDL: "NCHAR"},
+			&drivercaps.ColumnDefn{DDL: "NCHAR"}, // TODO(js) Is this valid? Do we just get default/max length?
 			&drivercaps.ColumnDefn{DDL: "NCHAR (8)"},
 			&drivercaps.ColumnDefn{DDL: "NVARCHAR2 (8)"},
 			&drivercaps.ColumnDefn{DDL: "DATE"},

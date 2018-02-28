@@ -9,7 +9,7 @@ var (
 	Pass string
 	Host string = "localhost"
 	// Port string = "5432"
-	Port string = "32785"
+	Port string = "32786"
 )
 
 func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {

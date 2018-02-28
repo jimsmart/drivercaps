@@ -1,8 +1,8 @@
 
 # Driver sql.ColumnType Capability Report
 
-- Package "github.com/mxk/go-sqlite/sqlite3" (sqlite3)
-- SQLite
+- Package "github.com/minus5/gofreetds" (mssql)
+- Microsoft SQL Server
 
 <table>
 	<thead>
@@ -12,7 +12,7 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td nowrap><code>t_0 INT</code></td>
+			<td nowrap><code>t_0 bigint</code></td>
 			<td nowrap><code>t_0</code></td>
 			<td/>
 			<td>-</td>
@@ -21,7 +21,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_1 INTEGER</code></td>
+			<td nowrap><code>t_1 bit</code></td>
 			<td nowrap><code>t_1</code></td>
 			<td/>
 			<td>-</td>
@@ -30,7 +30,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_2 TINYINT</code></td>
+			<td nowrap><code>t_2 decimal</code></td>
 			<td nowrap><code>t_2</code></td>
 			<td/>
 			<td>-</td>
@@ -39,7 +39,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_3 SMALLINT</code></td>
+			<td nowrap><code>t_3 int</code></td>
 			<td nowrap><code>t_3</code></td>
 			<td/>
 			<td>-</td>
@@ -48,7 +48,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_4 MEDIUMINT</code></td>
+			<td nowrap><code>t_4 numeric</code></td>
 			<td nowrap><code>t_4</code></td>
 			<td/>
 			<td>-</td>
@@ -57,7 +57,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_5 BIGINT</code></td>
+			<td nowrap><code>t_5 smallint</code></td>
 			<td nowrap><code>t_5</code></td>
 			<td/>
 			<td>-</td>
@@ -66,7 +66,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_6 UNSIGNED BIG INT</code></td>
+			<td nowrap><code>t_6 tinyint</code></td>
 			<td nowrap><code>t_6</code></td>
 			<td/>
 			<td>-</td>
@@ -75,7 +75,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_7 INT2</code></td>
+			<td nowrap><code>t_7 float</code></td>
 			<td nowrap><code>t_7</code></td>
 			<td/>
 			<td>-</td>
@@ -84,7 +84,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_8 INT8</code></td>
+			<td nowrap><code>t_8 real</code></td>
 			<td nowrap><code>t_8</code></td>
 			<td/>
 			<td>-</td>
@@ -93,7 +93,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_9 CHARACTER(20)</code></td>
+			<td nowrap><code>t_9 date</code></td>
 			<td nowrap><code>t_9</code></td>
 			<td/>
 			<td>-</td>
@@ -102,7 +102,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_10 VARCHAR(255)</code></td>
+			<td nowrap><code>t_10 datetime2</code></td>
 			<td nowrap><code>t_10</code></td>
 			<td/>
 			<td>-</td>
@@ -111,7 +111,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_11 VARYING CHARACTER(255)</code></td>
+			<td nowrap><code>t_11 datetime</code></td>
 			<td nowrap><code>t_11</code></td>
 			<td/>
 			<td>-</td>
@@ -120,7 +120,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_12 NCHAR(55)</code></td>
+			<td nowrap><code>t_12 datetimeoffset</code></td>
 			<td nowrap><code>t_12</code></td>
 			<td/>
 			<td>-</td>
@@ -129,7 +129,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_13 NATIVE CHARACTER(70)</code></td>
+			<td nowrap><code>t_13 smalldatetime</code></td>
 			<td nowrap><code>t_13</code></td>
 			<td/>
 			<td>-</td>
@@ -138,7 +138,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_14 NVARCHAR(100)</code></td>
+			<td nowrap><code>t_14 time</code></td>
 			<td nowrap><code>t_14</code></td>
 			<td/>
 			<td>-</td>
@@ -147,7 +147,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_15 TEXT</code></td>
+			<td nowrap><code>t_15 char</code></td>
 			<td nowrap><code>t_15</code></td>
 			<td/>
 			<td>-</td>
@@ -156,7 +156,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_16 CLOB</code></td>
+			<td nowrap><code>t_16 text</code></td>
 			<td nowrap><code>t_16</code></td>
 			<td/>
 			<td>-</td>
@@ -165,7 +165,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_17 BLOB</code></td>
+			<td nowrap><code>t_17 varchar</code></td>
 			<td nowrap><code>t_17</code></td>
 			<td/>
 			<td>-</td>
@@ -174,7 +174,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_18 REAL</code></td>
+			<td nowrap><code>t_18 nchar</code></td>
 			<td nowrap><code>t_18</code></td>
 			<td/>
 			<td>-</td>
@@ -183,7 +183,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_19 DOUBLE</code></td>
+			<td nowrap><code>t_19 ntext</code></td>
 			<td nowrap><code>t_19</code></td>
 			<td/>
 			<td>-</td>
@@ -192,7 +192,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_20 DOUBLE PRECISION</code></td>
+			<td nowrap><code>t_20 nvarchar</code></td>
 			<td nowrap><code>t_20</code></td>
 			<td/>
 			<td>-</td>
@@ -201,7 +201,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_21 FLOAT</code></td>
+			<td nowrap><code>t_21 binary</code></td>
 			<td nowrap><code>t_21</code></td>
 			<td/>
 			<td>-</td>
@@ -210,7 +210,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_22 NUMERIC</code></td>
+			<td nowrap><code>t_22 image</code></td>
 			<td nowrap><code>t_22</code></td>
 			<td/>
 			<td>-</td>
@@ -219,7 +219,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_23 DECIMAL(10,5)</code></td>
+			<td nowrap><code>t_23 varbinary</code></td>
 			<td nowrap><code>t_23</code></td>
 			<td/>
 			<td>-</td>
@@ -228,7 +228,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_24 BOOLEAN</code></td>
+			<td nowrap><code>t_24 rowversion</code></td>
 			<td nowrap><code>t_24</code></td>
 			<td/>
 			<td>-</td>
@@ -237,7 +237,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_25 DATE</code></td>
+			<td nowrap><code>t_25 uniqueidentifier</code></td>
 			<td nowrap><code>t_25</code></td>
 			<td/>
 			<td>-</td>
@@ -246,7 +246,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_26 DATETIME</code></td>
+			<td nowrap><code>t_26 xml</code></td>
 			<td nowrap><code>t_26</code></td>
 			<td/>
 			<td>-</td>
@@ -255,7 +255,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_27 INT NOT NULL</code></td>
+			<td nowrap><code>t_27 bigint NOT NULL</code></td>
 			<td nowrap><code>t_27</code></td>
 			<td/>
 			<td>-</td>
@@ -264,7 +264,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_28 INTEGER NOT NULL</code></td>
+			<td nowrap><code>t_28 bit NOT NULL</code></td>
 			<td nowrap><code>t_28</code></td>
 			<td/>
 			<td>-</td>
@@ -273,7 +273,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_29 TINYINT NOT NULL</code></td>
+			<td nowrap><code>t_29 decimal NOT NULL</code></td>
 			<td nowrap><code>t_29</code></td>
 			<td/>
 			<td>-</td>
@@ -282,7 +282,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_30 SMALLINT NOT NULL</code></td>
+			<td nowrap><code>t_30 int NOT NULL</code></td>
 			<td nowrap><code>t_30</code></td>
 			<td/>
 			<td>-</td>
@@ -291,7 +291,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_31 MEDIUMINT NOT NULL</code></td>
+			<td nowrap><code>t_31 numeric NOT NULL</code></td>
 			<td nowrap><code>t_31</code></td>
 			<td/>
 			<td>-</td>
@@ -300,7 +300,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_32 BIGINT NOT NULL</code></td>
+			<td nowrap><code>t_32 smallint NOT NULL</code></td>
 			<td nowrap><code>t_32</code></td>
 			<td/>
 			<td>-</td>
@@ -309,7 +309,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_33 UNSIGNED BIG INT NOT NULL</code></td>
+			<td nowrap><code>t_33 tinyint NOT NULL</code></td>
 			<td nowrap><code>t_33</code></td>
 			<td/>
 			<td>-</td>
@@ -318,7 +318,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_34 INT2 NOT NULL</code></td>
+			<td nowrap><code>t_34 float NOT NULL</code></td>
 			<td nowrap><code>t_34</code></td>
 			<td/>
 			<td>-</td>
@@ -327,7 +327,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_35 INT8 NOT NULL</code></td>
+			<td nowrap><code>t_35 real NOT NULL</code></td>
 			<td nowrap><code>t_35</code></td>
 			<td/>
 			<td>-</td>
@@ -336,7 +336,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_36 CHARACTER(20) NOT NULL</code></td>
+			<td nowrap><code>t_36 date NOT NULL</code></td>
 			<td nowrap><code>t_36</code></td>
 			<td/>
 			<td>-</td>
@@ -345,7 +345,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_37 VARCHAR(255) NOT NULL</code></td>
+			<td nowrap><code>t_37 datetime2 NOT NULL</code></td>
 			<td nowrap><code>t_37</code></td>
 			<td/>
 			<td>-</td>
@@ -354,7 +354,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_38 VARYING CHARACTER(255) NOT NULL</code></td>
+			<td nowrap><code>t_38 datetime NOT NULL</code></td>
 			<td nowrap><code>t_38</code></td>
 			<td/>
 			<td>-</td>
@@ -363,7 +363,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_39 NCHAR(55) NOT NULL</code></td>
+			<td nowrap><code>t_39 datetimeoffset NOT NULL</code></td>
 			<td nowrap><code>t_39</code></td>
 			<td/>
 			<td>-</td>
@@ -372,7 +372,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_40 NATIVE CHARACTER(70) NOT NULL</code></td>
+			<td nowrap><code>t_40 smalldatetime NOT NULL</code></td>
 			<td nowrap><code>t_40</code></td>
 			<td/>
 			<td>-</td>
@@ -381,7 +381,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_41 NVARCHAR(100) NOT NULL</code></td>
+			<td nowrap><code>t_41 time NOT NULL</code></td>
 			<td nowrap><code>t_41</code></td>
 			<td/>
 			<td>-</td>
@@ -390,7 +390,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_42 TEXT NOT NULL</code></td>
+			<td nowrap><code>t_42 char NOT NULL</code></td>
 			<td nowrap><code>t_42</code></td>
 			<td/>
 			<td>-</td>
@@ -399,7 +399,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_43 CLOB NOT NULL</code></td>
+			<td nowrap><code>t_43 text NOT NULL</code></td>
 			<td nowrap><code>t_43</code></td>
 			<td/>
 			<td>-</td>
@@ -408,7 +408,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_44 BLOB NOT NULL</code></td>
+			<td nowrap><code>t_44 varchar NOT NULL</code></td>
 			<td nowrap><code>t_44</code></td>
 			<td/>
 			<td>-</td>
@@ -417,7 +417,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_45 REAL NOT NULL</code></td>
+			<td nowrap><code>t_45 nchar NOT NULL</code></td>
 			<td nowrap><code>t_45</code></td>
 			<td/>
 			<td>-</td>
@@ -426,7 +426,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_46 DOUBLE NOT NULL</code></td>
+			<td nowrap><code>t_46 ntext NOT NULL</code></td>
 			<td nowrap><code>t_46</code></td>
 			<td/>
 			<td>-</td>
@@ -435,7 +435,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_47 DOUBLE PRECISION NOT NULL</code></td>
+			<td nowrap><code>t_47 nvarchar NOT NULL</code></td>
 			<td nowrap><code>t_47</code></td>
 			<td/>
 			<td>-</td>
@@ -444,7 +444,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_48 FLOAT NOT NULL</code></td>
+			<td nowrap><code>t_48 binary NOT NULL</code></td>
 			<td nowrap><code>t_48</code></td>
 			<td/>
 			<td>-</td>
@@ -453,7 +453,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_49 NUMERIC NOT NULL</code></td>
+			<td nowrap><code>t_49 image NOT NULL</code></td>
 			<td nowrap><code>t_49</code></td>
 			<td/>
 			<td>-</td>
@@ -462,7 +462,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_50 DECIMAL(10,5) NOT NULL</code></td>
+			<td nowrap><code>t_50 varbinary NOT NULL</code></td>
 			<td nowrap><code>t_50</code></td>
 			<td/>
 			<td>-</td>
@@ -471,7 +471,7 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_51 BOOLEAN NOT NULL</code></td>
+			<td nowrap><code>t_51 uniqueidentifier NOT NULL</code></td>
 			<td nowrap><code>t_51</code></td>
 			<td/>
 			<td>-</td>
@@ -480,17 +480,8 @@
 			<td nowrap><code>interface {}</code></td>
 		</tr>
 		<tr>
-			<td nowrap><code>t_52 DATE NOT NULL</code></td>
+			<td nowrap><code>t_52 xml NOT NULL</code></td>
 			<td nowrap><code>t_52</code></td>
-			<td/>
-			<td>-</td>
-			<td>-</td>
-			<td>-</td>
-			<td nowrap><code>interface {}</code></td>
-		</tr>
-		<tr>
-			<td nowrap><code>t_53 DATETIME NOT NULL</code></td>
-			<td nowrap><code>t_53</code></td>
 			<td/>
 			<td>-</td>
 			<td>-</td>
@@ -500,7 +491,7 @@
 	</tbody>
 </table>
 
-Report for [github.com/mxk/go-sqlite/sqlite3](https://github.com/mxk/go-sqlite) (sqlite3)<br/>
-Test timestamp 2018-02-28T19:54:03Z<br/>
+Report for [github.com/minus5/gofreetds](https://github.com/minus5/gofreetds) (mssql)<br/>
+Test timestamp 2018-02-28T19:52:04Z<br/>
 Generated by [drivercaps](https://github.com/jimsmart/drivercaps)
 
