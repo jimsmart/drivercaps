@@ -27,7 +27,7 @@ Currently supporting the following database engines:
 - Oracle
 - MySQL
 
-## Driver Capability Reports
+## Driver sql.ColumnType Capability Reports
 
 Driver | Database | Report
 ---|---|---
