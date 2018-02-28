@@ -1,60 +1,73 @@
-+--------------------------------+-------+------------------------+-----------+--------------+---------+-----------+
-|         DDL Definition         | .Name |      .DBTypeName       | .Nullable | .DecimalSize | .Length | .ScanType |
-+--------------------------------+-------+------------------------+-----------+--------------+---------+-----------+
-| t_0 INT                        | t_0   | INT                    | true      | -            | -       | nil       |
-| t_1 INTEGER                    | t_1   | INTEGER                | true      | -            | -       | nil       |
-| t_2 TINYINT                    | t_2   | TINYINT                | true      | -            | -       | nil       |
-| t_3 SMALLINT                   | t_3   | SMALLINT               | true      | -            | -       | nil       |
-| t_4 MEDIUMINT                  | t_4   | MEDIUMINT              | true      | -            | -       | nil       |
-| t_5 BIGINT                     | t_5   | BIGINT                 | true      | -            | -       | nil       |
-| t_6 UNSIGNED BIG INT           | t_6   | UNSIGNED BIG INT       | true      | -            | -       | nil       |
-| t_7 INT2                       | t_7   | INT2                   | true      | -            | -       | nil       |
-| t_8 INT8                       | t_8   | INT8                   | true      | -            | -       | nil       |
-| t_9 CHARACTER(20)              | t_9   | CHARACTER(20)          | true      | -            | -       | nil       |
-| t_10 VARCHAR(255)              | t_10  | VARCHAR(255)           | true      | -            | -       | nil       |
-| t_11 VARYING CHARACTER(255)    | t_11  | VARYING CHARACTER(255) | true      | -            | -       | nil       |
-| t_12 NCHAR(55)                 | t_12  | NCHAR(55)              | true      | -            | -       | nil       |
-| t_13 NATIVE CHARACTER(70)      | t_13  | NATIVE CHARACTER(70)   | true      | -            | -       | nil       |
-| t_14 NVARCHAR(100)             | t_14  | NVARCHAR(100)          | true      | -            | -       | nil       |
-| t_15 TEXT                      | t_15  | TEXT                   | true      | -            | -       | nil       |
-| t_16 CLOB                      | t_16  | CLOB                   | true      | -            | -       | nil       |
-| t_17 BLOB                      | t_17  | BLOB                   | true      | -            | -       | nil       |
-| t_18 REAL                      | t_18  | REAL                   | true      | -            | -       | nil       |
-| t_19 DOUBLE                    | t_19  | DOUBLE                 | true      | -            | -       | nil       |
-| t_20 DOUBLE PRECISION          | t_20  | DOUBLE PRECISION       | true      | -            | -       | nil       |
-| t_21 FLOAT                     | t_21  | FLOAT                  | true      | -            | -       | nil       |
-| t_22 NUMERIC                   | t_22  | NUMERIC                | true      | -            | -       | nil       |
-| t_23 DECIMAL(10,5)             | t_23  | DECIMAL(10,5)          | true      | -            | -       | nil       |
-| t_24 BOOLEAN                   | t_24  | BOOLEAN                | true      | -            | -       | nil       |
-| t_25 DATE                      | t_25  | DATE                   | true      | -            | -       | nil       |
-| t_26 DATETIME                  | t_26  | DATETIME               | true      | -            | -       | nil       |
-| t_27 INT NOT NULL              | t_27  | INT                    | true      | -            | -       | nil       |
-| t_28 INTEGER NOT NULL          | t_28  | INTEGER                | true      | -            | -       | nil       |
-| t_29 TINYINT NOT NULL          | t_29  | TINYINT                | true      | -            | -       | nil       |
-| t_30 SMALLINT NOT NULL         | t_30  | SMALLINT               | true      | -            | -       | nil       |
-| t_31 MEDIUMINT NOT NULL        | t_31  | MEDIUMINT              | true      | -            | -       | nil       |
-| t_32 BIGINT NOT NULL           | t_32  | BIGINT                 | true      | -            | -       | nil       |
-| t_33 UNSIGNED BIG INT NOT NULL | t_33  | UNSIGNED BIG INT       | true      | -            | -       | nil       |
-| t_34 INT2 NOT NULL             | t_34  | INT2                   | true      | -            | -       | nil       |
-| t_35 INT8 NOT NULL             | t_35  | INT8                   | true      | -            | -       | nil       |
-| t_36 CHARACTER(20) NOT NULL    | t_36  | CHARACTER(20)          | true      | -            | -       | nil       |
-| t_37 VARCHAR(255) NOT NULL     | t_37  | VARCHAR(255)           | true      | -            | -       | nil       |
-| t_38 VARYING CHARACTER(255)    | t_38  | VARYING CHARACTER(255) | true      | -            | -       | nil       |
-| NOT NULL                       |       |                        |           |              |         |           |
-| t_39 NCHAR(55) NOT NULL        | t_39  | NCHAR(55)              | true      | -            | -       | nil       |
-| t_40 NATIVE CHARACTER(70) NOT  | t_40  | NATIVE CHARACTER(70)   | true      | -            | -       | nil       |
-| NULL                           |       |                        |           |              |         |           |
-| t_41 NVARCHAR(100) NOT NULL    | t_41  | NVARCHAR(100)          | true      | -            | -       | nil       |
-| t_42 TEXT NOT NULL             | t_42  | TEXT                   | true      | -            | -       | nil       |
-| t_43 CLOB NOT NULL             | t_43  | CLOB                   | true      | -            | -       | nil       |
-| t_44 BLOB NOT NULL             | t_44  | BLOB                   | true      | -            | -       | nil       |
-| t_45 REAL NOT NULL             | t_45  | REAL                   | true      | -            | -       | nil       |
-| t_46 DOUBLE NOT NULL           | t_46  | DOUBLE                 | true      | -            | -       | nil       |
-| t_47 DOUBLE PRECISION NOT NULL | t_47  | DOUBLE PRECISION       | true      | -            | -       | nil       |
-| t_48 FLOAT NOT NULL            | t_48  | FLOAT                  | true      | -            | -       | nil       |
-| t_49 NUMERIC NOT NULL          | t_49  | NUMERIC                | true      | -            | -       | nil       |
-| t_50 DECIMAL(10,5) NOT NULL    | t_50  | DECIMAL(10,5)          | true      | -            | -       | nil       |
-| t_51 BOOLEAN NOT NULL          | t_51  | BOOLEAN                | true      | -            | -       | nil       |
-| t_52 DATE NOT NULL             | t_52  | DATE                   | true      | -            | -       | nil       |
-| t_53 DATETIME NOT NULL         | t_53  | DATETIME               | true      | -            | -       | nil       |
-+--------------------------------+-------+------------------------+-----------+--------------+---------+-----------+
++--------------------------------+-------+-----------------------+-----------+--------------+---------+-----------+
+|         DDL Definition         | .Name |      .DBTypeName      | .Nullable | .DecimalSize | .Length | .ScanType |
++--------------------------------+-------+-----------------------+-----------+--------------+---------+-----------+
+| t_0 INT                        | t_0   | INT                   | true      | -            | -       | nil       |
+| t_1 INTEGER                    | t_1   | INTEGER               | true      | -            | -       | nil       |
+| t_2 TINYINT                    | t_2   | TINYINT               | true      | -            | -       | nil       |
+| t_3 SMALLINT                   | t_3   | SMALLINT              | true      | -            | -       | nil       |
+| t_4 MEDIUMINT                  | t_4   | MEDIUMINT             | true      | -            | -       | nil       |
+| t_5 BIGINT                     | t_5   | BIGINT                | true      | -            | -       | nil       |
+| t_6 UNSIGNED BIG INT           | t_6   | UNSIGNED BIG INT      | true      | -            | -       | nil       |
+| t_7 INT2                       | t_7   | INT2                  | true      | -            | -       | nil       |
+| t_8 INT8                       | t_8   | INT8                  | true      | -            | -       | nil       |
+| t_9 CHARACTER                  | t_9   | CHARACTER             | true      | -            | -       | nil       |
+| t_10 CHARACTER (8)             | t_10  | CHARACTER (8)         | true      | -            | -       | nil       |
+| t_11 VARCHAR                   | t_11  | VARCHAR               | true      | -            | -       | nil       |
+| t_12 VARCHAR (8)               | t_12  | VARCHAR (8)           | true      | -            | -       | nil       |
+| t_13 VARYING CHARACTER         | t_13  | VARYING CHARACTER     | true      | -            | -       | nil       |
+| t_14 VARYING CHARACTER (8)     | t_14  | VARYING CHARACTER (8) | true      | -            | -       | nil       |
+| t_15 NCHAR                     | t_15  | NCHAR                 | true      | -            | -       | nil       |
+| t_16 NCHAR (55)                | t_16  | NCHAR (55)            | true      | -            | -       | nil       |
+| t_17 NATIVE CHARACTER          | t_17  | NATIVE CHARACTER      | true      | -            | -       | nil       |
+| t_18 NATIVE CHARACTER (8)      | t_18  | NATIVE CHARACTER (8)  | true      | -            | -       | nil       |
+| t_19 NVARCHAR                  | t_19  | NVARCHAR              | true      | -            | -       | nil       |
+| t_20 NVARCHAR (8)              | t_20  | NVARCHAR (8)          | true      | -            | -       | nil       |
+| t_21 TEXT                      | t_21  | TEXT                  | true      | -            | -       | nil       |
+| t_22 CLOB                      | t_22  | CLOB                  | true      | -            | -       | nil       |
+| t_23 BLOB                      | t_23  | BLOB                  | true      | -            | -       | nil       |
+| t_24 REAL                      | t_24  | REAL                  | true      | -            | -       | nil       |
+| t_25 DOUBLE                    | t_25  | DOUBLE                | true      | -            | -       | nil       |
+| t_26 DOUBLE PRECISION          | t_26  | DOUBLE PRECISION      | true      | -            | -       | nil       |
+| t_27 FLOAT                     | t_27  | FLOAT                 | true      | -            | -       | nil       |
+| t_28 NUMERIC                   | t_28  | NUMERIC               | true      | -            | -       | nil       |
+| t_29 DECIMAL (10,5)            | t_29  | DECIMAL (10,5)        | true      | -            | -       | nil       |
+| t_30 BOOLEAN                   | t_30  | BOOLEAN               | true      | -            | -       | nil       |
+| t_31 DATE                      | t_31  | DATE                  | true      | -            | -       | nil       |
+| t_32 DATETIME                  | t_32  | DATETIME              | true      | -            | -       | nil       |
+| t_33 INT NOT NULL              | t_33  | INT                   | true      | -            | -       | nil       |
+| t_34 INTEGER NOT NULL          | t_34  | INTEGER               | true      | -            | -       | nil       |
+| t_35 TINYINT NOT NULL          | t_35  | TINYINT               | true      | -            | -       | nil       |
+| t_36 SMALLINT NOT NULL         | t_36  | SMALLINT              | true      | -            | -       | nil       |
+| t_37 MEDIUMINT NOT NULL        | t_37  | MEDIUMINT             | true      | -            | -       | nil       |
+| t_38 BIGINT NOT NULL           | t_38  | BIGINT                | true      | -            | -       | nil       |
+| t_39 UNSIGNED BIG INT NOT NULL | t_39  | UNSIGNED BIG INT      | true      | -            | -       | nil       |
+| t_40 INT2 NOT NULL             | t_40  | INT2                  | true      | -            | -       | nil       |
+| t_41 INT8 NOT NULL             | t_41  | INT8                  | true      | -            | -       | nil       |
+| t_42 CHARACTER NOT NULL        | t_42  | CHARACTER             | true      | -            | -       | nil       |
+| t_43 CHARACTER (8) NOT NULL    | t_43  | CHARACTER (8)         | true      | -            | -       | nil       |
+| t_44 VARCHAR NOT NULL          | t_44  | VARCHAR               | true      | -            | -       | nil       |
+| t_45 VARCHAR (8) NOT NULL      | t_45  | VARCHAR (8)           | true      | -            | -       | nil       |
+| t_46 VARYING CHARACTER NOT     | t_46  | VARYING CHARACTER     | true      | -            | -       | nil       |
+| NULL                           |       |                       |           |              |         |           |
+| t_47 VARYING CHARACTER (8) NOT | t_47  | VARYING CHARACTER (8) | true      | -            | -       | nil       |
+| NULL                           |       |                       |           |              |         |           |
+| t_48 NCHAR NOT NULL            | t_48  | NCHAR                 | true      | -            | -       | nil       |
+| t_49 NCHAR (55) NOT NULL       | t_49  | NCHAR (55)            | true      | -            | -       | nil       |
+| t_50 NATIVE CHARACTER NOT NULL | t_50  | NATIVE CHARACTER      | true      | -            | -       | nil       |
+| t_51 NATIVE CHARACTER (8) NOT  | t_51  | NATIVE CHARACTER (8)  | true      | -            | -       | nil       |
+| NULL                           |       |                       |           |              |         |           |
+| t_52 NVARCHAR NOT NULL         | t_52  | NVARCHAR              | true      | -            | -       | nil       |
+| t_53 NVARCHAR (8) NOT NULL     | t_53  | NVARCHAR (8)          | true      | -            | -       | nil       |
+| t_54 TEXT NOT NULL             | t_54  | TEXT                  | true      | -            | -       | nil       |
+| t_55 CLOB NOT NULL             | t_55  | CLOB                  | true      | -            | -       | nil       |
+| t_56 BLOB NOT NULL             | t_56  | BLOB                  | true      | -            | -       | nil       |
+| t_57 REAL NOT NULL             | t_57  | REAL                  | true      | -            | -       | nil       |
+| t_58 DOUBLE NOT NULL           | t_58  | DOUBLE                | true      | -            | -       | nil       |
+| t_59 DOUBLE PRECISION NOT NULL | t_59  | DOUBLE PRECISION      | true      | -            | -       | nil       |
+| t_60 FLOAT NOT NULL            | t_60  | FLOAT                 | true      | -            | -       | nil       |
+| t_61 NUMERIC NOT NULL          | t_61  | NUMERIC               | true      | -            | -       | nil       |
+| t_62 DECIMAL (10,5) NOT NULL   | t_62  | DECIMAL (10,5)        | true      | -            | -       | nil       |
+| t_63 BOOLEAN NOT NULL          | t_63  | BOOLEAN               | true      | -            | -       | nil       |
+| t_64 DATE NOT NULL             | t_64  | DATE                  | true      | -            | -       | nil       |
+| t_65 DATETIME NOT NULL         | t_65  | DATETIME              | true      | -            | -       | nil       |
++--------------------------------+-------+-----------------------+-----------+--------------+---------+-----------+
