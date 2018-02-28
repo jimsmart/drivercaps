@@ -21,10 +21,6 @@ TODO summarise reports
 TODO docs
 
 
-SELECT 1
-SELECT 1 AS X
-SELECT 1 FROM dual
-
 Currently supporting the following database engines:
 
 - SQLite
