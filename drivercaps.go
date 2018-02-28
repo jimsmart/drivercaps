@@ -165,7 +165,7 @@ func assembleResults(types []string, ci []*sql.ColumnType) [][]string {
 	}
 	results = append(results, header)
 
-	for i := range types {
+	for i := range ci {
 
 		nullable, nullableok := ci[i].Nullable()
 		nullableStr := "-"
