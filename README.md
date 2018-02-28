@@ -16,18 +16,18 @@ TODO skip to Output/Reports, below, if you just want to view the capability repo
 
 TODO generate links to all reports
 
-TODO docs
+TODO summarise reports
 
-TODO Microsoft SQL Server support
+TODO docs
 
 
 Currently supporting the following database engines:
 
 - SQLite
 - Postgres
+- Microsoft SQL Server
 - Oracle
 - MySQL
-
 
 ## Installation
 ```bash
