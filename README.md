@@ -31,8 +31,8 @@ Currently supporting the following database engines:
 
 Driver | Database | Report
 ---|---|---
-github.com/denisenkom/go-mssqldb | MS SQL | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/denisenkom)
-github.com/minus5/gofreetds | MS SQL | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/minus5)
+github.com/denisenkom/go-mssqldb | MS SQL Server | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/denisenkom)
+github.com/minus5/gofreetds | MS SQL Server | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/minus5)
 github.com/go-sql-driver/mysql | MySQL | [View](https://github.com/jimsmart/drivercaps/tree/master/mysql/gosqldriver)
 github.com/ziutek/mymysql | MySQL | [View](https://github.com/jimsmart/drivercaps/tree/master/mysql/ziutek)
 github.com/go-goracle/goracle | Oracle | [View](https://github.com/jimsmart/drivercaps/tree/master/oracle/goracle)
