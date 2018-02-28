@@ -14,11 +14,11 @@ Different database drivers have varying levels of support for sql.ColumnType, th
 
 TODO skip to Output/Reports, below, if you just want to view the capability reports.
 
-TODO generate links to all reports
+TODO generate report links list
 
 TODO summarise reports
 
-TODO docs
+TODO more docs
 
 
 Currently supporting the following database engines:
@@ -29,7 +29,29 @@ Currently supporting the following database engines:
 - Oracle
 - MySQL
 
+## Reports
+
+Driver | Database |
+---|---|---
+github.com/denisenkom/go-mssqldb | MS SQL | [View Report](https://github.com/jimsmart/drivercaps/tree/master/mssql/denisenkom)
+github.com/minus5/gofreetds | MS SQL | [View Report](https://github.com/jimsmart/drivercaps/tree/master/mssql/minus5)
+github.com/go-sql-driver/mysql | MySQL | [View Report](https://github.com/jimsmart/drivercaps/tree/master/mysql/gosqldriver)
+github.com/ziutek/mymysql | MySQL | [View Report](https://github.com/jimsmart/drivercaps/tree/master/mysql/ziutek)
+github.com/go-goracle/goracle | Oracle | [View Report](https://github.com/jimsmart/drivercaps/tree/master/oracle/goracle)
+github.com/mattn/go-oci8 | Oracle | [View Report](https://github.com/jimsmart/drivercaps/tree/master/oracle/mattn)
+github.com/rana/ora | Oracle | [View Report](https://github.com/jimsmart/drivercaps/tree/master/oracle/rana)
+github.com/jackc/pgx | Postgres | [View Report](https://github.com/jimsmart/drivercaps/tree/master/postgres/jackc)
+github.com/jbarham/gopgsqldriver | Postgres | [View Report](https://github.com/jimsmart/drivercaps/tree/master/postgres/jbarham)
+github.com/lib/pq | Postgres | [View Report](https://github.com/jimsmart/drivercaps/tree/master/postgres/lib)
+github.com/gwenn/gosqlite | SQLite | [View Report](https://github.com/jimsmart/drivercaps/tree/master/sqlite/gwenn)
+github.com/mattn/go-sqlite3 | SQLite | [View Report](https://github.com/jimsmart/drivercaps/tree/master/sqlite/mattn)
+github.com/mxk/go-sqlite | SQLite | [View Report](https://github.com/jimsmart/drivercaps/tree/master/sqlite/mxk)
+
+
 ## Installation
+
+To install and produce your own reports:
+
 ```bash
 $ go get github.com/jimsmart/drivercaps
 ```
@@ -42,12 +64,14 @@ Change directory to the drivercaps root folder and execute:
 $ go test -test.v ./...
 ```
 
-## Output/Reports
+## Output
 
 After execution, capability reports for each driver can be found in the leaf folders of this package, e.g.
 
-- [https://github.com/jimsmart/drivercaps/oracle/goracle](https://github.com/jimsmart/drivercaps/tree/master/oracle/goracle)
-- [https://github.com/jimsmart/drivercaps/postgres/jackc](https://github.com/jimsmart/drivercaps/tree/master/postgres/jackc)
+- drivercaps/oracle/goracle/report.csv
+- drivercaps/oracle/goracle/report.txt
+- drivercaps/oracle/goracle/README.md
+- drivercaps/postgres/jackc/report.csv
 - etc.
 
 
