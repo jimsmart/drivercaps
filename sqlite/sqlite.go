@@ -53,6 +53,7 @@ func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {
 			&drivercaps.ColumnDefn{DDL: "DATETIME"},
 		},
 		CreateOpt: "WITHOUT ROWID",
+		PKType:    "INTEGER",
 	}
 	return t
 }

@@ -74,5 +74,6 @@ t_71 nvarchar (max) NOT NULL,t_71,,-,-,-,interface {}
 t_72 binary NOT NULL,t_72,,-,-,-,interface {}
 t_73 image NOT NULL,t_73,,-,-,-,interface {}
 t_74 varbinary NOT NULL,t_74,,-,-,-,interface {}
-t_75 uniqueidentifier NOT NULL,t_75,,-,-,-,interface {}
-t_76 xml NOT NULL,t_76,,-,-,-,interface {}
+t_75 rowversion NOT NULL,t_75,,-,-,-,interface {}
+t_76 uniqueidentifier NOT NULL,t_76,,-,-,-,interface {}
+t_77 xml NOT NULL,t_77,,-,-,-,interface {}

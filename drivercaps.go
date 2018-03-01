@@ -8,7 +8,6 @@ import (
 	"math/rand"
 	"os"
 	"strconv"
-	"strings"
 	"time"
 
 	"github.com/jimsmart/schema"
@@ -30,11 +29,11 @@ type DriverTest struct {
 	ConnStr   string
 	Columns   []*ColumnDefn
 	CreateOpt string
+	PKType    string
 }
 
 type ColumnDefn struct {
-	DDL         string // e.g. VARCHAR(255)
-	OnePerTable bool
+	DDL string // e.g. VARCHAR(255)
 	// *sql.ColumnType return values.
 	// Name                 string
 	// DatabaseTypeName     string
@@ -87,73 +86,64 @@ func exerciseDriver(test *DriverTest) ([][]string, error) {
 	}
 	title := fmt.Sprintf("sql.Driver %s %q", test.PkgName, test.DrvName)
 	log.Printf(title)
+
 	db, err := sql.Open(test.DrvName, test.ConnStr)
 	if err != nil {
 		return nil, err
 	}
-
-	// tname := "drivercaps_test_table_" + randomString(8)
-	tname := "drivercaps_" + randomString(8)
-	// log.Println(tname)
-
 	defer func() {
-		drop := fmt.Sprintf("DROP TABLE %s", tname)
-		exec(db, drop)
 		err = db.Close()
 		if err != nil {
 			log.Printf("db.Close error %v", err)
 		}
 	}()
 
-	// Build a CREATE TABLE command, using given list of fields.
-	create := fmt.Sprintf("CREATE TABLE %s (\n", tname)
+	types := make([]string, len(test.Columns)*2)
+	cis := make([]*sql.ColumnType, len(test.Columns)*2)
 	i := 0
-	var types []string
-	var cmd []string
-	// TODO(js) Consider making some columns uppercase, to detect whether driver honours case.
-	for _, ci := range test.Columns {
-		s := fmt.Sprintf("t_%d %s", i, ci.DDL)
-		types = append(types, s)
-		cmd = append(cmd, "\t"+s)
+
+	testType := func(typeDDL string) {
+		j := i
 		i++
-	}
-	for _, ci := range test.Columns {
-		if ci.OnePerTable {
-			continue
+		tname := "drivercaps_" + randomString(8)
+		// log.Println(tname)
+		create := fmt.Sprintf("CREATE TABLE %s (\n\tpk %s PRIMARY KEY,\n", tname, test.PKType)
+		s := fmt.Sprintf("t_%d %s", j, typeDDL)
+		types[j] = s
+		create += fmt.Sprintf("\t%s\n)", s)
+		err := exec(db, create)
+		if err != nil {
+			log.Printf("create error %v", err)
+			return
 		}
-		s := fmt.Sprintf("t_%d %s NOT NULL", i, ci.DDL)
-		types = append(types, s)
-		cmd = append(cmd, "\t"+s)
-		i++
-	}
-	cmd = append(cmd, "\tPRIMARY KEY (t_0)")
-	create += strings.Join(cmd, ",\n")
-	create += fmt.Sprintf("\n) %s", test.CreateOpt)
-	err = exec(db, create)
-	if err != nil {
-		return nil, err
+
+		// query caps
+		ci, err := schema.Table(db, tname)
+		if err != nil {
+			log.Printf("metadata query error %v", err)
+			return
+		}
+		cis[j] = ci[1]
+
+		err = exec(db, "DROP TABLE "+tname)
+		if err != nil {
+			log.Printf("drop error %v", err)
+		}
 	}
 
-	ci, err := schema.Table(db, tname)
-	if err != nil {
-		return nil, err
+	for _, t := range test.Columns {
+		testType(t.DDL)
+	}
+	for _, t := range test.Columns {
+		testType(t.DDL + " NOT NULL")
 	}
 
-	return assembleResults(types, ci), nil
+	return assembleResults(types, cis), nil
 }
 
 func assembleResults(types []string, ci []*sql.ColumnType) [][]string {
 	var results [][]string
 
-	// header := []string{
-	// 	"DDL Definition",
-	// 	"Name",
-	// 	"DB Type Name",
-	// 	"Nullable",
-	// 	"Decimal Size",
-	// 	"Length",
-	// 	"Scan Type",
-	// }
 	header := []string{
 		"DDL Definition",
 		".Name",
@@ -176,31 +166,13 @@ func assembleResults(types []string, ci []*sql.ColumnType) [][]string {
 		precision, scale, decsizeok := ci[i].DecimalSize()
 		decsizeStr := "-"
 		if decsizeok {
-			// TODO Factor this out.
-			precStr := ""
-			if precision == math.MaxInt64 {
-				precStr = "MaxInt64"
-			} else {
-				precStr = strconv.FormatInt(precision, 10)
-			}
-			// TODO Factor this out.
-			scaleStr := ""
-			if scale == math.MaxInt64 {
-				scaleStr = "MaxInt64"
-			} else {
-				scaleStr = strconv.FormatInt(scale, 10)
-			}
-			decsizeStr = fmt.Sprintf("(%s,%s)", precStr, scaleStr)
+			decsizeStr = fmt.Sprintf("(%s,%s)", formatInt64(precision), formatInt64(scale))
 		}
 
 		length, lengthok := ci[i].Length()
 		lengthStr := "-"
 		if lengthok {
-			if length == math.MaxInt64 {
-				lengthStr = "MaxInt64"
-			} else {
-				lengthStr = strconv.FormatInt(length, 10)
-			}
+			lengthStr = formatInt64(length)
 		}
 
 		scantype := ci[i].ScanType()
@@ -225,6 +197,14 @@ func assembleResults(types []string, ci []*sql.ColumnType) [][]string {
 	return results
 }
 
+func formatInt64(n int64) string {
+	if n == math.MaxInt64 {
+		return "MaxInt64"
+	} else {
+		return strconv.FormatInt(n, 10)
+	}
+}
+
 func localFilename(filename string) string {
 	wd, err := os.Getwd()
 	if err != nil {
@@ -234,6 +214,7 @@ func localFilename(filename string) string {
 }
 
 func exec(db *sql.DB, ddl string) error {
+
 	// log.Printf("executing %s", ddl)
 	_, err := db.Exec(ddl)
 	if err != nil {

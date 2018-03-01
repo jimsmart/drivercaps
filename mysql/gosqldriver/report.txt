@@ -1,7 +1,7 @@
 +--------------------------------+-------+-------------+-----------+---------------------+---------+-----------------+
 |         DDL Definition         | .Name | .DBTypeName | .Nullable |    .DecimalSize     | .Length |    .ScanType    |
 +--------------------------------+-------+-------------+-----------+---------------------+---------+-----------------+
-| t_0 BIT                        | t_0   | BIT         | false     | -                   | -       | sql.RawBytes    |
+| t_0 BIT                        | t_0   | BIT         | true      | -                   | -       | sql.RawBytes    |
 | t_1 BIT (8)                    | t_1   | BIT         | true      | -                   | -       | sql.RawBytes    |
 | t_2 TINYINT                    | t_2   | TINYINT     | true      | -                   | -       | sql.NullInt64   |
 | t_3 TINYINT UNSIGNED           | t_3   | TINYINT     | true      | -                   | -       | sql.NullInt64   |

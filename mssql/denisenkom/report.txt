@@ -1,7 +1,7 @@
 +--------------------------------+-------+------------------+-----------+--------------+------------+-----------+
 |         DDL Definition         | .Name |   .DBTypeName    | .Nullable | .DecimalSize |  .Length   | .ScanType |
 +--------------------------------+-------+------------------+-----------+--------------+------------+-----------+
-| t_0 bigint                     | t_0   | BIGINT           | false     | -            | -          | int64     |
+| t_0 bigint                     | t_0   | BIGINT           | true      | -            | -          | int64     |
 | t_1 bit                        | t_1   | BIT              | true      | -            | -          | bool      |
 | t_2 decimal                    | t_2   | DECIMAL          | true      | (18,0)       | -          | []uint8   |
 | t_3 decimal (8)                | t_3   | DECIMAL          | true      | (8,0)        | -          | []uint8   |
@@ -76,6 +76,7 @@
 | t_72 binary NOT NULL           | t_72  | BINARY           | false     | -            | -          | []uint8   |
 | t_73 image NOT NULL            | t_73  | IMAGE            | false     | -            | 2147483647 | []uint8   |
 | t_74 varbinary NOT NULL        | t_74  | VARBINARY        | false     | -            | 1          | []uint8   |
-| t_75 uniqueidentifier NOT NULL | t_75  | UNIQUEIDENTIFIER | false     | -            | -          | []uint8   |
-| t_76 xml NOT NULL              | t_76  | XML              | false     | -            | 1073741822 | string    |
+| t_75 rowversion NOT NULL       | t_75  | BINARY           | false     | -            | -          | []uint8   |
+| t_76 uniqueidentifier NOT NULL | t_76  | UNIQUEIDENTIFIER | false     | -            | -          | []uint8   |
+| t_77 xml NOT NULL              | t_77  | XML              | false     | -            | 1073741822 | string    |
 +--------------------------------+-------+------------------+-----------+--------------+------------+-----------+

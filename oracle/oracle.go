@@ -50,8 +50,8 @@ func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {
 			&drivercaps.ColumnDefn{DDL: "BINARY_FLOAT"},
 			&drivercaps.ColumnDefn{DDL: "BINARY_DOUBLE"},
 			// TODO(js) None of these seem to work with goracle?
-			// &drivercaps.ColumnDefn{DDL: "ROWID", OnePerTable: true},
-			// // &drivercaps.ColumnDefn{DDL: "UROWID (8)", OnePerTable: true},
+			// &drivercaps.ColumnDefn{DDL: "ROWID"},
+			// // &drivercaps.ColumnDefn{DDL: "UROWID (8)"},
 			// // https://docs.oracle.com/database/121/SQLQR/sqlqr06003.htm#SQLQR967
 			// &drivercaps.ColumnDefn{DDL: "SYS.AnyData"},
 			// &drivercaps.ColumnDefn{DDL: "SYS.AnyType"},
@@ -74,6 +74,7 @@ func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {
 			// &drivercaps.ColumnDefn{DDL: "XMLType"},
 			// &drivercaps.ColumnDefn{DDL: "URIType"},
 		},
+		PKType: "NUMBER",
 	}
 	return t
 }

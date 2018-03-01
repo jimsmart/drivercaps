@@ -1,5 +1,5 @@
 DDL Definition,.Name,.DBTypeName,.Nullable,.DecimalSize,.Length,.ScanType
-t_0 CHAR,T_0,CHAR,false,-,1,string
+t_0 CHAR,T_0,CHAR,true,-,1,string
 t_1 CHAR (8),T_1,CHAR,true,-,8,string
 t_2 VARCHAR2 (8),T_2,VARCHAR2,true,-,8,string
 t_3 NCHAR,T_3,NCHAR,true,-,4,string

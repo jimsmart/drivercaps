@@ -91,6 +91,7 @@ func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {
 			&drivercaps.ColumnDefn{DDL: "uuid"},
 			&drivercaps.ColumnDefn{DDL: "xml"},
 		},
+		PKType: "integer",
 	}
 	return t
 }

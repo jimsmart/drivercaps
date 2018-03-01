@@ -71,11 +71,12 @@ func NewTest(pkgURL, pkgName, drvName, connStr string) *drivercaps.DriverTest {
 			// &drivercaps.ColumnDefn{DDL: "sql_variant"},
 			// &drivercaps.ColumnDefn{DDL: "geometry"},
 			// &drivercaps.ColumnDefn{DDL: "table ()"}, // TODO(js)
-			&drivercaps.ColumnDefn{DDL: "rowversion", OnePerTable: true},
+			&drivercaps.ColumnDefn{DDL: "rowversion"},
 			&drivercaps.ColumnDefn{DDL: "uniqueidentifier"},
 			&drivercaps.ColumnDefn{DDL: "xml"},
 			// &drivercaps.ColumnDefn{DDL: "geography"},
 		},
+		PKType: "int",
 	}
 	return t
 }
