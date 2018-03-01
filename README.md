@@ -8,7 +8,7 @@ TODO more docs
 
 ## Why?
 
-Different database drivers have varying levels of support for sql.ColumnType, this project shines some light on the subject.
+Different database drivers have varying levels of support for [sql.ColumnType](https://golang.org/pkg/database/sql/#ColumnType), this project shines some light on the subject.
 
 ## What?
 
