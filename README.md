@@ -29,21 +29,21 @@ Currently supporting the following database engines:
 
 ## Driver sql.ColumnType Capability Reports
 
-Driver | Database | Full<br/>Report
----|---|---
-github.com/denisenkom/go-mssqldb | MS SQL Server | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/denisenkom)
-github.com/minus5/gofreetds | MS SQL Server | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/minus5)
-github.com/go-sql-driver/mysql | MySQL | [View](https://github.com/jimsmart/drivercaps/tree/master/mysql/gosqldriver)
-github.com/ziutek/mymysql | MySQL | [View](https://github.com/jimsmart/drivercaps/tree/master/mysql/ziutek)
-github.com/go-goracle/goracle | Oracle | [View](https://github.com/jimsmart/drivercaps/tree/master/oracle/goracle)
-github.com/mattn/go-oci8 | Oracle | [View](https://github.com/jimsmart/drivercaps/tree/master/oracle/mattn)
-github.com/rana/ora | Oracle | [View](https://github.com/jimsmart/drivercaps/tree/master/oracle/rana)
-github.com/jackc/pgx | Postgres | [View](https://github.com/jimsmart/drivercaps/tree/master/postgres/jackc)
-github.com/jbarham/gopgsqldriver | Postgres | [View](https://github.com/jimsmart/drivercaps/tree/master/postgres/jbarham)
-github.com/lib/pq | Postgres | [View](https://github.com/jimsmart/drivercaps/tree/master/postgres/lib)
-github.com/gwenn/gosqlite | SQLite | [View](https://github.com/jimsmart/drivercaps/tree/master/sqlite/gwenn)
-github.com/mattn/go-sqlite3 | SQLite | [View](https://github.com/jimsmart/drivercaps/tree/master/sqlite/mattn)
-github.com/mxk/go-sqlite | SQLite | [View](https://github.com/jimsmart/drivercaps/tree/master/sqlite/mxk)
+Driver | Database | Full<br/>Report | .Name<br/>Support | .DBTypeName<br/>Support | .Nullable<br/>Support | .DecimalSize<br/>Support | .Length<br/>Support | .ScantType<br/>Support
+---|---|---|---|---|---|---|---|---
+github.com/denisenkom/go-mssqldb | MS SQL Server | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/denisenkom) |---|---|---|---|---|---
+github.com/minus5/gofreetds | MS SQL Server | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/minus5) |---|---|---|---|---|---
+github.com/go-sql-driver/mysql | MySQL | [View](https://github.com/jimsmart/drivercaps/tree/master/mysql/gosqldriver) |---|---|---|---|---|---
+github.com/ziutek/mymysql | MySQL | [View](https://github.com/jimsmart/drivercaps/tree/master/mysql/ziutek) |---|---|---|---|---|---
+github.com/go-goracle/goracle | Oracle | [View](https://github.com/jimsmart/drivercaps/tree/master/oracle/goracle) |---|---|---|---|---|---
+github.com/mattn/go-oci8 | Oracle | [View](https://github.com/jimsmart/drivercaps/tree/master/oracle/mattn) |---|---|---|---|---|---
+github.com/rana/ora | Oracle | [View](https://github.com/jimsmart/drivercaps/tree/master/oracle/rana) |---|---|---|---|---|---
+github.com/jackc/pgx | Postgres | [View](https://github.com/jimsmart/drivercaps/tree/master/postgres/jackc) |---|---|---|---|---|---
+github.com/jbarham/gopgsqldriver | Postgres | [View](https://github.com/jimsmart/drivercaps/tree/master/postgres/jbarham) |---|---|---|---|---|---
+github.com/lib/pq | Postgres | [View](https://github.com/jimsmart/drivercaps/tree/master/postgres/lib) |---|---|---|---|---|---
+github.com/gwenn/gosqlite | SQLite | [View](https://github.com/jimsmart/drivercaps/tree/master/sqlite/gwenn) |---|---|---|---|---|---
+github.com/mattn/go-sqlite3 | SQLite | [View](https://github.com/jimsmart/drivercaps/tree/master/sqlite/mattn) |---|---|---|---|---|---
+github.com/mxk/go-sqlite | SQLite | [View](https://github.com/jimsmart/drivercaps/tree/master/sqlite/mxk) |---|---|---|---|---|---
 
 
 ## Installation
