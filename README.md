@@ -14,11 +14,11 @@ Different database drivers have varying levels of support for sql.ColumnType, th
 
 Currently supporting the following database engines:
 
-- SQLite
-- Postgres
 - Microsoft SQL Server
-- Oracle
 - MySQL
+- Oracle
+- Postgres
+- SQLite
 
 ## Driver sql.ColumnType Capability Reports
 
