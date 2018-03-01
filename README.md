@@ -4,18 +4,13 @@
 
 drivercaps is a [Go](https://golang.org) package to analyse and report database/sql drivers' column metadata capabilities.
 
+TODO more docs
 
 ## Why?
 
 Different database drivers have varying levels of support for sql.ColumnType, this project shines some light on the subject.
 
-
-## 'Under Construction'
-
-TODO generate report table (vs manual maintenance)
-
-TODO more docs
-
+## What?
 
 Currently supporting the following database engines:
 
@@ -26,6 +21,8 @@ Currently supporting the following database engines:
 - MySQL
 
 ## Driver sql.ColumnType Capability Reports
+
+TODO generate report table (vs manual maintenance)
 
 Driver | Database | Report | .Name<br/>Support | .DBTypeName<br/>Support | .Nullable<br/>Support | .DecimalSize<br/>Support | .Length<br/>Support | .ScanType<br/>Support
 ---|---|---|---|---|---|---|---|---
@@ -55,7 +52,6 @@ github.com/mxk/go-sqlite | SQLite | [View](https://github.com/jimsmart/drivercap
 &#91;10&#93; type name includes length and precision values<br/>
 &#91;11&#93; invalid scan type nil
 
-
 ## Installation
 
 To install and produce your own reports locally:
@@ -74,14 +70,13 @@ $ go test -test.v ./...
 
 ## Output
 
-After execution, capability reports for each driver can be found in the leaf folders of this package, e.g.
+After execution, capability reports for each driver can be found in the leaf folders of the package, e.g.
 
 - drivercaps/oracle/goracle/report.csv
 - drivercaps/oracle/goracle/report.txt
 - drivercaps/oracle/goracle/README.md
 - drivercaps/postgres/jackc/report.csv
 - etc.
-
 
 ## License
 
