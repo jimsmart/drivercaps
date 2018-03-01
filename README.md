@@ -12,9 +12,7 @@ Different database drivers have varying levels of support for sql.ColumnType, th
 
 ## 'Under Construction'
 
-TODO generate report links list
-
-TODO summarise reports
+TODO generate report table (vs manual maintenance)
 
 TODO more docs
 
