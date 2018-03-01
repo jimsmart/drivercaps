@@ -63,6 +63,8 @@ func writeMarkdown(w io.Writer, results [][]string, test *DriverTest, tim time.T
 - Package "{{.Package}}" ({{.Driver}})
 - {{.Database}}
 
+(Please scroll left/right to view full table contents)
+
 <table>
 	<thead>
 		<tr>
