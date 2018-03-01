@@ -29,7 +29,7 @@ Currently supporting the following database engines:
 
 ## Driver sql.ColumnType Capability Reports
 
-Driver | Database | Report
+Driver | Database | Full<br/>Report
 ---|---|---
 github.com/denisenkom/go-mssqldb | MS SQL Server | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/denisenkom)
 github.com/minus5/gofreetds | MS SQL Server | [View](https://github.com/jimsmart/drivercaps/tree/master/mssql/minus5)
