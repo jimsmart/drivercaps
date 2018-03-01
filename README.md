@@ -45,16 +45,16 @@ github.com/gwenn/gosqlite | SQLite | [View](https://github.com/jimsmart/driverca
 github.com/mattn/go-sqlite3 | SQLite | [View](https://github.com/jimsmart/drivercaps/tree/master/sqlite/mattn) | Yes | Yes &#91;10&#93; | Invalid &#91;6&#93; | No | No | Invalid &#91;11&#93;
 github.com/mxk/go-sqlite | SQLite | [View](https://github.com/jimsmart/drivercaps/tree/master/sqlite/mxk) | Yes | No | No | No | No | Default &#91;1&#93;
 
-&#91;1&#93; interface{} only
-&#91;2&#93; float and double types have invalid precision and scale value MaxInt64
-&#91;3&#93; number and float have invalid default scale value -127, float type has invalid? default precision value 126
-&#91;4&#93; exposes only internal type codenames
-&#91;5&#93; invalid scan type []string
-&#91;6&#93; reports everything as nullable
-&#91;7&#93; number and float types have invalid scale value -127
-&#91;8&#93; binary_float and binary_double have invalid scan type nil
-&#91;9&#93; numeric and decimal types have invalid default precision and scale values 65535, 65531
-&#91;10&#93; type name includes length and precision values
+&#91;1&#93; interface{} only<br/>
+&#91;2&#93; float and double types have invalid precision and scale value MaxInt64<br/>
+&#91;3&#93; number and float have invalid default scale value -127, float type has invalid? default precision value 126<br/>
+&#91;4&#93; exposes only internal type codenames<br/>
+&#91;5&#93; invalid scan type []string<br/>
+&#91;6&#93; reports everything as nullable<br/>
+&#91;7&#93; number and float types have invalid scale value -127<br/>
+&#91;8&#93; binary_float and binary_double have invalid scan type nil<br/>
+&#91;9&#93; numeric and decimal types have invalid default precision and scale values 65535, 65531<br/>
+&#91;10&#93; type name includes length and precision values<br/>
 &#91;11&#93; invalid scan type nil
 
 
